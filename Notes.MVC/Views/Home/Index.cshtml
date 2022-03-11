@@ -1,0 +1,201 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="~/css/index/index.css">
+<link rel="stylesheet" href="~/css/index/panel.css">
+
+<div class="container">
+    <div class="side-panel">
+
+        <div class="dongon">
+            <img class="logo" src="svg/DonGon-logo.svg" alt="">
+        </div>
+
+        <div class="func-block">
+
+            <button class="create-btn">
+                <div class="func-item">
+                    <div class="item-icon">
+                        <svg style="width:24px;height:24px" viewBox="0 0 18 18">
+                            <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                        </svg>
+                    </div>
+                    <p>Создать</p>
+                    <div class="list-icon">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+                        </svg>
+                    </div>
+                </div>
+            </button>
+
+            @using (Html.AjaxBeginForm("Index", "AllNotes",
+                new AjaxOptions() {UpdateTargetId = "target", HttpMethod = "get",}, new {id = "form"}))
+            {
+                <button class="btn" title="Заметки">
+                    <div class="func-item" id="button1">
+                        <div class="item-icon">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M17,4V10L15,8L13,10V4H9V20H19V4H17M3,7V5H5V4C5,2.89 5.9,2 7,2H19C20.05,2 21,2.95 21,4V20C21,21.05 20.05,22 19,22H7C5.95,22 5,21.05 5,20V19H3V17H5V13H3V11H5V7H3M5,5V7H7V5H5M5,19H7V17H5V19M5,13H7V11H5V13Z"/>
+                            </svg>
+                        </div>
+                        Все заметки
+                        
+                            <input class="count" type="text"  readonly="readonly" value="44">
+                    </div>
+                </button>
+            }
+
+            @using (Html.AjaxBeginForm("Index", "AllNotes",
+                new AjaxOptions() {UpdateTargetId = "target", HttpMethod = "get",}, new {id = "form"}))
+            {
+                <button class="btn" title="Напоминания">
+                    <div class="func-item" id="button2">
+                        <div class="item-icon">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z"/>
+                            </svg>
+                        </div>
+                        Напоминания
+                    </div>
+                </button>
+            }
+
+
+            @using (Html.AjaxBeginForm("Index", "Home",
+                new AjaxOptions {UpdateTargetId = "target"}))
+            {
+                <button class="btn" title="Задачи">
+                    <div class="func-item" id="button3">
+                        <div class="item-icon">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M19,4H18V2H16V4H8V2H6V4H5A2,2 0 0,0 3,6V20A2,2 0 0,0 5,22H19A2,2 0 0,0 21,20V6A2,2 0 0,0 19,4M19,20H5V10H19V20M5,8V6H19V8H5M10.56,18.46L16.5,12.53L15.43,11.47L10.56,16.34L8.45,14.23L7.39,15.29L10.56,18.46Z"/>
+                            </svg>
+                        </div>
+                        Задачи
+                    </div>
+                </button>
+            }
+
+
+            @using (Html.AjaxBeginForm("Index", "Home",
+                new AjaxOptions {UpdateTargetId = "target"}))
+            {
+                <button class="btn" title="Корзина">
+                    <div class="func-item" id="button4">
+                        <div class="item-icon">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z"/>
+                            </svg>
+                        </div>
+                        Корзина
+                    </div>
+                </button>
+            }
+
+            @using (Html.AjaxBeginForm("Index", "Home",
+                new AjaxOptions {UpdateTargetId = "target"}))
+            {
+                <button class="btn" title="Корзина" id="button5">
+                    <div class="func-item" id="button4">
+                        <div class="item-icon">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M20,18H4V8H20M20,6H12L10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6Z" />
+                            </svg>
+                        </div>
+                        Мои папки
+                    </div>
+                </button>
+            }
+        </div>
+
+        <div class="user-div">
+            <div class="user-info">
+                <div class="user-logo">
+
+                </div>
+                Nickname
+            </div>
+            <div class="exit">
+                <button class="exit-btn">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19,3H5C3.89,3 3,3.89 3,5V9H5V5H19V19H5V15H3V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M10.08,15.58L11.5,17L16.5,12L11.5,7L10.08,8.41L12.67,11H3V13H12.67L10.08,15.58Z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content-container" id="target">
+        @{ await Html.RenderPartialAsync("~/Views/Notes/_NotesPartial.cshtml"); }
+    </div>
+    
+    <div class="edit" id="edit">
+        @{ await Html.RenderPartialAsync("~/Views/Notes/_NoteEditPartial.cshtml"); }
+    </div>
+
+</div>
+
+<script src="js/anime.js"></script>
+<script src="~/js/p5.min.js"></script>
+<script src="~/js/vanta.topology.min.js"></script>
+
+@* <script> *@
+@* VANTA.TOPOLOGY({ *@
+@*   el: ".content-container", *@
+@*   mouseControls: true, *@
+@*   touchControls: true, *@
+@*   gyroControls: false, *@
+@*   minHeight: 700.00, *@
+@*   minWidth: 700.00, *@
+@*   scale: 1.00, *@
+@*   scaleMobile: 1.00, *@
+@*   color: 0xaeca40 *@
+@* }) *@
+@* </script> *@
+
+<script >
+var button1 = document.getElementById('button1');
+var button2 = document.getElementById('button2');
+var button3 = document.getElementById('button3');
+var button4 = document.getElementById('button4');
+var button5 = document.getElementById('button5');
+
+button1.addEventListener('click',function(){
+    this.classList.add('selected');
+    button2.classList.remove('selected');
+     button3.classList.remove('selected');
+     button4.classList.remove('selected');
+});
+
+button2.addEventListener('click',function(){
+  this.classList.add('selected');
+  button1.classList.remove('selected');
+  button3.classList.remove('selected');
+  button4.classList.remove('selected');
+});
+
+button3.addEventListener('click',function(){
+  this.classList.add('selected');
+  button1.classList.remove('selected');
+  button2.classList.remove('selected');
+  button4.classList.remove('selected');
+});
+
+button4.addEventListener('click',function(){
+  this.classList.add('selected');
+  button1.classList.remove('selected');
+  button2.classList.remove('selected');
+  button3.classList.remove('selected');
+});
+
+button5.addEventListener('click',function(){
+  this.classList.add('selected');
+  button1.classList.remove('selected');
+  button2.classList.remove('selected');
+  button3.classList.remove('selected');
+  button4.classList.remove('selected');
+});
+</script>
