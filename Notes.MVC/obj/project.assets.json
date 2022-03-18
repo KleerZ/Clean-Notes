@@ -1107,11 +1107,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\CleanNotes\\Notes.MVC\\Notes.MVC.csproj",
+      "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.MVC\\Notes.MVC.csproj",
       "projectName": "Notes.MVC",
-      "projectPath": "D:\\Projects\\CleanNotes\\Notes.MVC\\Notes.MVC.csproj",
+      "projectPath": "D:\\Projects\\CleanNote\\Notes.MVC\\Notes.MVC.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\CleanNotes\\Notes.MVC\\obj\\",
+      "outputPath": "D:\\Projects\\CleanNote\\Notes.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1171,7 +1171,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

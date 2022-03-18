@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\CleanNotes\\Notes.Domain\\Notes.Domain.csproj",
+      "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj",
       "projectName": "Notes.Domain",
-      "projectPath": "D:\\Projects\\CleanNotes\\Notes.Domain\\Notes.Domain.csproj",
+      "projectPath": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\CleanNotes\\Notes.Domain\\obj\\",
+      "outputPath": "D:\\Projects\\CleanNote\\Notes.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

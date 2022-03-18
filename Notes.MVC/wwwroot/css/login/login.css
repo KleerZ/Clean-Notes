@@ -9,8 +9,8 @@ body {
     /*align-items: center;*/
     /*flex-direction: row;*/
     /*width: 100%;*/
-    height: calc(100vh - 50px);
-    /*background: #4f5050;*/
+    height: calc(100vh);
+    /*background: #232323;*/
 }
 
 #canvas-basic {
@@ -29,7 +29,7 @@ body {
 .content-container{
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     z-index: 999;
@@ -38,7 +38,7 @@ body {
 
     width: 100vh;
     height: 63vh;
-    
+
     background: white;
     border: none;
     border-radius: 10px;
@@ -62,7 +62,7 @@ body {
 .title{
     width: 100%;
     text-align: center;
-    font-family: Gilroy;
+    font-family: "Google Sans Medium";
     font-weight: 500;
     font-size: 4vh;
     /*margin-top: 15px;*/
@@ -75,13 +75,13 @@ body {
     justify-content: space-around;
     flex-direction: column;
     width: 100%;
-    height: 55%;
+    height: 65%;
 }
 
 .input-field{
     border: 2px solid #000000;
     border-radius: 7px;
-    height: 16%;
+    height: 14%;
     width: 85%;
     /*font-family: "SF UI Display";*/
     font-family: "Gilroy";
@@ -96,22 +96,24 @@ body {
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     height: 10%;
 }
 
 .login-btn{
-    width: 70%;
+    width: 180px;
     background: white;
     font-family: "SF UI Display Medium";
     /*font-family: "Gilroy";*/
     height: 100%;
     color: black;
     border: none;
-    border-radius: 7px;
+    border-radius: 50px;
+    background: #009728;
+    color: white;
     font-size: 2vh;
     transition: .1s all linear;
-    border: 2px solid rgba(0, 0, 0, 1);
+    /*border: 2px solid rgba(0, 0, 0, 1);*/
     cursor: pointer;
 }
 
@@ -128,7 +130,7 @@ body {
     height: 5.8vh;
     width: 5.8vh;
     border: none;
-    border: 2px solid black;
+    border: 2px solid #000000;
     border-radius: 7px;
     transition: .2s all linear;
     cursor: pointer;
@@ -144,8 +146,8 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100%;
-    width: 50%;
-    /*background: #6d0abe;*/
+    width: 45%;
+    /*background: #232323;*/
     border: none;
     border-radius: 0px 10px 10px 0px;
 }
@@ -157,12 +159,35 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .reg-btn{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 70%;
     height: 10%;
+}
+
+.login-btn2{
+    width: 75%;
+    background: white;
+    font-family: "SF UI Display Medium";
+    /*font-family: "Gilroy";*/
+    height: 100%;
+    color: black;
+    border: none;
+    border-radius: 7px;
+    background: #0066ff;
+    color: white;
+    font-size: 2vh;
+    transition: .1s all linear;
+    /*border: 2px solid rgba(0, 0, 0, 1);*/
+    cursor: pointer;
+}
+
+.login-btn2:hover{
+    background: #0047b6;
+    transition: .1s all linear;
 }

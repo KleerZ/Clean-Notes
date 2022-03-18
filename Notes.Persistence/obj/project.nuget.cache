@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rFhcIAfJ67UeIsa1pB2yAI3nrsGdUw7kqv3XERq6RWnOWGafmegEVgLOFt0CHBEFjWg2U9Py7sLJKmJFqqJucA==",
+  "dgSpecHash": "2aCTYXARX9RKTP1gJ1bFQzX7dFqA17XPTJVJdxV1+p//6RhFAwkx6KjJVHXDyREQ2T6jBplG5TDTUus4hU32Fg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\CleanNotes\\Notes.Persistence\\Notes.Persistence.csproj",
+  "projectFilePath": "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",

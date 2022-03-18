@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\CleanNotes\\Notes.Persistence\\Notes.Persistence.csproj": {}
+    "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\CleanNotes\\Notes.Application\\Notes.Application.csproj": {
+    "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CleanNotes\\Notes.Application\\Notes.Application.csproj",
+        "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj",
         "projectName": "Notes.Application",
-        "projectPath": "D:\\Projects\\CleanNotes\\Notes.Application\\Notes.Application.csproj",
+        "projectPath": "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CleanNotes\\Notes.Application\\obj\\",
+        "outputPath": "D:\\Projects\\CleanNote\\Notes.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\CleanNotes\\Notes.Domain\\Notes.Domain.csproj": {
-                "projectPath": "D:\\Projects\\CleanNotes\\Notes.Domain\\Notes.Domain.csproj"
+              "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj": {
+                "projectPath": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj"
               }
             }
           }
@@ -76,18 +76,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\CleanNotes\\Notes.Domain\\Notes.Domain.csproj": {
+    "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CleanNotes\\Notes.Domain\\Notes.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj",
         "projectName": "Notes.Domain",
-        "projectPath": "D:\\Projects\\CleanNotes\\Notes.Domain\\Notes.Domain.csproj",
+        "projectPath": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CleanNotes\\Notes.Domain\\obj\\",
+        "outputPath": "D:\\Projects\\CleanNote\\Notes.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,18 +130,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Projects\\CleanNotes\\Notes.Persistence\\Notes.Persistence.csproj": {
+    "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CleanNotes\\Notes.Persistence\\Notes.Persistence.csproj",
+        "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj",
         "projectName": "Notes.Persistence",
-        "projectPath": "D:\\Projects\\CleanNotes\\Notes.Persistence\\Notes.Persistence.csproj",
+        "projectPath": "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CleanNotes\\Notes.Persistence\\obj\\",
+        "outputPath": "D:\\Projects\\CleanNote\\Notes.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -158,8 +158,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\CleanNotes\\Notes.Application\\Notes.Application.csproj": {
-                "projectPath": "D:\\Projects\\CleanNotes\\Notes.Application\\Notes.Application.csproj"
+              "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj": {
+                "projectPath": "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj"
               }
             }
           }
@@ -194,7 +194,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

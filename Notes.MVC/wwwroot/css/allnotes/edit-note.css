@@ -96,3 +96,42 @@
     transition: .2s all linear;
     cursor: pointer;
 }
+
+.text-container{
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    height: calc(100% - 80px);
+    width: 95%;
+    background: #ffffff;
+    padding: 10px;
+}
+
+.n-title{
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-family: "Google Sans Medium";
+    border: none;
+    color: #1f1f1f;
+}
+
+.n-title:focus{
+    border: none;
+    outline: none;
+}
+
+.n-text{
+    height: 90%;
+    font-size: 17px;
+    font-family: "Google Sans Medium";
+    border: none;
+    outline: none;
+    resize: none;
+    color: #252525;
+}
+
+.n-text:focus{
+    border: none;
+    outline: none;
+}

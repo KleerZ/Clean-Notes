@@ -8,57 +8,57 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Notes.MVC
 build_property.RootNamespace = Notes.MVC
-build_property.ProjectDir = D:\Projects\CleanNotes\Notes.MVC\
+build_property.ProjectDir = D:\Projects\CleanNote\Notes.MVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\Projects\CleanNotes\Notes.MVC
+build_property.MSBuildProjectDirectory = D:\Projects\CleanNote\Notes.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/Account/Login.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/Account/Registration.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/Account/Registration.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/Home/Index.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/Home/Privacy.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/Notes/_NoteEditPartial.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/Notes/_NoteEditPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZXNcX05vdGVFZGl0UGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/Notes/_NotesPartial.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/Notes/_NotesPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90ZXNcX05vdGVzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/Shared/Error.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/Shared/_HeaderPartial.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/Shared/_HeaderPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/_ViewImports.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/_ViewStart.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/CleanNotes/Notes.MVC/Views/Shared/_Layout.cshtml]
+[D:/Projects/CleanNote/Notes.MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-70airujj9h

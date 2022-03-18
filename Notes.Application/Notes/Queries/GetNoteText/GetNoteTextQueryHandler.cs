@@ -3,9 +3,10 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Notes.Application.Common.Exceptions;
 using Notes.Application.Interfaces;
+using Notes.Application.Notes.Queries.GetNoteDetails;
 using Notes.Domain;
 
-namespace Notes.Application.Notes.Queries.GetNoteDetails;
+namespace Notes.Application.Notes.Queries.GetNoteText;
 
 public class GetNoteTextQueryHandler: IRequestHandler<GetNoteTextQuery, NoteTextVM>
 {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SaRB/JRz5gf0EwDgUgrbHEH/pG2D6zAIxzflUdRX5iUsIVz52zflfhRXTsgicQ8cLtV49t4mP7qaKn8yCBpdHA==",
+  "dgSpecHash": "1xUCsluSgGuQfNIXvxsFRe/r6w9ZS6U0Q+kCnh32dvH4RZrY7oJZNf41YhacRRX0nQBnno1MVn5jvhKazwNx6A==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\CleanNotes\\Notes.Domain\\Notes.Domain.csproj",
+  "projectFilePath": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

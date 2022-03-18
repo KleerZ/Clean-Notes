@@ -20,8 +20,7 @@ public class CreateNoteCommandHandler: IRequestHandler<CreateNoteCommand, Guid>
             Title = request.Title,
             Text = request.Text,
             Id = Guid.NewGuid(),
-            CreationDate = DateTime.Now,
-            EditDate = null
+            EditDate = DateTime.Now
         };
 
         await _dbContext.Notes.AddAsync(note, cancellationToken);

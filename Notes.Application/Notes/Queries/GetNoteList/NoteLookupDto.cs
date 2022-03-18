@@ -9,6 +9,7 @@ public class NoteLookupDto: IMapWith<Note>
 {
     public Guid Id { get; set; }
     public string Title { get; set; }
+    public string Text { get; set; }
     
     public void Mapping(Profile profile)
     {
@@ -18,6 +19,9 @@ public class NoteLookupDto: IMapWith<Note>
                     options.MapFrom(note => note.Id))
             .ForMember(noteDto => noteDto.Title,
                 options =>
-                    options.MapFrom(note => note.Title));
+                    options.MapFrom(note => note.Title))
+            .ForMember(noteDto => noteDto.Text,
+                options =>
+                    options.MapFrom(note => note.Text));
     }
 }

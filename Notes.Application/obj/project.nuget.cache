@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KkSaCcoyfBaxJI/3i2aGVOL8MCJXotCCb+mQJvcLDA0xkPBj0SPZGYJKahzIfS2/Jf581/srBzxeiTd1eZcirw==",
+  "dgSpecHash": "aiIhPbhIHuB6Wx0CFJ1M3Z4zfml5Syb6mPYAid6rmNuH6y4OkQgtS8GC0x8AU5LpZmYZR+GvCNSimZQ+WN8gGw==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\CleanNotes\\Notes.Application\\Notes.Application.csproj",
+  "projectFilePath": "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",

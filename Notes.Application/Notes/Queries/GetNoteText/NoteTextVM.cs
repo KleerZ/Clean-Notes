@@ -24,9 +24,6 @@ public class NoteTextVM: IMapWith<Note>
             .ForMember(noteVM => noteVM.Id,
             options =>
                 options.MapFrom(note => note.Id))
-            .ForMember(noteVM => noteVM.CreationDate,
-            options =>
-                options.MapFrom(note => note.CreationDate))
             .ForMember(noteVM => noteVM.EditDate,
             options =>
                 options.MapFrom(note => note.EditDate));
