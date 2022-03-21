@@ -1,0 +1,45 @@
+@using Notes.MVC.Models.Account
+
+@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Вход";
+}
+
+<link rel="stylesheet" href="~/css/login.css">
+
+<div class="container">
+    <div class="content-container">
+        <div class="first-div">
+            <span class="title">Вход в аккаунт</span>
+            <form asp-controller="Auth" asp-action="Login" method="post">
+                <input asp-for="ReturnUrl" type="hidden">
+                <div class="fields-div">
+                    <input asp-for="Login" class="input-field" placeholder="Логин" type="text">
+                    <span asp-validation-for="Login"></span>
+
+                    <input asp-for="Password" class="input-field" placeholder="Пароль" type="text">
+                    <span asp-validation-for="Password"></span>
+                    <div asp-validation-summary="ModelOnly"></div>
+                </div>
+                <div class="btn-div">
+                    <input class="login-btn" type="submit" value="Войти">
+                    <a class="google-btn" href="">
+                        <img class="g-btn-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="">
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <div class="second-div">
+            <div class="picture-div">
+
+            </div>
+            <div class="reg-btn">
+                @* <input asp-controller="Auth" asp-action="Register" class="login-btn2" type="submit" value="Создать аккаунт"> *@
+                <a asp-controller="Auth" asp-action="Register" asp-route-returnUrl="@Model.ReturnUrl" class="login-btn2">Создать аккаунт</a>
+            </div>
+
+        </div>
+    </div>
+</div>

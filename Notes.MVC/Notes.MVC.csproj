@@ -8,8 +8,22 @@
 
     <ItemGroup>
       <PackageReference Include="AspNetCore.Unobtrusive.Ajax" Version="2.0.0" />
+      <PackageReference Include="IdentityServer4" Version="4.1.2" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.3" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="6.0.3" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.2" />
       <PackageReference Include="Microsoft.jQuery.Unobtrusive.Ajax" Version="3.2.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Notes.Application\Notes.Application.csproj" />
+      <ProjectReference Include="..\Notes.Identity\Notes.Identity.csproj" />
+      <ProjectReference Include="..\Notes.Ide\Notes.Ide.csproj" />
+      <ProjectReference Include="..\Notes.Persistence\Notes.Persistence.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\pictures\login.png" />
     </ItemGroup>
 
 </Project>

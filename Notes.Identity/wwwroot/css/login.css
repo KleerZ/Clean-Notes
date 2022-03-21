@@ -10,7 +10,7 @@ body {
     /*flex-direction: row;*/
     /*width: 100%;*/
     height: calc(100vh);
-    /*background: #232323;*/
+    background: #232323;
 }
 
 #canvas-basic {
@@ -48,11 +48,12 @@ body {
 }
 
 .first-div{
+    position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    height: 95%;
     width: 45%;
     background: white;
     border: none;
@@ -70,45 +71,57 @@ body {
 }
 
 .fields-div{
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
     width: 100%;
-    height: 65%;
+    height: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .input-field{
-    border: 2px solid #000000;
     border-radius: 7px;
-    height: 14%;
-    width: 85%;
-    /*font-family: "SF UI Display";*/
+    /*height: 14%;*/
+    height: 45px;
+    width: 310px;
+    /* font-family: "SF UI Display"; */
     font-family: "Gilroy";
     font-weight: 600;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 2.2vh;
+    border: none;
+    background: #dedede;
+}
+
+.input-field:focus{
+    outline: none;
 }
 
 .btn-div{
+    position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
     width: 70%;
     height: 10%;
+    bottom: 5px;
 }
 
 .login-btn{
-    width: 75%;
+    width: 180px;
     background: white;
     font-family: "SF UI Display Medium";
     /*font-family: "Gilroy";*/
-    height: 100%;
+    height: 45px;
     color: black;
     border: none;
-    border-radius: 50px;
+    border-radius: 7px;
     background: #009728;
     color: white;
     font-size: 2vh;
@@ -127,17 +140,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5.8vh;
-    width: 5.8vh;
-    border: none;
-    border: 2px solid #000000;
+    height: 5.7vh;
+    width: 5.7vh;
+    border: 2px solid #3d3d3d;
     border-radius: 7px;
     transition: .2s all linear;
     cursor: pointer;
+    background: #ffffff;
 }
 
+/*.g-btn-icon{*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*}*/
+
 .google-btn:hover{
-    background: #000000;
+    /*box-shadow: 0px 0px 20px 2px #999999;*/
+    background: black;
+    border: 2px solid black;
 }
 
 .second-div{
@@ -162,6 +185,15 @@ body {
     margin-bottom: 8%;
 }
 
+form{
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
 .reg-btn{
     display: flex;
     justify-content: space-around;
@@ -171,11 +203,14 @@ body {
 }
 
 .login-btn2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 75%;
     background: white;
     font-family: "SF UI Display Medium";
     /*font-family: "Gilroy";*/
-    height: 100%;
+    height: 45px;
     color: black;
     border: none;
     border-radius: 7px;
@@ -185,6 +220,7 @@ body {
     transition: .1s all linear;
     /*border: 2px solid rgba(0, 0, 0, 1);*/
     cursor: pointer;
+    text-decoration: none;
 }
 
 .login-btn2:hover{

@@ -9,7 +9,7 @@ public class Configuration
     public static IEnumerable<ApiScope> ApiScopes =>
         new List<ApiScope>
         {
-            new ApiScope("CleanNotes", "CleanNotes")
+            new ApiScope("CleanNotes", "Web MVC")
         };
 
     public static IEnumerable<IdentityResource> IdentityResources =>
@@ -22,7 +22,7 @@ public class Configuration
     public static IEnumerable<ApiResource> ApiResources =>
         new List<ApiResource>
         {
-            new ApiResource("CleanNotes", "CleanNotes",
+            new ApiResource("CleanNotes", "Web MVC",
                 new[] {JwtClaimTypes.Name})
             {
                 Scopes = {"CleanNotes"}
@@ -35,13 +35,13 @@ public class Configuration
             new Client
             {
                 ClientId = "clean-notes",
-                ClientName = "Clean Notes",
+                ClientName = "Clean Web",
                 AllowedGrantTypes = GrantTypes.Code,
                 RequireClientSecret = false,
                 RequirePkce = true,
-                RedirectUris = {"http://.../signin-oidc"},
-                AllowedCorsOrigins = {"http://..."},
-                PostLogoutRedirectUris = {"http:/.../signout-oidc"},
+                RedirectUris = {"https://localhost:44339/signin-oidc"},
+                AllowedCorsOrigins = {"https://localhost:44339"},
+                PostLogoutRedirectUris = {"https://localhost:44339/signout-oidc"},
                 AllowedScopes =
                 {
                     IdentityServerConstants.StandardScopes.OpenId,

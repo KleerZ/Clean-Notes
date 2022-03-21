@@ -11,10 +11,10 @@ public static class DependencyInjection
         IConfiguration configuration)
     {
         var connectionString = configuration["DbConnection"];
-        
+
         services.AddDbContext<NoteDbContext>(options =>
         {
-            options.UseNpgsql(connectionString);
+            options.UseNpgsql("Host=localhost;Port=5432;Database=CleanNotes;Username=postgres;Password=1234");
         });
 
         services.AddScoped<INotesDbContext>(provider =>

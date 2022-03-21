@@ -15,7 +15,7 @@ body {
 
 .content-container{
     height: 100%;
-    width: auto;
+    width: 450px;
     overflow-y: auto;
 }
 

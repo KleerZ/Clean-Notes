@@ -1,0 +1,45 @@
+@model Notes.MVC.Models.Account.RegistrationViewModel
+
+<link rel="stylesheet" href="~/css/reg.css">
+
+@{
+    ViewData["Title"] = "Регистрация";
+}
+
+<div class="container">
+    <div class="content-container">
+        <div class="first-div">
+            <span class="title">Регистрация</span>
+            <form asp-controller="Auth" asp-action="Register" method="post">
+                <input asp-for="ReturnUrl" type="hidden">
+                <div class="fields-div">
+                    <input asp-for="Login" class="input-field" placeholder="Логин" type="text">
+                    <span asp-validation-for="Login"></span>
+
+                    <input asp-for="Password" class="input-field" placeholder="Пароль" type="text">
+                    <span asp-validation-for="Password"></span>
+
+                    <input asp-for="ConfirmPassword" class="input-field" placeholder="Подтверждение пароля" type="text">
+                    <span asp-validation-for="ConfirmPassword"></span>
+                </div>
+                <div class="btn-div">
+                    <input class="login-btn" type="submit" value="Создать аккаунт">
+                </div>
+            </form>
+        </div>
+
+        <div class="second-div">
+            <div class="picture-div">
+
+            </div>
+            <div class="reg-btn">
+                <a asp-controller="Auth" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl" class="login-btn2" type="submit">Войти в аккаунт</a>
+
+                <a class="google-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>

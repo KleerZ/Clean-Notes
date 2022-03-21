@@ -17,8 +17,6 @@ public class NoteDbContext: DbContext, INotesDbContext
         base.OnModelCreating(builder);
     }
 
-    public Task<int> SaveChangesAsync(CancellationToken cancellationToken)
-    {
+    public Task<int> SaveChangesAsync(CancellationToken cancellationToken) =>
         throw new NotImplementedException();
-    }
 }
