@@ -1,0 +1,12 @@
+.idea
+.vs
+Notes.Application/bin
+Notes.Application/obj
+Notes.Domain/obj
+Notes.Domain/bin
+Notes.Identity/bin
+Notes.Identity/obj
+Notes.MVC/bin
+Notes.MVC/obj
+Notes.Persistence/bin
+Notes.Persistence/obj

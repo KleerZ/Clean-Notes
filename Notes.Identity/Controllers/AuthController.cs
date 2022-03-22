@@ -1,3 +1,5 @@
+using System.Security.Claims;
+using IdentityModel;
 using IdentityServer4.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -17,6 +19,7 @@ public class AuthController: Controller
         (_signInManager, _userManager, _interactionService) =
         (signInManager, userManager, interactionService);
 
+    [HttpGet]
     public IActionResult Login(string returnUrl)
     {
         var model = new LoginViewModel {ReturnUrl = returnUrl};
@@ -40,15 +43,16 @@ public class AuthController: Controller
 
         var result = await _signInManager.PasswordSignInAsync(model.Login,
             model.Password, false, false);
-        
-        if(result.Succeeded) return Redirect(model.ReturnUrl);
-        
-        ModelState.AddModelError(string.Empty, "Ошибка входа");
-        return View("~/Views/Login.cshtml", model);
 
-        return RedirectToAction("Index", "Home", model);
+        if (result.Succeeded) 
+            return Redirect(model.ReturnUrl);
+
+        ModelState.AddModelError(string.Empty, "Ошибка входа");
+        
+        return View("~/Views/Login.cshtml", model);
     }
 
+    [HttpGet]
     public IActionResult Register(string returnUrl)
     {
         var model = new RegistrationViewModel {ReturnUrl = returnUrl};
@@ -66,7 +70,7 @@ public class AuthController: Controller
         {
             UserName = model.Login
         };
-
+        
         var result = await _userManager.CreateAsync(user, model.Password);
 
         if (result.Succeeded)
@@ -76,11 +80,11 @@ public class AuthController: Controller
         }
         
         ModelState.AddModelError(string.Empty, "Ошибка регистрации");
-        return View("~/Views/Registration.cshtml", model);
         
-        return RedirectToAction("Index", "Home", model);
+        return View("~/Views/Registration.cshtml", model);
     }
 
+    [HttpGet]
     public async Task<IActionResult> Logout(string id)
     {
         await _signInManager.SignOutAsync();

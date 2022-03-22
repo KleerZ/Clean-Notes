@@ -1,10 +1,18 @@
 ﻿@using IdentityModel
+@using IdentityServer4.Extensions
+@using System.Security.Claims
+@using IdentityServer4.Models
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Identity
+@using Notes.Identity.Models
 @{
     ViewData["Title"] = "Home Page";
 }
 
-<link rel="stylesheet" href="~/css/index/index.css">
-<link rel="stylesheet" href="~/css/index/panel.css">
+@model string
+
+<link rel="stylesheet" href=@Url.Content("~/css/index/index.css")>
+<link rel="stylesheet" href=@Url.Content("~/css/index/panel.css")>
 
 <div class="container">
     <div class="side-panel">
@@ -18,7 +26,7 @@
             <button class="create-btn">
                 <div class="func-item">
                     <div class="item-icon">
-                        <svg style="width:24px;height:24px" viewBox="0 0 18 18">
+                        <svg style="width:30px;height:30px" viewBox="0 0 26 24">
                             <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
                         </svg>
                     </div>
@@ -114,9 +122,8 @@
         <div class="user-div">
             <div class="user-info">
                 <div class="user-logo">
-
                 </div>
-                
+                <p>@User.FindFirst(JwtClaimTypes.Name)?.Value
             </div>
             <div class="exit">
                 <button class="exit-btn">
@@ -139,23 +146,7 @@
 
 </div>
 
-<script src="js/anime.js"></script>
-<script src="~/js/p5.min.js"></script>
-<script src="~/js/vanta.topology.min.js"></script>
-
-@* <script> *@
-@* VANTA.TOPOLOGY({ *@
-@*   el: ".content-container", *@
-@*   mouseControls: true, *@
-@*   touchControls: true, *@
-@*   gyroControls: false, *@
-@*   minHeight: 700.00, *@
-@*   minWidth: 700.00, *@
-@*   scale: 1.00, *@
-@*   scaleMobile: 1.00, *@
-@*   color: 0xaeca40 *@
-@* }) *@
-@* </script> *@
+<script src="@Url.Content("~/js/anime.js")"></script>
 
 <script >
 var button1 = document.getElementById('button1');

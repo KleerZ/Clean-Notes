@@ -61,7 +61,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    width: 45px;
+    /*width: 45px;*/
 }
 
 .btn{
@@ -179,7 +179,8 @@
 
 .create-btn .func-item p{
     position: fixed;
-    margin-left: 55px;
+    margin-bottom: 13px;
+    margin-left: 35px;
 }
 
 .list-icon{
@@ -205,8 +206,9 @@
 .user-info{
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     align-items: center;
-    width: 140px;
+    /*width: 140px;*/
     margin-left: 10px;
     font-family: "Google Sans";
     color: white;

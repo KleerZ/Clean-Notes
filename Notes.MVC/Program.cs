@@ -2,6 +2,7 @@ using AspNetCore.Unobtrusive.Ajax;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using Notes.Identity.Models;
 using Notes.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,6 +28,7 @@ builder.Services.AddAuthentication(options =>
         options.ClientId = "clean-notes";
         options.SaveTokens = true;
         options.ResponseType = OpenIdConnectResponseType.Code;
+        options.GetClaimsFromUserInfoEndpoint = true;
         options.Scope.Add("openid");
         options.Scope.Add("profile");
     });
