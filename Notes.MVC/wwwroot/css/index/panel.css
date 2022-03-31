@@ -1,9 +1,9 @@
 .side-panel{
     position: relative;
     height: 100%;
-     min-width: 290px;
-    background: #232323;;
-    /*border-right: 2px solid #8d8d8d;*/
+    min-width: 290px;
+    background: #1f1f1f;
+    border-right: 1px solid #c0c0c0;
 }
 
 .func-block{
@@ -12,8 +12,8 @@
     flex-direction: column;
     align-items: center;
     height: 320px;
-        padding-top: 30px;
-        padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .func-block a{
@@ -36,18 +36,22 @@
     padding-right: 15px;
     padding-left: 15px;
     font-size: 16px;
-    color: white;
+    color: #cecece;
     background: none;
     transition: .1s all linear;
 }
 
-.func-item:hover{
-    transition: .2s all linear;
-    font-family: "Google Sans";
-    font-weight: 500;
-    background: #ffffff;
-    color: black;
+.func-item:focus{
+    background: #0a53be;
 }
+
+/*.func-item:hover{*/
+/*    transition: .2s all linear;*/
+/*    font-family: "Google Sans";*/
+/*    font-weight: 500;*/
+/*    background: #ffffff;*/
+/*    color: black;*/
+/*}*/
 
 .selected{
     background: #ffffff;
@@ -70,7 +74,22 @@
     align-items: center;
     border: none;
     background: none;
-    width: 30px;
+    width: 260px;
+}
+
+.btn:hover .func-item{
+    transition: .2s all linear;
+    font-family: "Google Sans";
+    font-weight: 500;
+    background: #ffffff;
+    color: black;
+}
+
+.btn:focus .func-item{
+    font-family: "Google Sans";
+    font-weight: 500;
+    background: #ffffff;
+    color: black;
 }
 
 .active-btn{
@@ -148,6 +167,7 @@
     border: none;
     background: none;
     width: 30px;
+    color: white;
 }
 
 .create-btn .item-icon{
@@ -166,25 +186,25 @@
     padding-right: 15px;
     padding-left: 15px;
     font-size: 16px;
-    /*color: white;*/
-    background: #009728;
+    color: white;
+    background: #6c63ff;
     transition: .2s all linear;
+    cursor: pointer;
 }
 
 .create-btn .func-item:hover{
     color: white;
-    background: #006c08;
+    background: #483dff;
     transition: .2s all linear;
 }
 
 .create-btn .func-item p{
     position: fixed;
-    margin-bottom: 13px;
     margin-left: 35px;
 }
 
 .list-icon{
-    position: fixed;    
+    position: fixed;
     display: flex;
     align-items: center;
     margin-left: 205px;
@@ -204,21 +224,24 @@
 }
 
 .user-info{
+    /*position: relative;*/
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    /*width: 140px;*/
-    margin-left: 10px;
+    width: 220px;
+    /*margin-left: 10px;*/
     font-family: "Google Sans";
     color: white;
 }
 
 .user-logo{
+    /*position: absolute;*/
     width: 45px;
     height: 45px;
     background: black;
     border-radius: 100px;
+    margin-left: 10px;
 }
 
 .exit{
@@ -247,7 +270,7 @@
 }
 
 .count-icon{
-    
+
     /*!*position: fixed;*!*/
     /*display: flex;*/
     /*align-items: center;*/
@@ -294,4 +317,10 @@
 
 .count:focus{
     outline: none;
+}
+
+.username{
+    font-size: 14px;
+    color: #bebebe;
+    font-family: "Google Sans", serif;
 }

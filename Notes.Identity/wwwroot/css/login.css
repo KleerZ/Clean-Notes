@@ -1,229 +1,217 @@
 body {
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
 .container{
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*flex-direction: row;*/
-    /*width: 100%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
     height: calc(100vh);
-    background: #232323;
+    background: #ffffff;
 }
 
-#canvas-basic {
-    position: relative;
+.picture-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 }
 
-.content-container{
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    z-index: 999;
-    /*width: 40%;*/
-    /*height: 50%;*/
-
-    width: 100vh;
-    height: 63vh;
-
-    background: white;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 4px 41px 14px rgba(0, 0, 0, 0.23);
-    margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
+.img{
+    width: 90%;
+    -webkit-user-select: none;
 }
 
-.first-div{
-    position: relative;
+.form-content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 95%;
-    width: 45%;
-    background: white;
-    border: none;
-    border-radius: 10px;
+    height: 100%;
+    width: 50%;
+    /*border-left: 2px solid black;*/
 }
 
 .title{
+    font-family: "Google Sans";
     width: 100%;
-    text-align: center;
-    font-family: "Google Sans Medium";
+    font-size: 26px;
     font-weight: 500;
-    font-size: 4vh;
-    /*margin-top: 15px;*/
-    /*margin-bottom: 15px;*/
+    margin-bottom: 0px;
 }
 
-.fields-div{
-    position: absolute;
+.title2{
+    font-family: "Google Sans";
+    width: 100%;
+    font-size: 15px;
+    /*font-weight: 500;*/
+    margin-bottom: 20px;
+    color: #646464;
+    margin-top: 5px;
+}
+
+.input-div{
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-direction: column;
     width: 100%;
-    height: 50%;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    height: 130px;
+    justify-content: space-around; 
 }
 
-.input-field{
-    border-radius: 7px;
-    /*height: 14%;*/
-    height: 45px;
-    width: 310px;
-    /* font-family: "SF UI Display"; */
-    font-family: "Gilroy";
-    font-weight: 600;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 2.2vh;
+.form{
+    display: flex;
+    flex-direction: column;
+    /*width: 55%;*/
+    height: auto;
+}
+
+.input-form{
+    position: relative;
+    z-index: 3;
+    width: 95%;
+    height: 50px;
+    /*margin-bottom: 15px;*/
+    background: #ececec;
     border: none;
-    background: #dedede;
+    border-radius: 7px;
+    font-family: "Google Sans", serif;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    color: #313131;
 }
 
-.input-field:focus{
+/*.input-form:first-child{*/
+/*    border-radius: 7px 7px 0px 0px;*/
+/*    !*border-bottom: 1px solid #cecece;*!*/
+/*}*/
+
+/*.input-form:last-child{*/
+/*    border-radius: 0px 0px 7px 7px;*/
+/*    !*border-top: 1px solid #cecece;*!*/
+/*}*/
+
+.input-form:focus{
     outline: none;
 }
 
 .btn-div{
-    position: absolute;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
-    width: 70%;
-    height: 10%;
-    bottom: 5px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 .login-btn{
-    width: 180px;
-    background: white;
-    font-family: "SF UI Display Medium";
-    /*font-family: "Gilroy";*/
-    height: 45px;
-    color: black;
+    width: 100%;
+    height: 50px;
     border: none;
-    border-radius: 7px;
-    background: #009728;
+    background: #6c63ff;
     color: white;
-    font-size: 2vh;
-    transition: .1s all linear;
-    /*border: 2px solid rgba(0, 0, 0, 1);*/
+    font-family: "Google Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: .2s all linear;
 }
 
 .login-btn:hover{
-    transition: .1s all linear;
-    background: black;
-    color: white;
-}
-
-.google-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 5.7vh;
-    width: 5.7vh;
-    border: 2px solid #3d3d3d;
-    border-radius: 7px;
+    background: #483dff;
     transition: .2s all linear;
-    cursor: pointer;
-    background: #ffffff;
 }
 
-/*.g-btn-icon{*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    width: 20px;*/
-/*    height: 20px;*/
-/*}*/
-
-.google-btn:hover{
-    /*box-shadow: 0px 0px 20px 2px #999999;*/
-    background: black;
-    border: 2px solid black;
-}
-
-.second-div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    width: 45%;
-    /*background: #232323;*/
-    border: none;
-    border-radius: 0px 10px 10px 0px;
-}
-
-.picture-div{
-    width: 95%;
-    height: 65%;
-    background-image: url("/pictures/login.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin-top: 8%;
-    margin-bottom: 8%;
-}
-
-form{
-    display: flex;
-    align-items: center;
-    /*justify-content: center;*/
-    flex-direction: column;
-    height: 100%;
+.btn-div span{
     width: 100%;
+    /*text-align: center;*/
+    font-family: "Google Sans", serif;
+    color: #606060;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 .reg-btn{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 10%;
+    width: 100%;
+    height: 45px;
+    text-decoration: none;
+    background: white;
+    outline: 2px solid #6c63ff;
+    border-radius: 6px;
+    font-family: "Google Sans", serif;
+    font-weight: 500;
+    color: #6c63ff;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: .2s all linear;
 }
 
-.login-btn2{
+.reg-btn:hover{
+    outline: 2px solid black;
+    color: white;
+    background: black;
+    transition: .2s all linear;
+}
+
+.span .field-validation-error{
+    background: red;
+}
+
+.i{
+    position: relative;
+    width: 100%;
+}
+
+#login-error{
+    position: absolute;
+    /*z-index: -1;*/
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #fa3636;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
-    background: white;
-    font-family: "SF UI Display Medium";
-    /*font-family: "Gilroy";*/
-    height: 45px;
-    color: black;
+    font-family: "Google Sans", serif;
+    font-weight: 500;
+    color: white;
     border: none;
     border-radius: 7px;
-    background: #0066ff;
-    color: white;
-    font-size: 2vh;
-    transition: .1s all linear;
-    /*border: 2px solid rgba(0, 0, 0, 1);*/
-    cursor: pointer;
-    text-decoration: none;
+    font-size: 13px;
+    width: 250px;
 }
 
-.login-btn2:hover{
-    background: #0047b6;
-    transition: .1s all linear;
+#pass-error{
+    position: absolute;
+    z-index: 2;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: #fa3636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Google Sans", serif;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    text-align: right;
+    font-size: 13px;
+    width: 250px;
 }

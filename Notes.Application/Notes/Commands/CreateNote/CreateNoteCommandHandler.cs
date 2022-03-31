@@ -7,7 +7,6 @@ namespace Notes.Application.Notes.Commands.CreateNote;
 public class CreateNoteCommandHandler: IRequestHandler<CreateNoteCommand, Guid>
 {
     private readonly INotesDbContext _dbContext;
-
     public CreateNoteCommandHandler(INotesDbContext dbContext) =>
         _dbContext = dbContext;
 

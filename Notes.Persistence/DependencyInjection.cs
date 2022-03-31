@@ -14,7 +14,7 @@ public static class DependencyInjection
 
         services.AddDbContext<NoteDbContext>(options =>
         {
-            options.UseNpgsql("Host=localhost;Port=5432;Database=CleanNotes;Username=postgres;Password=1234");
+            options.UseNpgsql(connectionString);
         });
 
         services.AddScoped<INotesDbContext>(provider =>

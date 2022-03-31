@@ -9,10 +9,10 @@ namespace Notes.MVC.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly Configuration _configuration;
-    
-    public async Task<IActionResult> Index()
-    {
+    public IActionResult Index()
+    { 
+        
+        
         return View();
     }
 }

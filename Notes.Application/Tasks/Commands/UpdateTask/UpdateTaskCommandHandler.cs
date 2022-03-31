@@ -23,7 +23,6 @@ public class UpdateTaskCommandHandler: IRequestHandler<UpdateTaskCommand>
 
         entity.Title = request.Title;
         entity.EditDate = DateTime.Now;
-        entity.TaskItems = request.TaskItems;
 
         await _dbContext.SaveChangesAsync(cancellationToken);
         

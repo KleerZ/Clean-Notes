@@ -1,13 +1,22 @@
-using Microsoft.AspNetCore.Authorization;
+using IdentityServer4.Extensions;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
+using Notes.Application.Notes.Queries.GetNoteList;
+using Notes.Application.Tasks.Queries.GetTaskList;
 
-namespace Notes.MVC.Controllers.AllNotes;
+namespace Notes.MVC.Controllers.Notes;
 
-public class AllNotesController : Controller
+public class AllNotesController : BaseController
 {
-    public PartialViewResult Index()
+    [HttpGet]
+    public async Task<IActionResult> GetAllNotes()
     {
-        return PartialView("~/Views/Notes/_NotesPartial.cshtml");
+        var query = new GetNoteListQuery()
+        {
+            UserId = UserId
+        };
+
+        var vm = await Mediator.Send(query);
+
+        return PartialView("~/Views/Notes/_NotesPartial.cshtml", vm.Notes);
     }
 }

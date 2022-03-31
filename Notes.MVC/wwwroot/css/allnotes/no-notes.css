@@ -1,0 +1,23 @@
+.notes{
+    height: 100%;
+}
+
+.nonotes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-family: "Google Sans";
+    font-weight: 500;
+    font-size: 25px;
+    color: #808080;
+    -webkit-user-select: none;
+}
+
+.note-icon{
+    color: #808080;
+    margin-bottom: 10px;
+}

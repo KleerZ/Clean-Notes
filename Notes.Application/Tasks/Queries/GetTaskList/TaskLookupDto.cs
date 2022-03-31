@@ -17,9 +17,6 @@ public class TaskLookupDto: IMapWith<Domain.Tasks>
                     options.MapFrom(task => task.Id))
             .ForMember(taskDto => taskDto.Title,
                 options =>
-                    options.MapFrom(task => task.Title))
-            .ForMember(taskDto => taskDto.TaskItems,
-                options =>
-                    options.MapFrom(task => task.TaskItems));
+                    options.MapFrom(task => task.Title));
     }
 }

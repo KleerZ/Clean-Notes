@@ -1,7 +1,12 @@
+using System.Reflection;
 using AspNetCore.Unobtrusive.Ajax;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using Notes.Application;
+using Notes.Application.Common.Mappings;
+using Notes.Application.Interfaces;
 using Notes.Identity.Models;
 using Notes.Persistence;
 
@@ -14,6 +19,17 @@ builder.Services.AddUnobtrusiveAjax();
 
 builder.Services.AddRazorPages()
     .AddRazorRuntimeCompilation();
+
+// --- AutoMapper ---
+builder.Services.AddAutoMapper(config =>
+{
+    config.AddProfile(new AssemblyMappingProfile(Assembly.GetExecutingAssembly()));
+    config.AddProfile(new AssemblyMappingProfile(typeof(INotesDbContext).Assembly));
+});
+
+// --- Connection services ---
+builder.Services.AddApplication();
+builder.Services.AddPersistence(builder.Configuration);
 
 builder.Services.AddAuthentication(options =>
     {
@@ -42,6 +58,7 @@ builder.Services.ConfigureApplicationCookie(config =>
     config.LogoutPath = "http://localhost:44339/signout-oidc";
 });
 
+// --- Cors ---
 builder.Services.AddCors(p =>
 {
     p.AddPolicy("AllowAll", c =>

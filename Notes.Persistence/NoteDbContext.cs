@@ -14,9 +14,7 @@ public class NoteDbContext: DbContext, INotesDbContext
     protected override void OnModelCreating(ModelBuilder builder)
     {
         builder.ApplyConfiguration(new NoteConfiguration());
+        builder.ApplyConfiguration(new TasksConfiguration());
         base.OnModelCreating(builder);
     }
-
-    public Task<int> SaveChangesAsync(CancellationToken cancellationToken) =>
-        throw new NotImplementedException();
 }

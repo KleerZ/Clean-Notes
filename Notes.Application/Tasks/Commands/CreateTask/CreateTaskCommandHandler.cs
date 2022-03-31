@@ -19,7 +19,6 @@ public class CreateTaskCommandHandler: IRequestHandler<CreateTaskCommand, Guid>
             Id = Guid.NewGuid(),
             UserId = request.UserId,
             Title = request.Title,
-            TaskItems = request.TaskItems,
             EditDate = request.EditDate
         };
 

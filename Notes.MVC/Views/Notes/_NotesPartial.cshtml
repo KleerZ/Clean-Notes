@@ -1,3 +1,7 @@
+@using IdentityServer4.Extensions
+@using Notes.Persistence
+@model List<NoteLookupDto>
+
 <link rel="stylesheet" href=@Url.Content("~/css/allnotes/allnotes.css")>
 
 <div class="line-container">
@@ -15,35 +19,42 @@
         </div>
         <div class="search-div">
             <div class="svg-search">
-                <svg class="magnify" style="width:24px;height:24px" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
-                </svg>
             </div>
             <input class="input-search" type="text" placeholder="Поиск">
         </div>
     </div>
-    
-    <div class="notes">
-        @for (int i = 0; i < 25; i++)
+
+    <div class="notes" id="notes">
+        @if (Model.IsNullOrEmpty())
         {
-            using (Html.AjaxBeginForm("Index", "EditNote",
-                new AjaxOptions {UpdateTargetId = "edit"}))
-            {
-                <button type="submit" class="item" asp-controller="Home" asp-action="Index">
+            await Html.RenderPartialAsync("~/Views/Notes/_NoNotesPartial.cshtml");
+        }
+
+        @foreach (var note in Model)
+        {
+            <form asp-controller="EditNote" asp-action="Index" asp-route-id="@note.Id" 
+                  data-ajax="true" data-ajax-mode="replace" data-ajax-update="#edit" method="get">
+                <button type="submit" class="item" asp-controller="EditNote" asp-action="Index" asp-route-id="@note.Id">
                     <div class="note-item">
-                        <span class="item-title">Заголовок
-                        <span class="date">10.03.2022</span>
+                        <span class="item-title">
+                            <span class="title-text">@note.Title</span>
+                            <span class="date">@note.EditDate.Date.ToShortDateString()</span>
                         </span>
                         <div class="text">
-                            fhgjsdsfnmy,mdgfdbfntjytdrsvdrtffhgjsdsfnmy,mdgfdbfntjytdrsvdrtffhgjsdsfnmy,mdgfdbfntjytdrsvdrtf
-                            fhgjsdsfnmy,mdgfdbfntjytdrsvdrtffhgjsdsfnmy,mdgfdbfntjytdrsvdrtffhgjsdsfnmy,mdgfdbfntjytdrsvdrtf
-                            fhgjsdsfnmy,mdgfdbfntjytdrsvdrtffhgjsdsfnmy,mdgfdbfntjytdrsvdrtffhgjsdsfnmy,mdgfdbfntjytdrsvdrtf
-                            fhgjsdsfnmy,mdgfdbfntjytdrsvdrtffhgjsdsfnmy,mdgfdbfntjytdrsvdrtffhgjsdsfnmy,mdgfdbfntjytdrsvdrtf
-                            fhgjsdsfnmy,mdgfdbfntjytdrsvdrtffhgjsdsfnmy,mdgfdbfntjytdrsvdrtffhgjsdsfnmy,<mdgfdbfntjytdrsvdrtf></mdgfdbfntjytdrsvdrtf>
+                            @note.Text
                         </div>
                     </div>
                 </button>
-            }
+            </form>
         }
     </div>
 </div>
+
+<script src="lib/jquery/dist/jquery.min.js"></script>
+
+<script>
+console.log($('.note-item').length)
+
+var input = document.querySelector('.count')
+input.value = $('.note-item').length;
+</script>

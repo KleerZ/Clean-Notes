@@ -1,41 +1,50 @@
-@model Notes.MVC.Models.Account.RegistrationViewModel
+@using Notes.MVC.Models.Account
 
-<link rel="stylesheet" href="~/css/reg.css">
+@model RegistrationViewModel
 
 @{
-    ViewData["Title"] = "Регистрация";
+    ViewData["Title"] = "Вход";
 }
 
+<link rel="stylesheet" href=@Url.Content("~/css/reg.css")>
+
 <div class="container">
-    <div class="content-container">
-        <div class="first-div">
-            <span class="title">Регистрация</span>
+    <div class="picture-container">
+        <img class="img" src="~/pictures/login-bkg.svg">
+    </div>
+    <div class="form-content">
+        <div class="form">
+            <p class="title">Регистрация</p>
+            <span class="title2">Создайте аккаунт и начните продуктивную работу!</span>
             <form asp-controller="Auth" asp-action="Register" method="post">
-                <input asp-for="ReturnUrl" type="hidden">
-                <div class="fields-div">
-                    <input asp-for="Login" class="input-field" placeholder="Логин" type="text">
-                    <span asp-validation-for="Login"></span>
+                <div class="input-div">
+                    <div class="i" id="login-div">
+                        <input asp-for="Login" class="input-form" placeholder="Логин" type="text">
+                        <span id="login-error" class="error" asp-validation-for="Login"></span>
+                    </div>
 
-                    <input asp-for="Password" class="input-field" placeholder="Пароль" type="text">
-                    <span asp-validation-for="Password"></span>
 
-                    <input asp-for="ConfirmPassword" class="input-field" placeholder="Подтверждение пароля" type="text">
-                    <span asp-validation-for="ConfirmPassword"></span>
+                    <div class="i" id="login-div">
+                        <input asp-for="Password" class="input-form" placeholder="Пароль" type="password">
+                        <span id="pass-error" asp-validation-for="Password"></span>
+                    </div>
+
+
+                    <div class="i" id="login-div">
+                        <input asp-for="ConfirmPassword" class="input-form" placeholder="Подтверждение пароля" type="password">
+                        <span id="conf-error" asp-validation-for="ConfirmPassword"></span>
+                    </div>
+
                 </div>
                 <div class="btn-div">
-                    <input class="login-btn" type="submit" value="Создать аккаунт">
+                    <input class="login-btn" type="submit" value="Зарегистрироваться">
+                    <a class="reg-btn" asp-controller="Auth" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">Войти аккаунт</a>
+                    <input asp-for="ReturnUrl" type="hidden">
                 </div>
             </form>
         </div>
-
-        <div class="second-div">
-            <div class="picture-div">
-
-            </div>
-            <div class="reg-btn">
-                <a asp-controller="Auth" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl" class="login-btn2" type="submit">Войти в аккаунт</a>
-            </div>
-
-        </div>
     </div>
 </div>
+
+<script src=@Url.Content("~/js/anime.js")></script>
+<script src=@Url.Content("~/js/animateValidError.js")></script>

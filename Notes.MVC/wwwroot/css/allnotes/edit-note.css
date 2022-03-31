@@ -57,15 +57,15 @@
     align-items: center;
     justify-content: space-around;
     /*height: 100%;*/
-    width: 200px;
+    width: 150px;
 }
 
 .save-btn{
     height: 40px;
     width: 100px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
-    background: #009728;
+    background: #009d31;
     color: white;
     font-family: "SF UI Display Medium";
     cursor: pointer;
@@ -84,9 +84,9 @@
     align-items: center;
     height: 40px;
     width: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
-    background: #1580FF;
+    background: #0066ff;
     color: white;
     transition: .2s all linear;
 }
