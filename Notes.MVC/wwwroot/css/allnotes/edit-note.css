@@ -57,7 +57,7 @@
     align-items: center;
     justify-content: space-around;
     /*height: 100%;*/
-    width: 150px;
+    width: 200px;
 }
 
 .save-btn{
@@ -93,6 +93,25 @@
 
 .download-btn:hover{
     background: #0a53be;
+    transition: .2s all linear;
+    cursor: pointer;
+}
+
+.delete-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 8px;
+    border: none;
+    background: #ff3535;
+    color: white;
+    transition: .2s all linear;
+}
+
+.delete-btn:hover{
+    background: #a20000;
     transition: .2s all linear;
     cursor: pointer;
 }
@@ -135,3 +154,4 @@
     border: none;
     outline: none;
 }
+
