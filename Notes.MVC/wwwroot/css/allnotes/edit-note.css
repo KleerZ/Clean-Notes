@@ -33,6 +33,12 @@
     font-family: "Google Sans Medium";
     font-size: 30px;
     color: #565656;
+    max-width: 550px;
+
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    /*padding: 5px; !* Поля *!*/
+    text-overflow: ellipsis;
 }
 
 .edit-date{

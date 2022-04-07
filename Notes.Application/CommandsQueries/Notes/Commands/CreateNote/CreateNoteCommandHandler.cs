@@ -1,4 +1,5 @@
 using MediatR;
+using Notes.Application.CommandsQueries.Notes.Commands.CreateNote;
 using Notes.Application.Interfaces;
 using Notes.Domain;
 

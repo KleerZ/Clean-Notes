@@ -9,6 +9,7 @@ using Notes.Application.Common.Mappings;
 using Notes.Application.Interfaces;
 using Notes.Identity.Models;
 using Notes.Persistence;
+using Notes.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,9 +28,10 @@ builder.Services.AddAutoMapper(config =>
     config.AddProfile(new AssemblyMappingProfile(typeof(INotesDbContext).Assembly));
 });
 
-// --- Connection services ---
+// --- Connection services --- //
 builder.Services.AddApplication();
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddServices();
 
 builder.Services.AddAuthentication(options =>
     {

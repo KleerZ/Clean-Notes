@@ -11,5 +11,6 @@ public class NoteConfiguration: IEntityTypeConfiguration<Note>
         builder.HasKey(note => note.Id);
         builder.HasIndex(note => note.Id).IsUnique();
         builder.Property(note => note.Title).HasMaxLength(100);
+        builder.Property(note => note.FolderId).IsRequired(false);
     }
 }

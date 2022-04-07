@@ -45,6 +45,7 @@
           "Notes.Application": "1.0.0",
           "Notes.Identity": "1.0.0",
           "Notes.Persistence": "1.0.0",
+          "Notes.Services": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "6.0.0.0",
@@ -1125,6 +1126,18 @@
         },
         "compile": {
           "Notes.Persistence.dll": {}
+        }
+      },
+      "Notes.Services/1.0.0": {
+        "dependencies": {
+          "Notes.Application": "1.0.0",
+          "Notes.Persistence": "1.0.0"
+        },
+        "runtime": {
+          "Notes.Services.dll": {}
+        },
+        "compile": {
+          "Notes.Services.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/6.0.0.0": {
@@ -3348,6 +3361,11 @@
       "sha512": ""
     },
     "Notes.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Notes.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

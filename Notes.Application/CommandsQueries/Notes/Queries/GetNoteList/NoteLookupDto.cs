@@ -1,6 +1,5 @@
 using AutoMapper;
 using Notes.Application.Common.Mappings;
-using Notes.Application.Notes.Queries.GetNoteDetails;
 using Notes.Domain;
 
 namespace Notes.Application.Notes.Queries.GetNoteList;

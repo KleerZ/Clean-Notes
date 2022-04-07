@@ -9,7 +9,12 @@ public class NoteDbContext: DbContext, INotesDbContext
 {
     public DbSet<Note> Notes { get; set; }
     public DbSet<Tasks> Tasks { get; set; }
-    public NoteDbContext(DbContextOptions<NoteDbContext> options):base(options){}
+    public DbSet<Folder> Folders { get; set; }
+
+    public NoteDbContext(DbContextOptions<NoteDbContext> options) : base(options)
+    {
+        
+    }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

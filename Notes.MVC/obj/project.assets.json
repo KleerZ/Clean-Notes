@@ -1007,6 +1007,20 @@
         "runtime": {
           "bin/placeholder/Notes.Persistence.dll": {}
         }
+      },
+      "Notes.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Notes.Application": "1.0.0",
+          "Notes.Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Notes.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notes.Services.dll": {}
+        }
       }
     }
   },
@@ -2640,6 +2654,11 @@
       "type": "project",
       "path": "../Notes.Persistence/Notes.Persistence.csproj",
       "msbuildProject": "../Notes.Persistence/Notes.Persistence.csproj"
+    },
+    "Notes.Services/1.0.0": {
+      "type": "project",
+      "path": "../Notes.Services/Notes.Services.csproj",
+      "msbuildProject": "../Notes.Services/Notes.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2654,7 +2673,8 @@
       "Microsoft.jQuery.Unobtrusive.Ajax >= 3.2.6",
       "Notes.Application >= 1.0.0",
       "Notes.Identity >= 1.0.0",
-      "Notes.Persistence >= 1.0.0"
+      "Notes.Persistence >= 1.0.0",
+      "Notes.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2692,6 +2712,9 @@
             },
             "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj": {
               "projectPath": "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj"
+            },
+            "D:\\Projects\\CleanNote\\Notes.Services\\Notes.Services.csproj": {
+              "projectPath": "D:\\Projects\\CleanNote\\Notes.Services\\Notes.Services.csproj"
             }
           }
         }

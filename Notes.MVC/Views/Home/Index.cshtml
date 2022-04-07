@@ -10,7 +10,7 @@
     ViewData["Title"] = "Главная страница";
 }
 
-@model string
+@model CombineNoteFolderViewModel
 
 <link rel="stylesheet" href=@Url.Content("~/css/index/index.css")>
 <link rel="stylesheet" href=@Url.Content("~/css/index/panel.css")>
@@ -19,11 +19,11 @@
     <div class="side-panel">
 
         <div class="dongon">
-            <img class="logo" src="svg/DonGon-logo.svg" alt="">
+            <img class="logo" src="~/svg/DonGon-logo.svg" alt="">
         </div>
 
         <div class="func-block">
-            
+
             <div class="drop-div">
                 <button onclick="myFunction()" class="create-btn">
                     <div class="func-item" id="create-btn">
@@ -41,25 +41,25 @@
                     </div>
                 </button>
                 <div class="dropdown" id="dropdown">
-                    <span class="drop-select">
+                    <span class="drop-select" id="note">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M3,7V5H5V4C5,2.89 5.9,2 7,2H13V9L15.5,7.5L18,9V2H19C20.05,2 21,2.95 21,4V20C21,21.05 20.05,22 19,22H7C5.95,22 5,21.05 5,20V19H3V17H5V13H3V11H5V7H3M7,11H5V13H7V11M7,7V5H5V7H7M7,19V17H5V19H7Z"/>
                         </svg>
                         Заметку
                     </span>
-                    
+
                     <hr>
-                    
+
                     <span class="drop-select">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M16.53,11.06L15.47,10L10.59,14.88L8.47,12.76L7.41,13.82L10.59,17L16.53,11.06Z"/>
                         </svg>
                         Задачу
                     </span>
-                    
+
                     <hr>
-                    
-                    <span class="drop-select">
+
+                    <span class="drop-select" onclick="visibleWindow()">
                         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                             <path fill="currentColor" d="M10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6H12L10,4Z"/>
                         </svg>
@@ -132,26 +132,28 @@
                     </div>
                 </button>
             }
+        </div>
 
-            @using (Html.AjaxBeginForm("Index", "Home",
-                new AjaxOptions {UpdateTargetId = "target"}))
+        <span class="folder-div-title">Папки</span>
+        <div class="folder-divv">
+            @if (Model.FolderList.Folders.Count == 0)
             {
-                <button class="btn" title="Корзина" id="button5">
-                    <div class="func-item" id="button4">
-                        <div class="item-icon">
-                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M20,18H4V8H20M20,6H12L10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6Z"/>
-                            </svg>
-                        </div>
-                        Мои папки
-                    </div>
+                <div class="nofolders-div">
+                    <svg style="width:40px;height:40px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M2.39 1.73L1.11 3L2.64 4.53C2.25 4.9 2 5.42 2 6V18C2 19.11 2.9 20 4 20H18.11L20.84 22.73L22.11 21.46L2.39 1.73M4 18V8H6.11L16.11 18H4M11.2 8L7.2 4H10L12 6H20C21.1 6 22 6.89 22 8V18C22 18.24 21.96 18.47 21.88 18.68L20 16.8V8H11.2Z" />
+                    </svg>
+                    Нет папок
+                </div>
+            }
+            @foreach (var folder in Model.FolderList.Folders)
+            {
+                <button class="bbb">
+                    <div class="folderr">@folder.Name</div>
                 </button>
             }
         </div>
-        
         <div class="user-div">
-            <div class="user-logo">
-            </div>
+            <div class="user-logo">@User.FindFirst(JwtClaimTypes.Name)?.Value.Substring(0, 1)</div>
             <p class="username">@User.FindFirst(JwtClaimTypes.Name)?.Value
             <div class="exit">
                 <form asp-controller="Logout" asp-action="Logout" method="post">
@@ -166,24 +168,40 @@
 
     </div>
 
-    <div class="content-container" id="target"></div>
+    <div class="content-container" id="target">
+        @await Html.PartialAsync("~/Views/Notes/_NotesPartial.cshtml", Model.NoteList)
+    </div>
 
     <div class="edit" id="edit">
-        @{ await Html.RenderPartialAsync("~/Views/Notes/_NoSelectedEditPartial.cshtml"); }
+        @if (Model?.NoteVm.Title != null)
+        {
+            await Html.RenderPartialAsync("~/Views/Notes/_NoteEditPartial.cshtml", Model.NoteVm);
+        }
+        else
+        {
+            await Html.RenderPartialAsync("~/Views/Notes/_NoSelectedEditPartial.cshtml", Model?.NoteVm);
+        }   
     </div>
-    
+
+    <div class="create-folder-background" onclick="hideWindows()">
+        <form id="create-folder-form" asp-controller="Folder" asp-action="Create" method="post" onsubmit="return validFolder()">
+            <div class="create-folder">
+                <span class="folder-window-title">Введите название папки</span>
+                <input asp-for="Folder.Name" class="folder-input" maxlength="30" type="text">
+                <span id="error-span" asp-validation-for="Folder.Name"></span>
+                <input asp-controller="Folder" asp-action="Create" class="create-btn-folder" asp-route-name="" type="submit" value="Создать папку">
+            </div>
+        </form>
+    </div>
+
 </div>
 
-
-
-
-<script src="~/js/anime.js"></script>
 <script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/anime.js"></script>
 <script src="js/allnotes/dropdown.js"></script>
+<script src="~/js/allnotes/contextMenu.js"></script>
+
 <script>
-$(document).ready(function(){
-    $('.content-container').load('@Url.Action("GetAllNotes", "AllNotes")');
-}) 
 
 document.getElementById("create-btn").onmouseover = function() {
     this.style.backgroundColor = "#483dff";
@@ -191,4 +209,66 @@ document.getElementById("create-btn").onmouseover = function() {
 document.getElementById("create-btn").onmouseleave = function() {
     this.style.backgroundColor = "#6c63ff";
 }
+
+window.onload = function(){
+    hideWindows();
+    myFunction();
+}
+
+function hideWindows(){
+    let modalWindow = document.querySelector('.create-folder-background')
+    let modal = document.querySelector('.create-folder')
+    
+    modalWindow.onclick = function(event){
+        if(event.target == modalWindow){
+            modalWindow.style.opacity = "0";
+            modalWindow.style.visibility = "visible";
+            
+            modal.querySelector('.folder-input').value = "";
+            
+            setTimeout(function(){
+                modalWindow.style.display = "none";
+            }, 200);
+        }
+    }
+}   
+
+function visibleWindow(){
+    let modalWindow = document.querySelector('.create-folder-background')
+    let modal = document.querySelector('.create-folder')
+    
+    modalWindow.style.display = "flex";
+    
+    setTimeout(function(){
+        modalWindow.style.opacity = 1;
+        modalWindow.style.visibility = "visible";
+    }, 1);
+}
+
+//событие при submit формы
+
+
+function validFolder(){
+    $('create-folder-form').submit(function(e){
+        e.preventDefault();
+        let input = document.querySelector('.folder-input');
+        let error = document.querySelector('#error-span');
+        let result = false;
+        
+        //проверка поля на размерность
+        if(input.value.length > 30){
+           error.value = "ппппппппп"
+           
+           result = false;
+           
+           console.log(result)
+      }
+    });
+    
+    return result;
+    
+    
+}
+
+
 </script>

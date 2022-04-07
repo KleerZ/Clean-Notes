@@ -1096,3 +1096,5 @@ D:\Projects\CleanNote\Notes.MVC\bin\Debug\net6.0\refs\System.Diagnostics.Diagnos
 D:\Projects\CleanNote\Notes.MVC\bin\Debug\net6.0\refs\System.Runtime.CompilerServices.Unsafe.dll
 D:\Projects\CleanNote\Notes.MVC\bin\Debug\net6.0\Humanizer.dll
 D:\Projects\CleanNote\Notes.MVC\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Projects\CleanNote\Notes.MVC\bin\Debug\net6.0\Notes.Services.dll
+D:\Projects\CleanNote\Notes.MVC\bin\Debug\net6.0\Notes.Services.pdb

@@ -2,19 +2,18 @@ using AutoMapper;
 using Notes.Application.Common.Mappings;
 using Notes.Domain;
 
-namespace Notes.Application.Notes.Queries.GetNoteDetails;
+namespace Notes.Application.Notes.Queries.GetNote;
 
-public class NoteTextVM: IMapWith<Note>
+public class NoteVM: IMapWith<Note>
 {
     public Guid Id { get; set; }
-    public string Title { get; set; }
-    public string Text { get; set; }
-    public DateTime CreationDate { get; set; }
+    public string? Title { get; set; }
+    public string? Text { get; set; }
     public DateTime? EditDate { get; set; }
 
     public void Mapping(Profile profile)
     {
-        profile.CreateMap<Note, NoteTextVM>()
+        profile.CreateMap<Note, NoteVM>()
             .ForMember(noteVM => noteVM.Title,
                 options =>
                     options.MapFrom(note => note.Title))

@@ -25,6 +25,8 @@
       <ProjectReference Include="..\Notes.Identity\Notes.Identity.csproj" />
 
       <ProjectReference Include="..\Notes.Persistence\Notes.Persistence.csproj" />
+
+      <ProjectReference Include="..\Notes.Services\Notes.Services.csproj" />
     </ItemGroup>
 
     <ItemGroup>

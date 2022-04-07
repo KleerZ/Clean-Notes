@@ -1,8 +1,9 @@
 @using IdentityServer4.Extensions
 @using Notes.Persistence
-@model List<NoteLookupDto>
+@model List<NoteLookupDto>?
 
 <link rel="stylesheet" href=@Url.Content("~/css/allnotes/allnotes.css")>
+<link rel="stylesheet" href=@Url.Content("~/css/allnotes/context-menu.css")>
 
 <div class="line-container">
     <div class="title-line">
@@ -29,32 +30,76 @@
         {
             await Html.RenderPartialAsync("~/Views/Notes/_NoNotesPartial.cshtml");
         }
-
-        @foreach (var note in Model)
+        else
         {
-            <form asp-controller="EditNote" asp-action="Index" asp-route-id="@note.Id" 
-                  data-ajax="true" data-ajax-mode="replace" data-ajax-update="#edit" method="get">
-                <button type="submit" class="item" asp-controller="EditNote" asp-action="Index" asp-route-id="@note.Id">
-                    <div class="note-item">
-                        <span class="item-title">
-                            <span class="title-text">@note.Title</span>
-                            <span class="date">@note.EditDate.Date.ToShortDateString()</span>
-                        </span>
-                        <div class="text">
-                            @note.Text
+            foreach (var note in Model)
+            {
+                using (Html.AjaxBeginForm("EditPage", "Note", new {id = note.Id},
+                    new AjaxOptions()
+                    {
+                        HttpMethod = "get",
+                        UpdateTargetId = "edit",
+                        InsertionMode = InsertionMode.Replace,
+                        OnSuccess = "UpdateURL(this)"
+                    }, new {@class = "note-item-form"}))
+                {
+                    <button type="submit" class="item">
+                        <div class="note-item">
+                            <span class="item-title">
+                                <span class="title-text">@note?.Title</span>
+                                <span class="date">@note?.EditDate.Date.ToShortDateString()</span>
+                                <input type="hidden" class="hidden-n" value="@note?.Id"/>
+                            </span>
+                            <div class="text">
+                                @note?.Text
+                            </div>
                         </div>
-                    </div>
-                </button>
-            </form>
+                    </button>
+                }
+            }
         }
     </div>
 </div>
 
-<script src="lib/jquery/dist/jquery.min.js"></script>
+
+<div class="context-menu-open">
+    <ul>
+        <li>
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M20,18H4V8H20M20,6H12L10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6Z"/>
+            </svg>
+            Переместить в папку
+        </li>
+        <li class="delete-note-btn">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z"/>
+            </svg>
+            Удалить
+        </li>
+    </ul>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/anime.js"></script>
+<script src="~/js/allnotes/contextMenu.js"></script>
+<script src="~/js/allnotes/deleteSelectedNote.js"></script>
+
 
 <script>
 console.log($('.note-item').length)
 
 var input = document.querySelector('.count')
 input.value = $('.note-item').length;
+
+
+function UpdateURL(form){
+    let formData = $(form).attr('action')
+    
+    history.pushState(formData, null, formData)
+}
+
+contextMenu();    
+
+
+
 </script>

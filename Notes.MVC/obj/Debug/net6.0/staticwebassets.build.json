@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ey1lXtrExmwK/6vXHb9w3kads9wcwOKIdwXJyq916lU=",
+  "Hash": "UyJNgQHV2mUqulyYrPtWeKc4qD1cTaVoqfmzB84DTs0=",
   "Source": "Notes.MVC",
   "BasePath": "_content/Notes.MVC",
   "Mode": "Default",
@@ -1209,6 +1209,23 @@
       "OriginalItemSpec": "wwwroot\\css\\allnotes\\allnotes.css"
     },
     {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\allnotes\\context-menu.css",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "css/allnotes/context-menu.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\allnotes\\context-menu.css"
+    },
+    {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\allnotes\\edit-note.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1394,6 +1411,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\checkFields.js"
+    },
+    {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\contextMenu.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/contextMenu.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\contextMenu.js"
+    },
+    {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\deleteSelectedNote.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/deleteSelectedNote.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\deleteSelectedNote.js"
     },
     {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\dropdown.js",
