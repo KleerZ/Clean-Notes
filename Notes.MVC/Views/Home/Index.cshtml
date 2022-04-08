@@ -41,12 +41,24 @@
                     </div>
                 </button>
                 <div class="dropdown" id="dropdown">
-                    <span class="drop-select" id="note">
-                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                            <path fill="currentColor" d="M3,7V5H5V4C5,2.89 5.9,2 7,2H13V9L15.5,7.5L18,9V2H19C20.05,2 21,2.95 21,4V20C21,21.05 20.05,22 19,22H7C5.95,22 5,21.05 5,20V19H3V17H5V13H3V11H5V7H3M7,11H5V13H7V11M7,7V5H5V7H7M7,19V17H5V19H7Z"/>
-                        </svg>
-                        Заметку
-                    </span>
+                    
+                    
+                    @using (Html.AjaxBeginForm("AddPage", "Note", new AjaxOptions
+                    {
+                        UpdateTargetId = "edit",
+                        InsertionMode = InsertionMode.Replace,
+                        HttpMethod = "Get"
+                    }, new {}))
+                    {
+                        <button class="n-c" type="submit">
+                            <span class="drop-select" id="note">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M3,7V5H5V4C5,2.89 5.9,2 7,2H13V9L15.5,7.5L18,9V2H19C20.05,2 21,2.95 21,4V20C21,21.05 20.05,22 19,22H7C5.95,22 5,21.05 5,20V19H3V17H5V13H3V11H5V7H3M7,11H5V13H7V11M7,7V5H5V7H7M7,19V17H5V19H7Z"/>
+                                </svg>
+                                Заметку
+                            </span>
+                        </button>
+                    }
 
                     <hr>
 
@@ -136,7 +148,7 @@
 
         <span class="folder-div-title">Папки</span>
         <div class="folder-divv">
-            @if (Model.FolderList.Folders.Count == 0)
+            @if (Model.CombineNoteVmFolderListVm.FolderListVm.Folders.Count == 0)
             {
                 <div class="nofolders-div">
                     <svg style="width:40px;height:40px" viewBox="0 0 24 24">
@@ -145,7 +157,7 @@
                     Нет папок
                 </div>
             }
-            @foreach (var folder in Model.FolderList.Folders)
+            @foreach (var folder in Model.CombineNoteVmFolderListVm.FolderListVm.Folders)
             {
                 <button class="bbb">
                     <div class="folderr">@folder.Name</div>
@@ -173,9 +185,10 @@
     </div>
 
     <div class="edit" id="edit">
-        @if (Model?.NoteVm.Title != null)
+        @if (Model?.CombineNoteVmFolderListVm.NoteVm.Title != null)
         {
-            await Html.RenderPartialAsync("~/Views/Notes/_NoteEditPartial.cshtml", Model.NoteVm);
+            await Html.RenderPartialAsync("~/Views/Notes/_NoteEditPartial.cshtml", Model.CombineNoteVmFolderListVm);
+            //await Html.RenderPartialAsync("~/Views/Notes/_NoteAddingPartial.cshtml", Model.CombineNoteVmFolderListVm);
         }
         else
         {
@@ -197,8 +210,6 @@
 </div>
 
 <script src="lib/jquery/dist/jquery.min.js"></script>
-<script src="~/js/anime.js"></script>
-<script src="js/allnotes/dropdown.js"></script>
 <script src="~/js/allnotes/contextMenu.js"></script>
 
 <script>

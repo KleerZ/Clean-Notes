@@ -5,23 +5,26 @@ using Microsoft.AspNetCore.Mvc;
 using Notes.Application.CommandsQueries.Folders.Queries.GetFolderList;
 using Notes.Application.Notes.Queries.GetNote;
 using Notes.Application.Notes.Queries.GetNoteList;
+using Notes.Domain;
 using Notes.Identity;
 using Notes.Identity.Models;
 using Notes.MVC.Models;
+using Notes.Services.Services;
 
 namespace Notes.MVC.Controllers;
 
 public class HomeController : BaseController
 {
+    private readonly NoteService _noteService;
+
+    public HomeController(NoteService noteService)
+    {
+        _noteService = noteService;
+    }
+
     public async Task<IActionResult> Index(Guid id)
     {
-        var query = new GetNoteQuery
-        {
-            Id = id,
-            UserId = UserId
-        };
-
-        var note = await Mediator.Send(query);
+        var note = await _noteService.Get(id, UserId);
 
         var query2 = new GetFolderListQuery
         {
@@ -40,8 +43,11 @@ public class HomeController : BaseController
         var model = new CombineNoteFolderViewModel()
         {
             NoteList = noteList,
-            NoteVm = note,
-            FolderList = folders
+            CombineNoteVmFolderListVm = new CombineNoteVmFolderListVm
+            {
+                NoteVm = note, 
+                FolderListVm = folders
+            }
         };
         
         return View("~/Views/Home/Index.cshtml", model);

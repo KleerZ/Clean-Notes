@@ -14,13 +14,17 @@ public class CreateNoteCommandHandler: IRequestHandler<CreateNoteCommand, Guid>
     public async Task<Guid> Handle(CreateNoteCommand request,
         CancellationToken cancellationToken)
     {
+        if (request.FolderId == Guid.Empty)
+            request.FolderId = null;
+        
         var note = new Note
         {
             UserId = request.UserId,
             Title = request.Title,
             Text = request.Text,
             Id = Guid.NewGuid(),
-            EditDate = DateTime.Now
+            EditDate = DateTime.UtcNow,
+            FolderId = request.FolderId
         };
 
         await _dbContext.Notes.AddAsync(note, cancellationToken);

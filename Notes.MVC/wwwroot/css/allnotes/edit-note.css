@@ -13,6 +13,7 @@
 
 .header{
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     width: 97%;
@@ -25,8 +26,12 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    /*height: 100%;*/
     /*width: 200px;*/
+    margin-top:0;
+    /*margin-bottom: 0;*/
+    margin-left: 0;
+    
 }
 
 .note-title{
@@ -63,7 +68,7 @@
     align-items: center;
     justify-content: space-around;
     /*height: 100%;*/
-    width: 200px;
+    width: 150px;
 }
 
 .save-btn{
@@ -104,6 +109,7 @@
 }
 
 .delete-btn{
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,5 +165,26 @@
 .n-text:focus{
     border: none;
     outline: none;
+}
+
+#second{
+    position: relative;
+}
+
+.folder-drop{
+    height: 40px;
+    outline: none;
+    font-family: "Google Sans Medium";
+    border-radius: 7px;
+}
+
+.not-add{
+    background: #ff3636;
+    color: white;
+}
+
+.folder-select:hover{
+    background: black;
+    color: white;
 }
 

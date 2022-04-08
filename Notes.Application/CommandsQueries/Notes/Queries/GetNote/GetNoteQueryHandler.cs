@@ -28,7 +28,7 @@ public class GetNoteQueryHandler: IRequestHandler<GetNoteQuery, NoteVM>
         if (entity == null || entity.UserId != request.UserId)
         {
             if (_dbContext.Notes.Count() > 0)
-                entity = _dbContext.Notes.Where(n => n.UserId == request.UserId).FirstOrDefault();
+                entity = await _dbContext.Notes.Where(n => n.UserId == request.UserId).FirstOrDefaultAsync();
             else 
                 entity = new Note();
         }

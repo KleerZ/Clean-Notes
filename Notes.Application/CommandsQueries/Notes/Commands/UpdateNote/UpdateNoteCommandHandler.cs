@@ -26,6 +26,13 @@ public class UpdateNoteCommandHandler: IRequestHandler<UpdateNoteCommand>
         entity.Title = request.Title;
         entity.EditDate = DateTime.Now.ToUniversalTime();
 
+        if (request.FolderId == Guid.Empty)
+            entity.FolderId = null;
+        else
+        {
+            entity.FolderId = request.FolderId;
+        }
+
         await _dbContext.SaveChangesAsync(cancellationToken);
         
         return Unit.Value;

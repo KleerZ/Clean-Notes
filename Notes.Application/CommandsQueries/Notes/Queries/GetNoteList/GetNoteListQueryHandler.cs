@@ -3,8 +3,9 @@ using AutoMapper.QueryableExtensions;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Notes.Application.Interfaces;
+using Notes.Application.Notes.Queries.GetNoteList;
 
-namespace Notes.Application.Notes.Queries.GetNoteList;
+namespace Notes.Application.CommandsQueries.Notes.Queries.GetNoteList;
 
 public class GetNoteListQueryHandler: IRequestHandler<GetNoteListQuery, NoteListVm>
 {
@@ -23,8 +24,9 @@ public class GetNoteListQueryHandler: IRequestHandler<GetNoteListQuery, NoteList
         var notesQuery = await _dbContext.Notes
             .Where(note => note.UserId == request.UserId)
             .ProjectTo<NoteLookupDto>(_mapper.ConfigurationProvider)
+            .OrderByDescending(n => n.EditDate)
             .ToListAsync(cancellationToken);
-        
+
         if (notesQuery == null)
             notesQuery = new List<NoteLookupDto>();
 

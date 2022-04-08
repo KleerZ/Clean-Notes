@@ -10,6 +10,7 @@ public class NoteVM: IMapWith<Note>
     public string? Title { get; set; }
     public string? Text { get; set; }
     public DateTime? EditDate { get; set; }
+    public Guid? Folder { get; set; }
 
     public void Mapping(Profile profile)
     {
@@ -25,6 +26,9 @@ public class NoteVM: IMapWith<Note>
                 options.MapFrom(note => note.Id))
             .ForMember(noteVM => noteVM.EditDate,
             options =>
-                options.MapFrom(note => note.EditDate));
+                options.MapFrom(note => note.EditDate))
+            .ForMember(noteVM => noteVM.Folder,
+            options =>
+                options.MapFrom(note => note.FolderId));
     }
 }

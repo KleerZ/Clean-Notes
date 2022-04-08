@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UyJNgQHV2mUqulyYrPtWeKc4qD1cTaVoqfmzB84DTs0=",
+  "Hash": "Pp9X//t+VJBbxQxRLDOd0/A/DGfp5F3iqcjT8DJltL0=",
   "Source": "Notes.MVC",
   "BasePath": "_content/Notes.MVC",
   "Mode": "Default",
@@ -1175,23 +1175,6 @@
       "OriginalItemSpec": "D:\\Projects\\CleanNote\\Notes.MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Notes.MVC.styles.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Notes.MVC.bundle.scp.css",
-      "SourceId": "Notes.MVC",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/Notes.MVC",
-      "RelativePath": "Notes.MVC.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\CleanNote\\Notes.MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Notes.MVC.bundle.scp.css"
-    },
-    {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\allnotes\\allnotes.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1394,6 +1377,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\addnote.js"
+    },
+    {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\anime.min.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/anime.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\anime.min.js"
     },
     {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\checkFields.js",

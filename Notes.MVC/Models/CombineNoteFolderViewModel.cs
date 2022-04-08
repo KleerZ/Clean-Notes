@@ -10,4 +10,5 @@ public class CombineNoteFolderViewModel
     public FolderListVm FolderList { get; set; }
     public FolderViewModel Folder { get; set; }
     public List<NoteLookupDto> NoteList { get; set; }
+    public CombineNoteVmFolderListVm? CombineNoteVmFolderListVm { get; set; }
 }
