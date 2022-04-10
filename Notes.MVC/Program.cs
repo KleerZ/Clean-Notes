@@ -8,6 +8,7 @@ using Notes.Application;
 using Notes.Application.Common.Mappings;
 using Notes.Application.Interfaces;
 using Notes.Identity.Models;
+using Notes.MVC.Services;
 using Notes.Persistence;
 using Notes.Services;
 
@@ -31,7 +32,16 @@ builder.Services.AddAutoMapper(config =>
 // --- Connection services --- //
 builder.Services.AddApplication();
 builder.Services.AddPersistence(builder.Configuration);
-builder.Services.AddServices();
+builder.Services.AddScoped<NoteService>();
+builder.Services.AddScoped<FolderService>();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromSeconds(5000);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddAuthentication(options =>
     {
@@ -85,6 +95,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseUnobtrusiveAjax();
+
+app.UseSession();
 
 app.UseRouting(); 
 

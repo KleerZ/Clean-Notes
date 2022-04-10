@@ -1,0 +1,49 @@
+@model Notes.Application.CommandsQueries.Folders.Queries.GetFolderList.FolderListVm
+
+<link rel="stylesheet" href="~/css/index/panel.css">
+
+@if (Model.Folders.Count == 0)
+{
+    <div class="nofolders-div">
+        <svg style="width:40px;height:40px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M2.39 1.73L1.11 3L2.64 4.53C2.25 4.9 2 5.42 2 6V18C2 19.11 2.9 20 4 20H18.11L20.84 22.73L22.11 21.46L2.39 1.73M4 18V8H6.11L16.11 18H4M11.2 8L7.2 4H10L12 6H20C21.1 6 22 6.89 22 8V18C22 18.24 21.96 18.47 21.88 18.68L20 16.8V8H11.2Z" />
+        </svg>
+        Нет папок
+    </div>
+}
+@foreach (var folder in Model.Folders)
+{
+    using (Html.AjaxBeginForm("Delete", "Folder", new{id = folder.Id}, new AjaxOptions()
+    {
+        HttpMethod = "get",
+        UpdateTargetId = "folder-divv",
+        InsertionMode = InsertionMode.Replace,
+        OnSuccess = "UpdateURL(this)"
+    },new {@class = "folder-form"}))
+    {
+        <button type="submit" class="bbb">
+            <div class="folderr">@folder.Name</div>
+        </button>
+    }
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/allnotes/contextMenuFolder.js"></script>
+<script src="~/js/allnotes/deleteSelectedFolder.js"></script>
+
+<script >
+contextMenuFolder()
+
+// function UpdateURL(form){
+//     var input = document.querySelector('.count')
+//     input.value = $('.note-item').length;
+//    
+//     let formData = $(form).attr('action')
+//    
+//     history.pushState(formData, null, formData)
+// }
+//
+// let url2 = "https://localhost:44339/Folder/Delete"
+//
+// localStorage.setItem('url2', url2);
+</script>

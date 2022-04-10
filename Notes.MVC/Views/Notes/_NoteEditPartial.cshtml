@@ -6,43 +6,49 @@
 <link rel="stylesheet" href=@Url.Content("~/css/allnotes/edit-note.css")>
 
 <form class="edit-container" asp-controller="Note">
-    <div class="edit-container">
-        <div class="header">
-            <div class="info-div">
-                <span class="note-title">@Model.NoteVm?.Title</span>
-                <div class="date-info">
-                    Последние изменения:&nbsp;<span class="edit-date">@Model.NoteVm?.EditDate.Value.ToShortDateString()</span>
-                    <input asp-for="NoteVm.Id" type="hidden" value="@Model.NoteVm?.Id">
+    @using (Html.BeginForm("Edit", "Note", new { vm = Model})){
+        <div class="edit-container">
+            <div class="header">
+                <div class="info-div">
+                    <span class="note-title">Изменение</span>
+                    <div class="date-info">
+                        Последние изменения:&nbsp;<span class="edit-date">@Model.NoteVm?.EditDate.Value.ToShortDateString()</span>
+                        <input asp-for="NoteVm.Id" type="hidden" value="@Model.NoteVm?.Id">
+                    </div>
+                </div>
+            
+                <select asp-for="NoteVm.Folder" class="folder-drop">
+                    <option class="not-add" value="@Guid.Empty">Не добавлять в папку</option>
+
+                    @foreach (var folder in Model?.FolderListVm?.Folders){
+                        <option class="folder-select" value="@folder.Id">@folder.Name</option>
+                    }
+                </select>
+
+                <div class="func-note">
+                    <button asp-controller="Note" asp-action="Edit" type="submit" class="save-btn">
+                        Сохранить
+                    </button>
+                    <button class="download-btn">
+                        <svg style="width:22px;height:22px" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M2 12H4V17H20V12H22V17C22 18.11 21.11 19 20 19H4C2.9 19 2 18.11 2 17V12M12 15L17.55 9.54L16.13 8.13L13 11.25V2H11V11.25L7.88 8.13L6.46 9.55L12 15Z"/>
+                        </svg>
+                    </button>
                 </div>
             </div>
-            
-            <select asp-for="NoteVm.Folder" class="folder-drop">
-                <option class="not-add" value="@Guid.Empty">Не добавлять в папку</option>
-
-                @foreach (var folder in Model?.FolderListVm?.Folders)
-                {
-                    <option class="folder-select" value="@folder.Id">@folder.Name</option>
-                }
-            </select>
-
-            <div class="func-note">
-                <button asp-controller="Note" asp-action="Edit" type="submit" class="save-btn">
-                    Сохранить
-                </button>
-                <button class="download-btn">
-                    <svg style="width:22px;height:22px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M2 12H4V17H20V12H22V17C22 18.11 21.11 19 20 19H4C2.9 19 2 18.11 2 17V12M12 15L17.55 9.54L16.13 8.13L13 11.25V2H11V11.25L7.88 8.13L6.46 9.55L12 15Z"/>
-                    </svg>
-                </button>
+        
+            <div class="text-container">
+                <input maxlength="100" type="text" asp-for="NoteVm.Title" class="n-title" placeholder="Введите заголовок" >
+                <textarea asp-for="NoteVm.Text" class="n-text" cols="20" rows="10" placeholder="Введите текст">vvvvv</textarea>
             </div>
         </div>
-        
-        <div class="text-container">
-            <input type="text" asp-for="NoteVm.Title" class="n-title" placeholder="Введите заголовок" >
-            <textarea asp-for="NoteVm.Text" class="n-text" cols="20" rows="10" placeholder="Введите текст">vvvvv</textarea>
-        </div>
-    </div>
+    }
 </form>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/allnotes/contextMenu.js"></script>
+<script src="~/js/allnotes/contextMenuFolder.js"></script>
 
+<script >
+contextMenu();
+</script>

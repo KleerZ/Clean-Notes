@@ -8,7 +8,7 @@ using Notes.Application.Notes.Commands.UpdateNote;
 using Notes.Application.Notes.Queries.GetNote;
 using Notes.Application.Notes.Queries.GetNoteList;
 using Notes.MVC.Models;
-using Notes.Services.Services;
+using Notes.MVC.Services;
 
 namespace Notes.MVC.Controllers.Notes;
 
@@ -27,6 +27,7 @@ public class NoteController : BaseController
     public async Task<IActionResult> AddPage()
     {
         var folderList = await _folderService.GetList(UserId);
+        
         var vm = new CombineNoteVmFolderListVm()
         {
             NoteVm = new NoteVM(),
@@ -57,17 +58,9 @@ public class NoteController : BaseController
     [HttpPost]
     public async Task<IActionResult> Add(CombineNoteVmFolderListVm vm)
     {
-        var query = new CreateNoteCommand
-        {
-            UserId = UserId,
-            Text = vm.NoteVm.Text,
-            Title = vm.NoteVm.Title,
-            FolderId = vm.NoteVm?.Folder
-        };
-
-        await Mediator.Send(query);
+        await _noteService.Add(vm, UserId);
         
-        return RedirectToAction("GetList", "Note");
+        return RedirectToAction("Index", "Home");
     }
 
     [HttpPost]
@@ -92,7 +85,7 @@ public class NoteController : BaseController
         
         await _noteService.Update(note, UserId);
 
-        return RedirectToAction("GetList", "Note");
+        return RedirectToAction("Index", "Home");
     }
     
     [HttpGet]

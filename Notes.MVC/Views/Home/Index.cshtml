@@ -4,6 +4,7 @@
 @using IdentityServer4.Models
 @using Microsoft.AspNetCore.Authentication
 @using Microsoft.AspNetCore.Identity
+@using Notes.Domain
 @using Notes.Identity.Models
 
 @{
@@ -14,6 +15,7 @@
 
 <link rel="stylesheet" href=@Url.Content("~/css/index/index.css")>
 <link rel="stylesheet" href=@Url.Content("~/css/index/panel.css")>
+<link rel="stylesheet" href=@Url.Content("~/css/allnotes/context-menu.css")>
 
 <div class="container">
     <div class="side-panel">
@@ -147,22 +149,8 @@
         </div>
 
         <span class="folder-div-title">Папки</span>
-        <div class="folder-divv">
-            @if (Model.CombineNoteVmFolderListVm.FolderListVm.Folders.Count == 0)
-            {
-                <div class="nofolders-div">
-                    <svg style="width:40px;height:40px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M2.39 1.73L1.11 3L2.64 4.53C2.25 4.9 2 5.42 2 6V18C2 19.11 2.9 20 4 20H18.11L20.84 22.73L22.11 21.46L2.39 1.73M4 18V8H6.11L16.11 18H4M11.2 8L7.2 4H10L12 6H20C21.1 6 22 6.89 22 8V18C22 18.24 21.96 18.47 21.88 18.68L20 16.8V8H11.2Z" />
-                    </svg>
-                    Нет папок
-                </div>
-            }
-            @foreach (var folder in Model.CombineNoteVmFolderListVm.FolderListVm.Folders)
-            {
-                <button class="bbb">
-                    <div class="folderr">@folder.Name</div>
-                </button>
-            }
+        <div class="folder-divv" id="folder-divv">
+            @{await Html.RenderPartialAsync("~/Views/Folders/_FoldersPartial.cshtml", Model.CombineNoteVmFolderListVm.FolderListVm);}
         </div>
         <div class="user-div">
             <div class="user-logo">@User.FindFirst(JwtClaimTypes.Name)?.Value.Substring(0, 1)</div>
@@ -197,89 +185,78 @@
     </div>
 
     <div class="create-folder-background" onclick="hideWindows()">
-        <form id="create-folder-form" asp-controller="Folder" asp-action="Create" method="post" onsubmit="return validFolder()">
+        <form id="create-folder-form" asp-controller="Folder" asp-action="Add" method="post" onsubmit="return validFolder()">
+            
+        </form>
+
+        @using(Html.AjaxBeginForm("Add", "Folder", new AjaxOptions()
+        {
+            InsertionMode = InsertionMode.Replace,
+            UpdateTargetId = "folder-divv",
+            OnSuccess = "AddingFolder()"
+        }, new {@class = "add-folder-form"}))
+        {
             <div class="create-folder">
                 <span class="folder-window-title">Введите название папки</span>
-                <input asp-for="Folder.Name" class="folder-input" maxlength="30" type="text">
+                <input asp-for="Folder.Name" name="name" class="folder-input" maxlength="24" type="text">
                 <span id="error-span" asp-validation-for="Folder.Name"></span>
-                <input asp-controller="Folder" asp-action="Create" class="create-btn-folder" asp-route-name="" type="submit" value="Создать папку">
+                <input class="create-btn-folder" type="submit" value="Создать папку">
             </div>
-        </form>
+        }
     </div>
 
 </div>
 
+<div class="context-menu-open-folder" id="context-menu-open-folder">
+    <ul>
+        <li class="delete-folder-btn-folder">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z"/>
+            </svg>
+            Удалить
+        </li>
+    </ul>
+</div>
+
 <script src="lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/allnotes/contextMenu.js"></script>
+<script src="~/js/allnotes/contextMenuFolder.js"></script>
+<script src="~/js/allnotes/hoverbtn.js"></script>
+<script src="~/js/allnotes/hideWindows.js"></script>
+<script src="~/js/allnotes/folder.js"></script>
+<script src="~/js/allnotes/deleteSelectedFolder.js"></script>
 
 <script>
-
-document.getElementById("create-btn").onmouseover = function() {
-    this.style.backgroundColor = "#483dff";
-}
-document.getElementById("create-btn").onmouseleave = function() {
-    this.style.backgroundColor = "#6c63ff";
-}
-
 window.onload = function(){
     hideWindows();
+    visibleWindow();
     myFunction();
+    contextMenuFolder();
 }
 
-function hideWindows(){
-    let modalWindow = document.querySelector('.create-folder-background')
-    let modal = document.querySelector('.create-folder')
+function AddingFolder(){
+    let id3 = 0;
     
-    modalWindow.onclick = function(event){
-        if(event.target == modalWindow){
-            modalWindow.style.opacity = "0";
-            modalWindow.style.visibility = "visible";
-            
-            modal.querySelector('.folder-input').value = "";
-            
-            setTimeout(function(){
-                modalWindow.style.display = "none";
-            }, 200);
+    let contextMenu = document.querySelectorAll('.item');
+        let contextMenuOpen = document.querySelector('.context-menu-open-folder');
+        for (let i = 0; i < contextMenu.length; i++) {
+            contextMenu[i].addEventListener('c', function (e) {
+                e.preventDefault();
+    
+                let element = e[0].target;
+                while (element.className !== 'add-folder-form') {
+                    element = element.parentNode;
+                }
+                id3 = $(element).attr('action').split('/')[3];
+    
+                localStorage.setItem('id-folder', id3);
+    
+                console.log(id3);
+            });
         }
-    }
-}   
-
-function visibleWindow(){
-    let modalWindow = document.querySelector('.create-folder-background')
-    let modal = document.querySelector('.create-folder')
     
-    modalWindow.style.display = "flex";
     
-    setTimeout(function(){
-        modalWindow.style.opacity = 1;
-        modalWindow.style.visibility = "visible";
-    }, 1);
-}
-
-//событие при submit формы
-
-
-function validFolder(){
-    $('create-folder-form').submit(function(e){
-        e.preventDefault();
-        let input = document.querySelector('.folder-input');
-        let error = document.querySelector('#error-span');
-        let result = false;
-        
-        //проверка поля на размерность
-        if(input.value.length > 30){
-           error.value = "ппппппппп"
-           
-           result = false;
-           
-           console.log(result)
-      }
-    });
-    
-    return result;
     
     
 }
-
-
 </script>

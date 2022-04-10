@@ -4,27 +4,27 @@ using Notes.Application.Interfaces;
 using Notes.Application.Notes.Commands.DeleteNote;
 using Notes.Domain;
 
-namespace Notes.Application.CommandsQueries.Notes.Commands.DeleteNote;
+namespace Notes.Application.CommandsQueries.Folders.Commands.DeleteFolder;
 
-public class DeleteNoteCommandHandler: IRequestHandler<DeleteNoteCommand>
+public class DeleteFolderCommandHandler: IRequestHandler<DeleteFolderCommand>
 {
     private readonly INotesDbContext _dbContext;
-    public DeleteNoteCommandHandler(INotesDbContext dbContext) =>
+
+    public DeleteFolderCommandHandler(INotesDbContext dbContext) =>
         _dbContext = dbContext;
 
-    public async Task<Unit> Handle(DeleteNoteCommand request,
+    public async Task<Unit> Handle(DeleteFolderCommand request,
         CancellationToken cancellationToken)
     {
-        var entity = await _dbContext.Notes
+        var entity = await _dbContext.Folders
             .FindAsync(new object[] {request.Id}, cancellationToken);
 
         if (entity == null || entity.UserId != request.UserId)
-            throw new NotFoundException(nameof(Note), request.Id);
+            throw new NotFoundException(nameof(Folder), request.Id);
 
-        _dbContext.Notes.Remove(entity);
+        _dbContext.Folders.Remove(entity);
         await _dbContext.SaveChangesAsync(cancellationToken);
-        
+
         return Unit.Value;
     }
-
 }

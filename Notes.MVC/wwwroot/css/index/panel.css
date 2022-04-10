@@ -622,3 +622,13 @@ hr{
     width: 100%;
     height: 44px;
 }
+
+.folder-form{
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    flex-direction: column;
+    width: 100%;
+    /*height: 100%;*/
+    font-family: "Google Sans Medium";
+}
