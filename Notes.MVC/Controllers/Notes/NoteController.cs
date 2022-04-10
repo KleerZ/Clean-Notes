@@ -34,6 +34,8 @@ public class NoteController : BaseController
             FolderListVm = folderList
         };
         
+        HttpContext.Session.SetString("currentPage", "addPage");
+
         return PartialView("~/Views/Notes/_NoteAddingPartial.cshtml", vm);
     }
 
@@ -51,7 +53,9 @@ public class NoteController : BaseController
             NoteVm = note,
             FolderListVm = folderList
         };
-            
+        
+        HttpContext.Session.SetString("currentPage", id.ToString());
+
         return PartialView("~/Views/Notes/_NoteEditPartial.cshtml", vm);
     }
 

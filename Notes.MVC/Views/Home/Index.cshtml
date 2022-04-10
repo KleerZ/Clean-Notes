@@ -191,10 +191,11 @@
 
         @using(Html.AjaxBeginForm("Add", "Folder", new AjaxOptions()
         {
+            OnSuccess = "AddingFolder()",
+            HttpMethod = "post",
             InsertionMode = InsertionMode.Replace,
             UpdateTargetId = "folder-divv",
-            OnSuccess = "AddingFolder()"
-        }, new {@class = "add-folder-form"}))
+        }, new {@class = "add-folder-form"}))   
         {
             <div class="create-folder">
                 <span class="folder-window-title">Введите название папки</span>
@@ -218,7 +219,7 @@
     </ul>
 </div>
 
-<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/allnotes/contextMenu.js"></script>
 <script src="~/js/allnotes/contextMenuFolder.js"></script>
 <script src="~/js/allnotes/hoverbtn.js"></script>
@@ -232,31 +233,42 @@ window.onload = function(){
     visibleWindow();
     myFunction();
     contextMenuFolder();
+    AddingFolder();
+    UpdateURLAdd();
 }
 
 function AddingFolder(){
-    let id3 = 0;
+    console.log("блять")
     
-    let contextMenu = document.querySelectorAll('.item');
-        let contextMenuOpen = document.querySelector('.context-menu-open-folder');
-        for (let i = 0; i < contextMenu.length; i++) {
-            contextMenu[i].addEventListener('c', function (e) {
-                e.preventDefault();
+     let url = window.location.href;
     
-                let element = e[0].target;
-                while (element.className !== 'add-folder-form') {
-                    element = element.parentNode;
-                }
-                id3 = $(element).attr('action').split('/')[3];
+    console.log(url)
     
-                localStorage.setItem('id-folder', id3);
+     let noteId = url.split('/')[5];
+     
+     if (url.includes('/Note/EditPage/')) {
+         $('#edit').load("/Note/EditPage/" + noteId);
+     }
+     if (url.includes('/Home/Index/')) {
+         $('#edit').load("/Note/EditPage/" + noteId);
+     }
+     else if(url.includes('/Note/AddPage')){
+         $('#edit').load("/Note/AddPage");
+     }
+}
+
+$('#note').one('click', function(){
+    UpdateURLAdd();
+});
+
+function UpdateURLAdd(){
+    var input = document.querySelector('.count')
+    input.value = $('.note-item').length;
     
-                console.log(id3);
-            });
-        }
+    let formData = "/Note/AddPage";
     
+    console.log(formData)
     
-    
-    
+    history.pushState(formData, null, formData)
 }
 </script>
