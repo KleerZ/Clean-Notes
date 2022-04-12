@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AXWYVgzjWxCi12jgA4wlDOlrlP6fkCqUiE0RJqKsYVI=",
+  "Hash": "cLDsn3gfq0rnDUZ46q6BdWVuzMSdgQmavnlkFoqnDyE=",
   "Source": "Notes.MVC",
   "BasePath": "_content/Notes.MVC",
   "Mode": "Default",
@@ -1260,6 +1260,23 @@
       "OriginalItemSpec": "wwwroot\\css\\allnotes\\no-selected.css"
     },
     {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\allnotes\\rename-folder.css",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "css/allnotes/rename-folder.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\allnotes\\rename-folder.css"
+    },
+    {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\header.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1362,6 +1379,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\AddingFolder.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/AddingFolder.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\AddingFolder.js"
+    },
+    {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\addnote.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1445,6 +1479,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\contextMenuFolder.js"
+    },
+    {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\counter.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/counter.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\counter.js"
     },
     {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\deleteSelectedFolder.js",
@@ -1581,6 +1632,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\sort-page.js"
+    },
+    {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\UpdateURL.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/UpdateURL.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\UpdateURL.js"
+    },
+    {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\UpdateURLAdd.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/UpdateURLAdd.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\UpdateURLAdd.js"
     },
     {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\anime.js",

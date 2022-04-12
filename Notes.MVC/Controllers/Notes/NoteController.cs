@@ -1,12 +1,7 @@
 using AspNetCore.Unobtrusive.Ajax;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Notes.Application.CommandsQueries.Folders.Queries.GetFolderList;
-using Notes.Application.CommandsQueries.Notes.Commands.CreateNote;
-using Notes.Application.Notes.Commands.DeleteNote;
-using Notes.Application.Notes.Commands.UpdateNote;
+using Notes.Application.CommandsQueries.Folders.Queries.GetFolder;
 using Notes.Application.Notes.Queries.GetNote;
-using Notes.Application.Notes.Queries.GetNoteList;
 using Notes.MVC.Models;
 using Notes.MVC.Services;
 
@@ -33,8 +28,6 @@ public class NoteController : BaseController
             NoteVm = new NoteVM(),
             FolderListVm = folderList
         };
-        
-        HttpContext.Session.SetString("currentPage", "addPage");
 
         return PartialView("~/Views/Notes/_NoteAddingPartial.cshtml", vm);
     }
@@ -53,8 +46,6 @@ public class NoteController : BaseController
             NoteVm = note,
             FolderListVm = folderList
         };
-        
-        HttpContext.Session.SetString("currentPage", id.ToString());
 
         return PartialView("~/Views/Notes/_NoteEditPartial.cshtml", vm);
     }
@@ -101,5 +92,30 @@ public class NoteController : BaseController
             .OrderByDescending(p => p.EditDate).ToList();
 
         return PartialView("~/Views/Notes/_NotesPartial.cshtml", sortedVm);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> GetNotesInFolder(Guid id)
+    {
+        var noteList = (await _noteService.GetList(UserId))
+            .Notes
+            .Where(f => f.FolderId == id)
+            .ToList();
+
+        var query = new GetFolderQuery
+        {
+            Id = id,
+            UserId = UserId
+        };
+
+        var folder = await Mediator.Send(query);
+
+        var vm = new CombineNoteLookupFolder
+        {
+            FolderVm = folder,
+            NoteLookupDto = noteList
+        };
+
+        return PartialView("~/Views/Folders/_FolderNotesPartial.cshtml", vm);
     }
 }

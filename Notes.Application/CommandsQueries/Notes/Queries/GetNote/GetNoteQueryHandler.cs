@@ -1,11 +1,11 @@
 using AutoMapper;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Notes.Application.Common.Exceptions;
 using Notes.Application.Interfaces;
+using Notes.Application.Notes.Queries.GetNote;
 using Notes.Domain;
 
-namespace Notes.Application.Notes.Queries.GetNote;
+namespace Notes.Application.CommandsQueries.Notes.Queries.GetNote;
 
 public class GetNoteQueryHandler: IRequestHandler<GetNoteQuery, NoteVM>
 {
@@ -28,7 +28,14 @@ public class GetNoteQueryHandler: IRequestHandler<GetNoteQuery, NoteVM>
         if (entity == null || entity.UserId != request.UserId)
         {
             if (_dbContext.Notes.Count() > 0)
-                entity = await _dbContext.Notes.Where(n => n.UserId == request.UserId).FirstOrDefaultAsync();
+            {
+                if (request.Id == Guid.Empty)
+                    entity = _dbContext.Notes.Where(n => n.UserId == request.UserId)
+                        .OrderBy(n => n.EditDate)
+                        .Last();
+                else
+                    entity = await _dbContext.Notes.Where(n => n.UserId == request.UserId).FirstOrDefaultAsync();
+            }
             else 
                 entity = new Note();
         }

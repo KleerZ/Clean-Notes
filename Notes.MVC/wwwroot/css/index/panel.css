@@ -87,6 +87,7 @@
     font-weight: 500;
     background: #ffffff;
     color: black;
+    cursor: pointer ;
 }
 
 .btn:focus .func-item{
@@ -503,6 +504,7 @@ hr{
     background: white;
     color: black;
     transition: .1s all linear;
+    cursor: pointer;
 }
 
 .create-folder-background{

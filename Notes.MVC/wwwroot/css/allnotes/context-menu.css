@@ -19,7 +19,7 @@
     background-color: white;
     border-radius: 7px;
     padding: 4px;
-    height: 90px;
+    height: 45px;
 }
 .context-menu-open ul {
     display: flex;

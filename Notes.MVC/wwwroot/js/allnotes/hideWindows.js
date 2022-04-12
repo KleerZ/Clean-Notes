@@ -20,6 +20,8 @@ function hideWindows(){
     }
 }
 
+hideWindows();
+
 function visibleWindow(){
     let modalWindow = document.querySelector('.create-folder-background')
     let modal = document.querySelector('.create-folder')

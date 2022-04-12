@@ -13,13 +13,12 @@
 }
 @foreach (var folder in Model.Folders)
 {
-    using (Html.AjaxBeginForm("Delete", "Folder", new{id = folder.Id}, new AjaxOptions()
+    using (Html.AjaxBeginForm("GetNotesInFolder", "Note", new{id = folder.Id}, new AjaxOptions()
     {
-        HttpMethod = "get",
-        UpdateTargetId = "folder-divv",
+        HttpMethod = "post",
+        UpdateTargetId = "target",
         InsertionMode = InsertionMode.Replace,
-        OnSuccess = "UpdateURL(this)"
-    },new {@class = "folder-form"}))
+    },new {@class = "folder-form", @id = "folder-form"}))
     {
         <button type="submit" class="bbb">
             <div class="folderr">@folder.Name</div>
@@ -28,22 +27,16 @@
 }
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/allnotes/contextMenu.js"></script>
 <script src="~/js/allnotes/contextMenuFolder.js"></script>
+<script src="~/js/allnotes/hoverbtn.js"></script>
+<script src="~/js/allnotes/hideWindows.js"></script>
+<script src="~/js/allnotes/folder.js"></script>
 <script src="~/js/allnotes/deleteSelectedFolder.js"></script>
+<script src="~/js/allnotes/AddingFolder.js"></script>
+<script src="~/js/allnotes/UpdateURLAdd.js"></script>
 
 <script >
 contextMenuFolder()
-
-// function UpdateURL(form){
-//     var input = document.querySelector('.count')
-//     input.value = $('.note-item').length;
-//    
-//     let formData = $(form).attr('action')
-//    
-//     history.pushState(formData, null, formData)
-// }
-//
-// let url2 = "https://localhost:44339/Folder/Delete"
-//
-// localStorage.setItem('url2', url2);
+contextMenu()
 </script>

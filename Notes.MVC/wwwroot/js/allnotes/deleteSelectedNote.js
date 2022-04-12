@@ -2,8 +2,8 @@ $('.delete-note-btn').on('click', function(){
     let id = localStorage.getItem('id');
     let url = localStorage.getItem('url2');
 
-    let input = document.querySelector('.count')
-    input.value = $('.note-item').length;
+    // let input = document.querySelector('.count')
+    // input.value = $('.note-item').length;
     
     console.log("fef")
 
@@ -12,7 +12,10 @@ $('.delete-note-btn').on('click', function(){
         type: 'POST',
         success: function (result) {
             $('#target').html(result);
-            $('#edit').load("/Note/AddPage");
+            
+            //перейти по ссылке
+            window.location.href = "/Home/Index";
+            
 
             input.value = $('.note-item').length;
         }

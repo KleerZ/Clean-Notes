@@ -6,7 +6,10 @@
 <link rel="stylesheet" href=@Url.Content("~/css/allnotes/edit-note.css")>
 
 <form class="edit-container" asp-controller="Note">
-    @using (Html.BeginForm("Edit", "Note", new { vm = Model})){
+    @using (Html.AjaxBeginForm("Edit", "Note",new AjaxOptions
+    {
+        OnSuccess = "OnSuccess",
+    }, new { vm = Model})){
         <div class="edit-container">
             <div class="header">
                 <div class="info-div">
@@ -48,7 +51,24 @@
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/allnotes/contextMenu.js"></script>
 <script src="~/js/allnotes/contextMenuFolder.js"></script>
+<script src="~/js/allnotes/hoverbtn.js"></script>
+<script src="~/js/allnotes/hideWindows.js"></script>
+<script src="~/js/allnotes/folder.js"></script>
+<script src="~/js/allnotes/deleteSelectedFolder.js"></script>
+<script src="~/js/allnotes/deleteSelectedNote.js"></script>
+<script src="~/js/allnotes/AddingFolder.js"></script>
+<script src="~/js/allnotes/UpdateURLAdd.js"></script>
 
 <script >
 contextMenu();
+</script>
+
+<script >
+window.onload = function(){
+    HELPMEJS();
+}
+</script>
+
+<script>
+HELPMEJS();
 </script>

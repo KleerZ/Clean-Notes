@@ -1,17 +1,23 @@
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using Notes.Application.CommandsQueries.Folders.Commands.CreateFolder;
 using Notes.Application.CommandsQueries.Folders.Commands.DeleteFolder;
 using Notes.Application.CommandsQueries.Folders.Queries.GetFolderList;
 using Notes.MVC.Models;
+using Notes.Persistence;
 
 namespace Notes.MVC.Services;
 
 public class FolderService
 {
     private readonly IMediator _mediator;
+    private readonly NoteDbContext _dbContext;
 
-    public FolderService(IMediator mediator) =>
+    public FolderService(IMediator mediator, NoteDbContext dbContext)
+    {
         _mediator = mediator;
+        _dbContext = dbContext;
+    }
 
     public async Task<FolderListVm> GetList(Guid UserId)
     {
@@ -45,5 +51,19 @@ public class FolderService
         };
 
         await _mediator.Send(query);
+    }
+
+    public async Task<FolderListVm> Rename(CombineNoteFolderViewModel vm, Guid UserId)
+    {
+        var folder = await _dbContext.Folders
+            .FirstOrDefaultAsync(n => n.Id == vm.Folder.Id);
+
+        folder.Name = vm.Folder.Name;
+        
+        await _dbContext.SaveChangesAsync();
+
+        var folderList = await GetList(UserId);
+
+        return folderList;
     }
 }

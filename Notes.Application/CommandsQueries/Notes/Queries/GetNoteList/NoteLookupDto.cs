@@ -10,6 +10,7 @@ public class NoteLookupDto: IMapWith<Note>
     public string Title { get; set; }
     public string Text { get; set; }
     public DateTime EditDate { get; set; }
+    public Guid FolderId { get; set; }
     
     public void Mapping(Profile profile)
     {
@@ -25,6 +26,9 @@ public class NoteLookupDto: IMapWith<Note>
                     options.MapFrom(note => note.Text))
             .ForMember(noteDto => noteDto.EditDate,
                 options =>
-                    options.MapFrom(note => note.EditDate));
+                    options.MapFrom(note => note.EditDate))
+            .ForMember(noteDto => noteDto.FolderId,
+                options =>
+                    options.MapFrom(note => note.FolderId));
     }
 }

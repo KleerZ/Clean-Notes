@@ -1,11 +1,5 @@
 ﻿@using IdentityModel
-@using IdentityServer4.Extensions
-@using System.Security.Claims
-@using IdentityServer4.Models
-@using Microsoft.AspNetCore.Authentication
-@using Microsoft.AspNetCore.Identity
 @using Notes.Domain
-@using Notes.Identity.Models
 
 @{
     ViewData["Title"] = "Главная страница";
@@ -16,9 +10,10 @@
 <link rel="stylesheet" href=@Url.Content("~/css/index/index.css")>
 <link rel="stylesheet" href=@Url.Content("~/css/index/panel.css")>
 <link rel="stylesheet" href=@Url.Content("~/css/allnotes/context-menu.css")>
+<link rel="stylesheet" href=@Url.Content("~/css/allnotes/rename-folder.css")>
 
 <div class="container">
-    <div class="side-panel">
+    <div class="side-panel">    
 
         <div class="dongon">
             <img class="logo" src="~/svg/DonGon-logo.svg" alt="">
@@ -83,7 +78,7 @@
             </div>
 
 
-            @using (Html.AjaxBeginForm("GetAllNotes", "AllNotes",
+            @using (Html.AjaxBeginForm("GetList", "Note",
                 new AjaxOptions() {UpdateTargetId = "target", HttpMethod = "get",}, new {id = "form"}))
             {
                 <button class="btn" title="Заметки">
@@ -199,7 +194,7 @@
         {
             <div class="create-folder">
                 <span class="folder-window-title">Введите название папки</span>
-                <input asp-for="Folder.Name" name="name" class="folder-input" maxlength="24" type="text">
+                <input asp-for="Folder.Name" class="folder-input" maxlength="24" type="text">
                 <span id="error-span" asp-validation-for="Folder.Name"></span>
                 <input class="create-btn-folder" type="submit" value="Создать папку">
             </div>
@@ -210,6 +205,12 @@
 
 <div class="context-menu-open-folder" id="context-menu-open-folder">
     <ul>
+        <li class="rename-folder">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M17,7H22V17H17V19A1,1 0 0,0 18,20H20V22H17.5C16.95,22 16,21.55 16,21C16,21.55 15.05,22 14.5,22H12V20H14A1,1 0 0,0 15,19V5A1,1 0 0,0 14,4H12V2H14.5C15.05,2 16,2.45 16,3C16,2.45 16.95,2 17.5,2H20V4H18A1,1 0 0,0 17,5V7M2,7H13V9H4V15H13V17H2V7M20,15V9H17V15H20Z" />
+            </svg>
+            Переименовать
+        </li>
         <li class="delete-folder-btn-folder">
             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z"/>
@@ -219,6 +220,24 @@
     </ul>
 </div>
 
+
+@using (Html.AjaxBeginForm("Rename", "Folder" ,new AjaxOptions
+{
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = "folder-divv",
+    HttpMethod = "post"
+}))
+{
+    <div class="rename-folder-background" id="rename-folder-background">
+        <div class="rename-folder-window">
+            <span class="folder-window-title">Введите новое название папки</span>
+            <input asp-for="Folder.Name" id="folder-name-text" class="folder-input" maxlength="24" type="text">
+            <input type="hidden" asp-for="Folder.Id" id="folderId" value="">
+            <input class="rename-folder-btn" type="submit" value="Переименовать">
+        </div>
+    </div>
+}
+
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/allnotes/contextMenu.js"></script>
 <script src="~/js/allnotes/contextMenuFolder.js"></script>
@@ -226,6 +245,9 @@
 <script src="~/js/allnotes/hideWindows.js"></script>
 <script src="~/js/allnotes/folder.js"></script>
 <script src="~/js/allnotes/deleteSelectedFolder.js"></script>
+<script src="~/js/allnotes/deleteSelectedNote.js"></script>
+<script src="~/js/allnotes/AddingFolder.js"></script>
+<script src="~/js/allnotes/UpdateURLAdd.js"></script>
 
 <script>
 window.onload = function(){
@@ -235,40 +257,66 @@ window.onload = function(){
     contextMenuFolder();
     AddingFolder();
     UpdateURLAdd();
-}
-
-function AddingFolder(){
-    console.log("блять")
-    
-     let url = window.location.href;
-    
-    console.log(url)
-    
-     let noteId = url.split('/')[5];
-     
-     if (url.includes('/Note/EditPage/')) {
-         $('#edit').load("/Note/EditPage/" + noteId);
-     }
-     if (url.includes('/Home/Index/')) {
-         $('#edit').load("/Note/EditPage/" + noteId);
-     }
-     else if(url.includes('/Note/AddPage')){
-         $('#edit').load("/Note/AddPage");
-     }
+    contextMenu();
 }
 
 $('#note').one('click', function(){
     UpdateURLAdd();
 });
 
-function UpdateURLAdd(){
-    var input = document.querySelector('.count')
-    input.value = $('.note-item').length;
+contextMenu();
+</script>
+
+<script > //Ебаное модальное окно переименования папки
+$('.rename-folder').on('click', function(){
+    let idDD = localStorage.getItem("id-folder");
     
-    let formData = "/Note/AddPage";
+    let modal = document.getElementById('rename-folder-background');
+    let text = document.getElementById('folder-name-text');
     
-    console.log(formData)
+    let hiddenId = document.getElementById('folderId').value = idDD;
     
-    history.pushState(formData, null, formData)
-}
+    modal.style.display = "flex";
+    
+    setTimeout(function(){
+        modal.style.opacity = 1;
+        modal.style.visibility = "visible";
+    }, 1);
+});
+
+
+//Прятать эту хуйню
+let modalWindow = document.querySelector('.rename-folder-background')
+let text = document.getElementById('folder-name-text');
+
+    modalWindow.onclick = function(event){
+        if(event.target == modalWindow){
+            modalWindow.style.opacity = "0";
+            modalWindow.style.visibility = "visible";
+
+            text.value = "";
+
+            setTimeout(function(){
+                modalWindow.style.display = "none";
+            }, 200);
+        }
+    }
+    
+    let renameBtn = document.querySelector('.rename-folder-btn');
+    
+    $(renameBtn).on('click', function(){
+        if (text.value == ""){
+            alert("Введите название папки");
+            return false;
+        }
+        else{
+            modalWindow.style.opacity = "0";
+            modalWindow.style.visibility = "visible";
+
+            setTimeout(function(){
+                modalWindow.style.display = "none";
+                text.value = "";
+            }, 200);
+        }
+    });
 </script>

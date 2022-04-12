@@ -22,8 +22,6 @@ function contextMenu() {
             let id = $(element).attr('action').split('/')[3];
             
             localStorage.setItem('id', id);
-
-            console.log(id);
         });
     }
 
@@ -33,7 +31,7 @@ function contextMenu() {
             translateY: -5,
             delay: 0
         });
-        contextMenuOpen.style.opacity = 0;
-        contextMenuOpen.style.visibility = 'hidden';
+        // contextMenuOpen.style.opacity = 0;
+        // contextMenuOpen.style.visibility = 'hidden';
     });
 }
