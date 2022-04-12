@@ -2,6 +2,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Notes.Application.CommandsQueries.Folders.Commands.CreateFolder;
 using Notes.Application.CommandsQueries.Folders.Commands.DeleteFolder;
+using Notes.Application.CommandsQueries.Folders.Queries.GetFolder;
 using Notes.Application.CommandsQueries.Folders.Queries.GetFolderList;
 using Notes.MVC.Models;
 using Notes.Persistence;
@@ -18,6 +19,19 @@ public class FolderService
         _mediator = mediator;
         _dbContext = dbContext;
     }
+
+    public async Task<FolderVM> Get(Guid id, Guid UserId)
+    {
+        var query = new GetFolderQuery
+        {
+            Id = id,
+            UserId = UserId
+        };
+
+        var folder = await _mediator.Send(query);
+
+        return folder;
+    } 
 
     public async Task<FolderListVm> GetList(Guid UserId)
     {

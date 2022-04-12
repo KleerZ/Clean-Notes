@@ -97,24 +97,7 @@ public class NoteController : BaseController
     [HttpPost]
     public async Task<IActionResult> GetNotesInFolder(Guid id)
     {
-        var noteList = (await _noteService.GetList(UserId))
-            .Notes
-            .Where(f => f.FolderId == id)
-            .ToList();
-
-        var query = new GetFolderQuery
-        {
-            Id = id,
-            UserId = UserId
-        };
-
-        var folder = await Mediator.Send(query);
-
-        var vm = new CombineNoteLookupFolder
-        {
-            FolderVm = folder,
-            NoteLookupDto = noteList
-        };
+        var vm = await _noteService.GetNotesInFolder(id, UserId);
 
         return PartialView("~/Views/Folders/_FolderNotesPartial.cshtml", vm);
     }

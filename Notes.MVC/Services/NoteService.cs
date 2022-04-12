@@ -1,5 +1,6 @@
 using MediatR;
 using Microsoft.Extensions.Caching.Memory;
+using Notes.Application.CommandsQueries.Folders.Queries.GetFolder;
 using Notes.Application.CommandsQueries.Notes.Commands.CreateNote;
 using Notes.Application.Notes.Commands.DeleteNote;
 using Notes.Application.Notes.Commands.UpdateNote;
@@ -12,10 +13,13 @@ namespace Notes.MVC.Services;
 public class NoteService
 {
     private readonly IMediator _mediator;
-    private readonly IMemoryCache _memoryCache;
+    private readonly FolderService _folderService;
 
-    public NoteService(IMediator mediator) =>
+    public NoteService(IMediator mediator, FolderService folderService)
+    {
         _mediator = mediator;
+        _folderService = folderService;
+    }
 
     public async Task<NoteVM> Get(Guid id, Guid userId)
     {
@@ -78,5 +82,23 @@ public class NoteService
         };
 
         await _mediator.Send(query);
+    }
+
+    public async Task<CombineNoteLookupFolder> GetNotesInFolder(Guid id, Guid UserId)
+    {
+        var noteList = (await GetList(UserId))
+            .Notes
+            .Where(f => f.FolderId == id)
+            .ToList();
+
+        var folder = await _folderService.Get(id, UserId);
+
+        var vm = new CombineNoteLookupFolder
+        {
+            FolderVm = folder,
+            NoteLookupDto = noteList
+        };
+
+        return vm;
     }
 }
