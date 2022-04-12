@@ -238,85 +238,20 @@
     </div>
 }
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/js/allnotes/contextMenu.js"></script>
-<script src="~/js/allnotes/contextMenuFolder.js"></script>
-<script src="~/js/allnotes/hoverbtn.js"></script>
-<script src="~/js/allnotes/hideWindows.js"></script>
-<script src="~/js/allnotes/folder.js"></script>
-<script src="~/js/allnotes/deleteSelectedFolder.js"></script>
-<script src="~/js/allnotes/deleteSelectedNote.js"></script>
-<script src="~/js/allnotes/AddingFolder.js"></script>
-<script src="~/js/allnotes/UpdateURLAdd.js"></script>
-
 <script>
 window.onload = function(){
-    hideWindows();
-    visibleWindow();
-    myFunction();
-    contextMenuFolder();
-    AddingFolder();
-    UpdateURLAdd();
-    contextMenu();
+    // hideWindows();
+    // visibleWindow();
+    // myFunction();
+    // contextMenuFolder();
+    // AddingFolder();
+    // UpdateURLAdd();
+    // contextMenu();
 }
 
 $('#note').one('click', function(){
     UpdateURLAdd();
 });
 
-contextMenu();
-</script>
-
-<script > //Ебаное модальное окно переименования папки
-$('.rename-folder').on('click', function(){
-    let idDD = localStorage.getItem("id-folder");
-    
-    let modal = document.getElementById('rename-folder-background');
-    let text = document.getElementById('folder-name-text');
-    
-    let hiddenId = document.getElementById('folderId').value = idDD;
-    
-    modal.style.display = "flex";
-    
-    setTimeout(function(){
-        modal.style.opacity = 1;
-        modal.style.visibility = "visible";
-    }, 1);
-});
-
-
-//Прятать эту хуйню
-let modalWindow = document.querySelector('.rename-folder-background')
-let text = document.getElementById('folder-name-text');
-
-    modalWindow.onclick = function(event){
-        if(event.target == modalWindow){
-            modalWindow.style.opacity = "0";
-            modalWindow.style.visibility = "visible";
-
-            text.value = "";
-
-            setTimeout(function(){
-                modalWindow.style.display = "none";
-            }, 200);
-        }
-    }
-    
-    let renameBtn = document.querySelector('.rename-folder-btn');
-    
-    $(renameBtn).on('click', function(){
-        if (text.value == ""){
-            alert("Введите название папки");
-            return false;
-        }
-        else{
-            modalWindow.style.opacity = "0";
-            modalWindow.style.visibility = "visible";
-
-            setTimeout(function(){
-                modalWindow.style.display = "none";
-                text.value = "";
-            }, 200);
-        }
-    });
+// contextMenu();
 </script>

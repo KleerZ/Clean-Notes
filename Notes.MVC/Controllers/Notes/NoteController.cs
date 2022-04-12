@@ -1,6 +1,5 @@
 using AspNetCore.Unobtrusive.Ajax;
 using Microsoft.AspNetCore.Mvc;
-using Notes.Application.CommandsQueries.Folders.Queries.GetFolder;
 using Notes.Application.Notes.Queries.GetNote;
 using Notes.MVC.Models;
 using Notes.MVC.Services;

@@ -31,7 +31,7 @@ function contextMenu() {
             translateY: -5,
             delay: 0
         });
-        // contextMenuOpen.style.opacity = 0;
-        // contextMenuOpen.style.visibility = 'hidden';
+        contextMenuOpen.style.opacity = 0;
+        contextMenuOpen.style.visibility = 'hidden';
     });
 }

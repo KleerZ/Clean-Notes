@@ -73,46 +73,6 @@
     </ul>
 </div>
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/js/allnotes/contextMenu.js"></script>
-<script src="~/js/allnotes/contextMenuFolder.js"></script>
-<script src="~/js/allnotes/hoverbtn.js"></script>
-<script src="~/js/allnotes/hideWindows.js"></script>
-<script src="~/js/allnotes/folder.js"></script>
-<script src="~/js/allnotes/deleteSelectedFolder.js"></script>
-<script src="~/js/allnotes/deleteSelectedNote.js"></script>
-<script src="~/js/allnotes/AddingFolder.js"></script>
-<script src="~/js/allnotes/UpdateURLAdd.js"></script>
-
 <script>
-console.log($('.note-item').length)
 
-
-var input = document.querySelector('.count')
-input.value = $('.note-item').length;
-
-function UpdateURL(form){
-    var input = document.querySelector('.count')
-    input.value = $('.note-item').length;
-
-    let formData = $(form).attr('action')
-    
-
-    history.pushState(formData, null, formData)
-}
-
-contextMenu();    
-contextMenuFolder();
-
-let urlEdit = "https://localhost:44339/Notes/EditPage"
-
-localStorage.setItem('url', urlEdit);
-</script>
-
-<script>
-    $('.sort-btn').on('click', function(){
-        $('.sort-menu').toggleClass('show');
-    })
-contextMenu();    
-contextMenuFolder();
 </script>

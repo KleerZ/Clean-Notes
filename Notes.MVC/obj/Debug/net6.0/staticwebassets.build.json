@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cLDsn3gfq0rnDUZ46q6BdWVuzMSdgQmavnlkFoqnDyE=",
+  "Hash": "Lpz9NwLUDd5qLt7alypcd7aZchSPHURqWS756qEG2jI=",
   "Source": "Notes.MVC",
   "BasePath": "_content/Notes.MVC",
   "Mode": "Default",
@@ -1430,6 +1430,23 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\anime.min.js"
     },
     {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\anyValidation.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/anyValidation.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\anyValidation.js"
+    },
+    {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\checkFields.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1566,6 +1583,23 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\folder.js"
     },
     {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\getFolderId.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/getFolderId.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\getFolderId.js"
+    },
+    {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\grid.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1615,6 +1649,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\hoverbtn.js"
+    },
+    {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\notesPartial.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/notesPartial.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\notesPartial.js"
+    },
+    {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\renameModalWindow.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/renameModalWindow.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\renameModalWindow.js"
     },
     {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\sort-page.js",

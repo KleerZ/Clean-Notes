@@ -36,22 +36,11 @@
     </div>
 </form>
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/js/allnotes/contextMenu.js"></script>
-<script src="~/js/allnotes/contextMenuFolder.js"></script>
-
 <script >
-$(document).ready(function() {
-    $('.save-btn').click(function(e) {
-        if ($('.n-title').val() == '' || $('.n-text').val() == '') {
-            e.preventDefault();
-            alert('Заполните все поля');
-        }
-    });
-});
 
-contextMenu();
-contextMenuFolder();
+
+// contextMenu();
+// contextMenuFolder();
 
 </script>
 

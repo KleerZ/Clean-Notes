@@ -11,15 +11,17 @@ function myFunction(){
 
     let btn = document.getElementById('create-btn')
     if (style == 'hidden'){
-        btn.style.background = '#483dff'
+        $('.create-btn').on('click', function(){
+            btn.style.background = '#483dff'
 
-        elem.style.visibility='visible';
-        elem.style.opacity='1';
-        anime({
-            targets: '.dropdown',
-            translateY: 7,
-            duration: 700
-        });
+            elem.style.visibility='visible';
+            elem.style.opacity='1';
+            anime({
+                targets: '.dropdown',
+                translateY: 7,
+                duration: 700
+            });
+        })
 
         hide();
     }
@@ -35,6 +37,25 @@ function myFunction(){
     }
 
     function hide(){
+        
+        $('.create-btn').on('click', function(){
+            if (style == 'visible'){
+                let elem = document.querySelector('.dropdown');
+                let btn = document.getElementById('create-btn')
+                anime({
+                    targets: '.dropdown',
+                    translateY: -15,
+                    duration: 700
+                });
+
+                elem.style.opacity='0';
+                elem.style.visibility='hidden';
+                btn.style.background = '#6c63ff'
+            }
+        })
+        
+        
+        
         $(document).click('on', function(e){
             var box = $('.drop-div');
 

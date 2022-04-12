@@ -62,7 +62,3 @@ $('.delete-folder-btn-folder').on('click', function(){
         }
     });
 });
-
-function HELPMEJS(){
-
-}
