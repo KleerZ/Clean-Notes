@@ -45,28 +45,30 @@ public class NoteService
         await _mediator.Send(query);
     }
     
-    public async Task Update(NoteVM noteVm, Guid UserId)
+    public async Task Update(CombineNoteVmFolderListVm vm, Guid UserId)
     {
         var command = new UpdateNoteCommand()
         {
-            Id = noteVm.Id,
-            Title = noteVm.Title,
-            Text = noteVm.Text,
+            Id = vm.NoteVm.Id,
+            Title = vm.NoteVm.Title,
+            Text = vm.NoteVm.Text,
             UserId = UserId,
-            FolderId = noteVm.Folder!.Value
+            FolderId = vm.NoteVm.Folder!.Value
         };
 
         await _mediator.Send(command);
     }
 
-    public async Task<NoteListVm> GetList(Guid UserId)
+    public async Task<List<NoteLookupDto>> GetList(Guid UserId)
     {
         var query = new GetNoteListQuery()
         {
             UserId = UserId
         };
 
-        var vm = await _mediator.Send(query);
+        var vm = (await _mediator.Send(query))
+            .Notes
+            .OrderByDescending(p => p.EditDate).ToList();
 
         return vm;
     }
@@ -87,7 +89,6 @@ public class NoteService
     public async Task<CombineNoteLookupFolder> GetNotesInFolder(Guid id, Guid UserId)
     {
         var noteList = (await GetList(UserId))
-            .Notes
             .Where(f => f.FolderId == id)
             .ToList();
 

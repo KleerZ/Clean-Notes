@@ -23,7 +23,7 @@ public class HomeController : BaseController
 
         var model = new CombineNoteFolderViewModel()
         {
-            NoteList = noteList.Notes,
+            NoteList = noteList,
             CombineNoteVmFolderListVm = new CombineNoteVmFolderListVm
             {
                 NoteVm = note, 

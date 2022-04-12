@@ -69,16 +69,7 @@ public class NoteController : BaseController
     [HttpPost]
     public async Task<IActionResult> Edit(CombineNoteVmFolderListVm vm)
     {
-        var note = new NoteVM
-        {
-            Id = vm.NoteVm.Id,
-            Title = vm.NoteVm.Title,
-            EditDate = DateTime.Now,
-            Text = vm.NoteVm.Text,
-            Folder = vm.NoteVm.Folder
-        };
-        
-        await _noteService.Update(note, UserId);
+        await _noteService.Update(vm, UserId);
 
         return RedirectToAction("Index", "Home");
     }
@@ -88,10 +79,7 @@ public class NoteController : BaseController
     {
         var vm = await _noteService.GetList(UserId);
 
-        var sortedVm = vm?.Notes?
-            .OrderByDescending(p => p.EditDate).ToList();
-
-        return PartialView("~/Views/Notes/_NotesPartial.cshtml", sortedVm);
+        return PartialView("~/Views/Notes/_NotesPartial.cshtml", vm);
     }
 
     [HttpPost]
