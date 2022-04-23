@@ -15,9 +15,10 @@
 {
     using (Html.AjaxBeginForm("GetNotesInFolder", "Note", new{id = folder.Id}, new AjaxOptions()
     {
-        HttpMethod = "post",
         UpdateTargetId = "target",
+        HttpMethod = "get",
         InsertionMode = InsertionMode.Replace,
+        OnSuccess = "getFolderUrl()"
     },new {@class = "folder-form", @id = "folder-form"}))
     {
         <button type="submit" class="bbb">
@@ -27,11 +28,14 @@
 }
 
 <script >
-// contextMenuFolder()
-// contextMenu()
+    function getFolderUrl(){
+        let folderurl = window.location.href;
+            
+        localStorage.setItem("folderurl", folderurl);
+    }
 </script>
 
-@* ОПРЕДЕЛЕНИЕ ЕБАНОЙ ПАПКИ В URL *@
-<script>
-
+<script >
+contextMenu();
+contextMenuFolder();
 </script>

@@ -16,15 +16,17 @@ $('.rename-folder').on('click', function(){
 
 
 //Прятать эту хуйню
-let modalWindow = document.querySelector('.rename-folder-background')
-let text = document.getElementById('folder-name-text');
 
-modalWindow.onclick = function(event){
+
+$('.rename-folder-background').onclick = function(event){
     if(event.target == modalWindow){
+        var modalWindow = document.querySelector('.rename-folder-background')
+        var text = document.getElementById('folder-name-text');
+        
         modalWindow.style.opacity = "0";
         modalWindow.style.visibility = "visible";
 
-        text.value = "";
+        document.getElementById('folder-name-text').value = "";
 
         setTimeout(function(){
             modalWindow.style.display = "none";
@@ -32,14 +34,15 @@ modalWindow.onclick = function(event){
     }
 }
 
-let renameBtn = document.querySelector('.rename-folder-btn');
-
-$(renameBtn).on('click', function(){
+$('.rename-folder-btn').on('click', function(){
     if (text.value == ""){
         alert("Введите название папки");
         return false;
     }
     else{
+        let modalWindow = document.querySelector('.rename-folder-background')
+        let text = document.getElementById('folder-name-text');
+        
         modalWindow.style.opacity = "0";
         modalWindow.style.visibility = "visible";
 

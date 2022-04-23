@@ -88,7 +88,8 @@ public class NoteService
 
     public async Task<CombineNoteLookupFolder> GetNotesInFolder(Guid id, Guid UserId)
     {
-        var noteList = (await GetList(UserId))
+        var noteList = GetList(UserId)
+            .Result
             .Where(f => f.FolderId == id)
             .ToList();
 

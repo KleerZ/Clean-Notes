@@ -1,6 +1,6 @@
-window.onload = function(){
+// window.onload = function(){
     hideWindows();
-}
+// }
 
 function hideWindows(){
     let modalWindow = document.querySelector('.create-folder-background')

@@ -81,7 +81,7 @@
             @using (Html.AjaxBeginForm("GetList", "Note",
                 new AjaxOptions() {UpdateTargetId = "target", HttpMethod = "get",}, new {id = "form"}))
             {
-                <button class="btn" title="Заметки">
+                <button onclick="clearLocal()" class="btn" title="Заметки">
                     <div class="func-item" id="button1">
                         <div class="item-icon">
                             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
@@ -239,19 +239,17 @@
 }
 
 <script>
-window.onload = function(){
-    // hideWindows();
-    // visibleWindow();
-    // myFunction();
-    // contextMenuFolder();
-    // AddingFolder();
-    // UpdateURLAdd();
-    // contextMenu();
-}
-
 $('#note').one('click', function(){
     UpdateURLAdd();
 });
 
-// contextMenu();
+contextMenu();
+</script>
+
+<script >
+function clearLocal(){
+    localStorage.setItem('folderurl', null);
+        console.log(localStorage.getItem('folderurl').split('/')[5])
+        console.log(11)
+}
 </script>

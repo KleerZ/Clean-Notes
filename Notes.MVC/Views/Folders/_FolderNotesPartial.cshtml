@@ -1,5 +1,4 @@
 @using IdentityServer4.Extensions
-@using Notes.Persistence
 @model CombineNoteLookupFolder
 
 <link rel="stylesheet" href=@Url.Content("~/css/allnotes/allnotes.css")>
@@ -73,21 +72,17 @@
     </ul>
 </div>
 
+<script src="~/js/allnotes/deleteSelectedNote.js"></script>
+
+
 <script >
-// contextMenu();    
-// contextMenuFolder();
+contextMenu();
+contextMenuFolder();
 </script>
 
 <script>
-window.onload = function() {
-    // contextMenu();    
-    // contextMenuFolder();
-}
 
-// contextMenu();    
-// contextMenuFolder();
-
-let urlFolderNotes = "https://localhost:44339/Notes/EditPage"
+var urlFolderNotes = "https://localhost:44339/Notes/EditPage"
 
 localStorage.setItem('url', urlFolderNotes);
 

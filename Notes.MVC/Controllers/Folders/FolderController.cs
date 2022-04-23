@@ -1,6 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Notes.Application.CommandsQueries.Folders.Commands.CreateFolder;
 using Notes.MVC.Models;
 using Notes.MVC.Services;
 using Notes.Persistence;
@@ -10,9 +8,14 @@ namespace Notes.MVC.Controllers.Folders;
 public class FolderController : BaseController
 {
     private readonly FolderService _folderService;
+    private readonly NoteService _noteService;
     
-    public FolderController(FolderService folderService, NoteDbContext dbContext) =>
+    public FolderController(FolderService folderService,
+        NoteDbContext dbContext, NoteService noteService)
+    {
         _folderService = folderService;
+        _noteService = noteService;
+    }
 
     [HttpGet]
     public async Task<IActionResult> GetList()
@@ -36,7 +39,7 @@ public class FolderController : BaseController
     public async Task<IActionResult> Delete(Guid id)
     {
         await _folderService.Delete(id, UserId);
-        
+
         return RedirectToAction("Index", "Home");
     }
 

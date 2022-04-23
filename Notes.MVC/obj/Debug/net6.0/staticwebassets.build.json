@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lpz9NwLUDd5qLt7alypcd7aZchSPHURqWS756qEG2jI=",
+  "Hash": "xorO7zH1sMtSLEUR+1qE6F2ARC49TRAiMIXPxyoiJX4=",
   "Source": "Notes.MVC",
   "BasePath": "_content/Notes.MVC",
   "Mode": "Default",
@@ -1447,6 +1447,23 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\anyValidation.js"
     },
     {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\changeFolderUrl.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/changeFolderUrl.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\changeFolderUrl.js"
+    },
+    {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\checkFields.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1683,6 +1700,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\renameModalWindow.js"
+    },
+    {
+      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\return.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/return.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\return.js"
     },
     {
       "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\sort-page.js",

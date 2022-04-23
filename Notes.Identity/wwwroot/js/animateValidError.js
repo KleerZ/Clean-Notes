@@ -4,17 +4,14 @@ let conf = document.getElementById('conf-error');
 
 window.onload = function(){
     if (document.getElementById('login-error').innerHTML === ""){
-        console.log('пустой')
         login.style.display = 'none';
     }
 
     if (document.getElementById('pass-error').innerHTML === ""){
-        console.log('пустой')
         pass.style.display = 'none';
     }
 
     if (document.getElementById('conf-error').innerHTML === ""){
-        console.log('пустой')
         conf.style.display = 'none';
     }
 

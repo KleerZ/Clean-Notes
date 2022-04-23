@@ -1,5 +1,4 @@
 function contextMenuFolder() {
-    console.log(3)
     let contextMenu = document.querySelectorAll('.bbb');
     let contextMenuOpen = document.querySelector('.context-menu-open-folder');
     for (let i = 0; i < contextMenu.length; i++) {

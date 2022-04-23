@@ -1,6 +1,5 @@
 $('.delete-folder-btn-folder').on('click', function(){
-
-    console.log("СУКА БЛЯТЬ")
+    
 
     let id = localStorage.getItem('id-folder');
 
@@ -10,14 +9,12 @@ $('.delete-folder-btn-folder').on('click', function(){
 
     // let input = document.querySelector('.count')
     // input.value = $('.note-item').length;
-
-    console.log(noteId)
+    
 
     let titleNote = ""
     let textNote = ""
     let editTitleNote = ""
     let editTextNote = ""
-
 
     if(url.includes('/Note/AddPage')) {
         titleNote = document.querySelector('.n-title').value;

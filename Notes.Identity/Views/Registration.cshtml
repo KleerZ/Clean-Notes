@@ -16,6 +16,10 @@
         <div class="form">
             <p class="title">Регистрация</p>
             <span class="title2">Создайте аккаунт и начните продуктивную работу!</span>
+            
+            <div class="validation" asp-validation-summary="ModelOnly"></div> 
+            @* ошибка регистрации *@
+            
             <form asp-controller="Auth" asp-action="Register" method="post">
                 <div class="input-div">
                     <div class="i" id="login-div">

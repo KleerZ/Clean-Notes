@@ -22,7 +22,7 @@ public class NoteController : BaseController
     {
         var folderList = await _folderService.GetList(UserId);
         
-        var vm = new CombineNoteVmFolderListVm()
+        var vm = new CombineNoteVmFolderListVm
         {
             NoteVm = new NoteVM(),
             FolderListVm = folderList
@@ -40,7 +40,7 @@ public class NoteController : BaseController
         if (!Request.IsAjaxRequest())
             return RedirectToAction("Index", "Home", new {id = id});
 
-        var vm = new CombineNoteVmFolderListVm()
+        var vm = new CombineNoteVmFolderListVm
         {
             NoteVm = note,
             FolderListVm = folderList
@@ -58,18 +58,14 @@ public class NoteController : BaseController
     }
 
     [HttpPost]
-    public async Task<IActionResult> Delete(Guid id)
-    {
+    public async Task Delete(Guid id) =>
         await _noteService.Delete(id, UserId);
-        
-        return RedirectToAction("GetList", "Note");
-    }
 
     [HttpPost]
     public async Task<IActionResult> Edit(CombineNoteVmFolderListVm vm)
     {
         await _noteService.Update(vm, UserId);
-
+        
         return RedirectToAction("Index", "Home");
     }
     
@@ -80,8 +76,8 @@ public class NoteController : BaseController
 
         return PartialView("~/Views/Notes/_NotesPartial.cshtml", vm);
     }
-
-    [HttpPost]
+    
+    [HttpGet]
     public async Task<IActionResult> GetNotesInFolder(Guid id)
     {
         var vm = await _noteService.GetNotesInFolder(id, UserId);

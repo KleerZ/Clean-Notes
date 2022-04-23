@@ -21,8 +21,8 @@ function validFolder(){
 
 
 $(document).ready(function() {
-    let modalWindow = document.querySelector('.create-folder-background')
-    let modal = document.querySelector('.create-folder')
+    var modalWindow = document.querySelector('.create-folder-background')
+    var modal = document.querySelector('.create-folder')
 
     $('.create-btn-folder').click(function(e) {
         if ($('.folder-input').val() == '') {

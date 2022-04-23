@@ -5,10 +5,11 @@
 
 <link rel="stylesheet" href=@Url.Content("~/css/allnotes/edit-note.css")>
 
-<form class="edit-container" asp-controller="Note">
-    @using (Html.AjaxBeginForm("Edit", "Note",new AjaxOptions
+@using (Html.AjaxBeginForm("Edit", "Note",new AjaxOptions
     {
-        OnSuccess = "OnSuccess",
+        OnSuccess = "OnSuccess()",
+        InsertionMode = InsertionMode.Replace,
+        LoadingElementDuration = 100
     }, new { vm = Model})){
         <div class="edit-container">
             <div class="header">
@@ -29,7 +30,7 @@
                 </select>
 
                 <div class="func-note">
-                    <button asp-controller="Note" asp-action="Edit" type="submit" class="save-btn">
+                    <button type="submit" class="save-btn">
                         Сохранить
                     </button>
                     <button class="download-btn">
@@ -46,18 +47,18 @@
             </div>
         </div>
     }
-</form>
 
 <script >
-// contextMenu();
-</script>
-
-<script >
-window.onload = function(){
-    HELPMEJS();
-}
-</script>
-
-<script>
-HELPMEJS();
+    function OnSuccess() {
+        if(localStorage.getItem('folderurl').split('/')[5] != null){
+            $('#target').load('@Url.Action("GetNotesInFolder", "Note")' + '/' + localStorage.getItem('folderurl').split('/')[5]);
+        }
+        else {
+            $('#target').load('@Url.Action("GetList", "Note")');
+        }
+    }
+   
+    
+    
+    
 </script>

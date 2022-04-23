@@ -6,7 +6,8 @@
     <title>@ViewData["Title"]</title>
     @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/> *@
     <link rel="stylesheet" href="~/css/normalize.css">
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/> *@
+    <script src="~/lib/jquery/dist/jquery.js"></script>
 </head>
 <body>
 
@@ -21,9 +22,6 @@
 @* </div> *@
 
 
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/jquery/dist/jquery.js"></script>
-
 
 <script src="~/js/allnotes/anime.min.js"></script>
 <script src="~/js/allnotes/dropdown.js"></script>
@@ -37,19 +35,17 @@
 <script src="~/js/allnotes/deleteSelectedNote.js"></script>
 <script src="~/js/allnotes/dropdown.js"></script>
 <script src="~/js/allnotes/folder.js"></script>
-<script src="~/js/allnotes/grid.js"></script>
 <script src="~/js/allnotes/hideWindows.js"></script>
 <script src="~/js/allnotes/hoverbtn.js"></script>
 <script src="~/js/allnotes/sort-page.js"></script>
 <script src="~/js/allnotes/UpdateURLAdd.js"></script>
 <script src="~/js/allnotes/UpdateURL.js"></script>
-<script src="~/js/allnotes/getFolderId.js"></script>
 <script src="~/js/allnotes/renameModalWindow.js"></script>
 <script src="~/js/allnotes/anyValidation.js"></script>
 <script src="~/js/allnotes/notesPartial.js"></script>
+<script src="~/js/allnotes/changeFolderUrl.js"></script>
+<script src="~/js/allnotes/return.js"></script>
 
-
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="~/js/site.js" asp-append-version="true"></script>
 @Html.RenderUnobtrusiveAjaxScript()
