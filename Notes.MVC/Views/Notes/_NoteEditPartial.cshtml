@@ -48,10 +48,13 @@
         </div>
     }
 
+<script src="~/js/allnotes/deleteSelectedFolder.js"></script>
+<script src="~/js/allnotes/AddingFolder.js"></script>
+
 <script >
     function OnSuccess() {
         if(localStorage.getItem('folderurl').split('/')[5] != null){
-            $('#target').load('@Url.Action("GetNotesInFolder", "Note")' + '/' + localStorage.getItem('folderurl').split('/')[5]);
+            $('#target').load('@Url.Action("GetNotesInFolder", "Folder")' + '/' + localStorage.getItem('folderurl').split('/')[5]);
         }
         else {
             $('#target').load('@Url.Action("GetList", "Note")');

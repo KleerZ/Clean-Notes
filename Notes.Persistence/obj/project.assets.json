@@ -959,19 +959,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Vanya\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj",
+      "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Persistence\\Notes.Persistence.csproj",
       "projectName": "Notes.Persistence",
-      "projectPath": "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\CleanNote\\Notes.Persistence\\obj\\",
+      "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Persistence\\Notes.Persistence.csproj",
+      "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Persistence\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -985,8 +985,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj": {
-              "projectPath": "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj"
+            "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj": {
+              "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj"
             }
           }
         }

@@ -29,6 +29,8 @@ $('.delete-folder-btn-folder').on('click', function(){
         editTextNote = document.querySelector('.n-text').value;
     }
 
+    
+
 
     $.ajax({
         url: '/Folder/Delete/' + id,
@@ -55,7 +57,7 @@ $('.delete-folder-btn-folder').on('click', function(){
                 });
 
             }
-            input.value = $('.note-item').length;
+            // input.value = $('.note-item').length;
         }
     });
 });

@@ -7,7 +7,7 @@
 <div class="line-container">
     <div class="title-line">
         <div class="title">
-            @Model.FolderVm.Name
+            @Model?.FolderVm?.Name
             <div class="func">
                 <button class="sort-btn">
                     <svg class="sort-icon" style="width:22px;height:22px" viewBox="0 0 24 24">
@@ -73,6 +73,7 @@
 </div>
 
 <script src="~/js/allnotes/deleteSelectedNote.js"></script>
+<script src="~/js/allnotes/deleteSelectedFolder.js"></script>
 
 
 <script >

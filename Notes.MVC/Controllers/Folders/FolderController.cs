@@ -10,8 +10,7 @@ public class FolderController : BaseController
     private readonly FolderService _folderService;
     private readonly NoteService _noteService;
     
-    public FolderController(FolderService folderService,
-        NoteDbContext dbContext, NoteService noteService)
+    public FolderController(FolderService folderService, NoteService noteService)
     {
         _folderService = folderService;
         _noteService = noteService;
@@ -49,5 +48,13 @@ public class FolderController : BaseController
         var folderList = await _folderService.Rename(vm, UserId);
         
         return PartialView("~/Views/Folders/_FoldersPartial.cshtml", folderList);
+    }
+    
+    [HttpGet]
+    public async Task<IActionResult> GetNotesInFolder(Guid id)
+    {
+        var vm = await _noteService.GetNotesInFolder(id, UserId);
+
+        return PartialView("~/Views/Folders/_FolderNotesPartial.cshtml", vm);
     }
 }

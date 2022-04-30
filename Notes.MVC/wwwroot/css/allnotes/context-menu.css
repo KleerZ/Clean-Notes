@@ -11,7 +11,7 @@
 .context-menu-open {
     display: none;
     position: fixed;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 99999;
     top: 0;
     left: 0;
@@ -19,7 +19,8 @@
     background-color: white;
     border-radius: 7px;
     padding: 4px;
-    height: 45px;
+    height: auto;
+    max-height: 120px;
 }
 .context-menu-open ul {
     display: flex;

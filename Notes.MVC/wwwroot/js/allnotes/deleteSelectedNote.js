@@ -1,25 +1,28 @@
 $('.delete-note-btn').on('click', function(){
-    let id = localStorage.getItem('id');
-    let url = localStorage.getItem('url2');
+    var id = localStorage.getItem('id');
+    var url = localStorage.getItem('url2');
 
-    // let input = document.querySelector('.count')
-    // input.value = $('.note-item').length;
+    var input = document.querySelector('.count')
+    input.value = $('.note-item').length;
     
     console.log("fef")
 
     $.ajax({
-        url: '/Note/Delete/' + id,
+        url: '/Note/ToTrash/' + id,
         type: 'POST',
-        success: function (result) {
-            $('#target').html(result);
+        success: function () {
+            // $('#target').html(result);
             
             //перейти по ссылке
-            window.location.href = "/Home/Index";
-            
+            $('#target').load("/Note/GetList/");
+            console.log("fef")
 
-            input.value = $('.note-item').length;
+            document.querySelector('.count').value = $('.note-item').length;
         }
     });
-
+    
+    // $('#target').load("/Note/GetList/");
     console.log(id);
+    document.querySelector('.count').value = $('.note-item').length;
+    $('#target').load("/Note/GetList/");
 });

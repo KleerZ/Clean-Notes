@@ -1,12 +1,13 @@
 using AspNetCore.Unobtrusive.Ajax;
 using Microsoft.AspNetCore.Mvc;
+using Notes.Application.CommandsQueries.Notes.Commands.ToTrash;
 using Notes.Application.Notes.Queries.GetNote;
 using Notes.MVC.Models;
 using Notes.MVC.Services;
 
 namespace Notes.MVC.Controllers.Notes;
 
-public class NoteController : BaseController
+public class NoteController: BaseController
 {
     private readonly NoteService _noteService;
     private readonly FolderService _folderService;
@@ -56,10 +57,28 @@ public class NoteController : BaseController
         
         return RedirectToAction("Index", "Home");
     }
+    
+    [HttpPost]
+    public async Task<IActionResult> Delete(Guid id)
+    {
+        await _noteService.Delete(id, UserId);
+        
+        var notes = (await _noteService.GetDeletedList(UserId))
+            .Where(n => n.isDeleted == true)
+            .ToList();
+
+        return PartialView("~/Views/Trash/_TrashPartial.cshtml", notes);
+    }
 
     [HttpPost]
-    public async Task Delete(Guid id) =>
-        await _noteService.Delete(id, UserId);
+    public async Task<IActionResult> ToTrash(Guid id)
+    {
+        await _noteService.NoteToTrash(id);
+        
+        var vm = await _noteService.GetList(UserId);
+        
+        return PartialView("~/Views/Notes/_NotesPartial.cshtml", vm);
+    }
 
     [HttpPost]
     public async Task<IActionResult> Edit(CombineNoteVmFolderListVm vm)
@@ -75,13 +94,5 @@ public class NoteController : BaseController
         var vm = await _noteService.GetList(UserId);
 
         return PartialView("~/Views/Notes/_NotesPartial.cshtml", vm);
-    }
-    
-    [HttpGet]
-    public async Task<IActionResult> GetNotesInFolder(Guid id)
-    {
-        var vm = await _noteService.GetNotesInFolder(id, UserId);
-
-        return PartialView("~/Views/Folders/_FolderNotesPartial.cshtml", vm);
     }
 }

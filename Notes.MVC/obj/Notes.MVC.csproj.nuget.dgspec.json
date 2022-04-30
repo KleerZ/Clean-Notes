@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\CleanNote\\Notes.MVC\\Notes.MVC.csproj": {}
+    "D:\\Projects\\Clean-Notes\\Notes.MVC\\Notes.MVC.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj": {
+    "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj",
+        "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj",
         "projectName": "Notes.Application",
-        "projectPath": "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CleanNote\\Notes.Application\\obj\\",
+        "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj",
+        "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj": {
-                "projectPath": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj"
+              "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj"
               }
             }
           }
@@ -80,17 +80,17 @@
         }
       }
     },
-    "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj": {
+    "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj",
         "projectName": "Notes.Domain",
-        "projectPath": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CleanNote\\Notes.Domain\\obj\\",
+        "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj",
+        "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -134,17 +134,17 @@
         }
       }
     },
-    "D:\\Projects\\CleanNote\\Notes.Identity\\Notes.Identity.csproj": {
+    "D:\\Projects\\Clean-Notes\\Notes.Identity\\Notes.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Identity\\Notes.Identity.csproj",
+        "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Identity\\Notes.Identity.csproj",
         "projectName": "Notes.Identity",
-        "projectPath": "D:\\Projects\\CleanNote\\Notes.Identity\\Notes.Identity.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CleanNote\\Notes.Identity\\obj\\",
+        "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Identity\\Notes.Identity.csproj",
+        "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Identity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -217,17 +217,17 @@
         }
       }
     },
-    "D:\\Projects\\CleanNote\\Notes.MVC\\Notes.MVC.csproj": {
+    "D:\\Projects\\Clean-Notes\\Notes.MVC\\Notes.MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.MVC\\Notes.MVC.csproj",
+        "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.MVC\\Notes.MVC.csproj",
         "projectName": "Notes.MVC",
-        "projectPath": "D:\\Projects\\CleanNote\\Notes.MVC\\Notes.MVC.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CleanNote\\Notes.MVC\\obj\\",
+        "projectPath": "D:\\Projects\\Clean-Notes\\Notes.MVC\\Notes.MVC.csproj",
+        "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Clean-Notes\\Notes.MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -241,17 +241,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj": {
-                "projectPath": "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj"
+              "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj": {
+                "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj"
               },
-              "D:\\Projects\\CleanNote\\Notes.Identity\\Notes.Identity.csproj": {
-                "projectPath": "D:\\Projects\\CleanNote\\Notes.Identity\\Notes.Identity.csproj"
+              "D:\\Projects\\Clean-Notes\\Notes.Identity\\Notes.Identity.csproj": {
+                "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Identity\\Notes.Identity.csproj"
               },
-              "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj": {
-                "projectPath": "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj"
+              "D:\\Projects\\Clean-Notes\\Notes.Persistence\\Notes.Persistence.csproj": {
+                "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Persistence\\Notes.Persistence.csproj"
               },
-              "D:\\Projects\\CleanNote\\Notes.Services\\Notes.Services.csproj": {
-                "projectPath": "D:\\Projects\\CleanNote\\Notes.Services\\Notes.Services.csproj"
+              "D:\\Projects\\Clean-Notes\\Notes.Services\\Notes.Services.csproj": {
+                "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Services\\Notes.Services.csproj"
               }
             }
           }
@@ -335,17 +335,17 @@
         }
       }
     },
-    "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj": {
+    "D:\\Projects\\Clean-Notes\\Notes.Persistence\\Notes.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj",
+        "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Persistence\\Notes.Persistence.csproj",
         "projectName": "Notes.Persistence",
-        "projectPath": "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CleanNote\\Notes.Persistence\\obj\\",
+        "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Persistence\\Notes.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -359,8 +359,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj": {
-                "projectPath": "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj"
+              "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj": {
+                "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj"
               }
             }
           }
@@ -405,17 +405,17 @@
         }
       }
     },
-    "D:\\Projects\\CleanNote\\Notes.Services\\Notes.Services.csproj": {
+    "D:\\Projects\\Clean-Notes\\Notes.Services\\Notes.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Services\\Notes.Services.csproj",
+        "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Services\\Notes.Services.csproj",
         "projectName": "Notes.Services",
-        "projectPath": "D:\\Projects\\CleanNote\\Notes.Services\\Notes.Services.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\CleanNote\\Notes.Services\\obj\\",
+        "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Services\\Notes.Services.csproj",
+        "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -429,11 +429,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj": {
-                "projectPath": "D:\\Projects\\CleanNote\\Notes.Application\\Notes.Application.csproj"
+              "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj": {
+                "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj"
               },
-              "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj": {
-                "projectPath": "D:\\Projects\\CleanNote\\Notes.Persistence\\Notes.Persistence.csproj"
+              "D:\\Projects\\Clean-Notes\\Notes.Persistence\\Notes.Persistence.csproj": {
+                "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Persistence\\Notes.Persistence.csproj"
               }
             }
           }
@@ -462,7 +462,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

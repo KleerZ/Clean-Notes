@@ -11,11 +11,31 @@ $('.rename-folder').on('click', function(){
     setTimeout(function(){
         modal.style.opacity = 1;
         modal.style.visibility = "visible";
+        hide()
     }, 1);
 });
 
 
 //Прятать эту хуйню
+
+function hide(){
+    document.addEventListener('click', function(e) {
+        if (e.target.id != 'rename-window-id' && e.target.id != 'rename-btn-id' && e.target.class != "rename-folder" && e.target.id != 'rename-ul-id' && e.target.id != 'rename-folder-id' && e.target.id != 'folder-name-text' && e.target.id != 'folder-window-title') {
+            var modalWindow = document.querySelector('.rename-folder-background')
+            var text = document.getElementById('folder-name-text');
+
+            modalWindow.style.opacity = "0";
+            modalWindow.style.visibility = "visible";
+
+            document.getElementById('folder-name-text').value = "";
+
+            setTimeout(function(){
+                modalWindow.style.display = "none";
+            }, 200);
+        }
+    });
+    
+}
 
 
 $('.rename-folder-background').onclick = function(event){
@@ -35,6 +55,7 @@ $('.rename-folder-background').onclick = function(event){
 }
 
 $('.rename-folder-btn').on('click', function(){
+    var text = document.getElementById('folder-name-text');
     if (text.value == ""){
         alert("Введите название папки");
         return false;
@@ -52,3 +73,5 @@ $('.rename-folder-btn').on('click', function(){
         }, 200);
     }
 });
+
+

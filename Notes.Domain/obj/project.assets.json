@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\Vanya\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj",
+      "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj",
       "projectName": "Notes.Domain",
-      "projectPath": "D:\\Projects\\CleanNote\\Notes.Domain\\Notes.Domain.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\CleanNote\\Notes.Domain\\obj\\",
+      "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj",
+      "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

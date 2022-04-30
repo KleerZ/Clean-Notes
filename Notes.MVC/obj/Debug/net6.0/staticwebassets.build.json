@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "xorO7zH1sMtSLEUR+1qE6F2ARC49TRAiMIXPxyoiJX4=",
+  "Hash": "DmrSvvAkNRDZv+5h8SLIFv0Dy2Ka+fnWjJz58RkJVaQ=",
   "Source": "Notes.MVC",
   "BasePath": "_content/Notes.MVC",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\Notes.Identity.csproj",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\Notes.Identity.csproj",
       "Version": 2,
       "Source": "Notes.Identity",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,24 +22,24 @@
     {
       "Name": "Notes.Identity\\wwwroot",
       "Source": "Notes.Identity",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "Pattern": "**"
     },
     {
       "Name": "Notes.MVC\\wwwroot",
       "Source": "Notes.MVC",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Notes.Identity.bundle.scp.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Notes.Identity.bundle.scp.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "Notes.Identity.bundle.scp.css",
       "AssetKind": "All",
@@ -50,13 +50,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\CleanNote\\Notes.Identity\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Notes.Identity.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Projects\\Clean-Notes\\Notes.Identity\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Notes.Identity.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\css\\login.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\css\\login.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "css/login.css",
       "AssetKind": "All",
@@ -70,10 +70,10 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\css\\reg.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\css\\reg.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "css/reg.css",
       "AssetKind": "All",
@@ -87,10 +87,10 @@
       "OriginalItemSpec": "wwwroot\\css\\reg.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\favicon.ico",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -104,10 +104,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\js\\animateValidError.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\js\\animateValidError.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "js/animateValidError.js",
       "AssetKind": "All",
@@ -121,10 +121,10 @@
       "OriginalItemSpec": "wwwroot\\js\\animateValidError.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\js\\anime.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\js\\anime.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "js/anime.js",
       "AssetKind": "All",
@@ -138,10 +138,10 @@
       "OriginalItemSpec": "wwwroot\\js\\anime.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\js\\site.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -155,10 +155,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -172,10 +172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -189,10 +189,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -223,10 +223,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -240,10 +240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -257,10 +257,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -274,10 +274,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -291,10 +291,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -308,10 +308,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -325,10 +325,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -342,10 +342,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -376,10 +376,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -393,10 +393,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -410,10 +410,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -427,10 +427,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -444,10 +444,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -461,10 +461,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -478,10 +478,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -495,10 +495,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -512,10 +512,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -529,10 +529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -546,10 +546,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -580,10 +580,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -597,10 +597,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -614,10 +614,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -631,10 +631,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -648,10 +648,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -665,10 +665,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -699,10 +699,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -716,10 +716,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -733,10 +733,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -750,10 +750,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -767,10 +767,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -784,10 +784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -801,10 +801,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -818,10 +818,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -835,10 +835,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -852,10 +852,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -869,10 +869,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -886,10 +886,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -903,10 +903,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -937,10 +937,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -954,10 +954,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -971,10 +971,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -988,10 +988,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1022,10 +1022,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1039,10 +1039,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1056,10 +1056,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1073,10 +1073,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1090,10 +1090,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1107,10 +1107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1124,10 +1124,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\pictures\\login-bkg.svg",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\pictures\\login-bkg.svg",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "pictures/login-bkg.svg",
       "AssetKind": "All",
@@ -1141,10 +1141,10 @@
       "OriginalItemSpec": "wwwroot\\pictures\\login-bkg.svg"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\pictures\\login.png",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\pictures\\login.png",
       "SourceId": "Notes.Identity",
       "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.Identity\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.Identity\\wwwroot\\",
       "BasePath": "_content/Notes.Identity",
       "RelativePath": "pictures/login.png",
       "AssetKind": "All",
@@ -1158,10 +1158,10 @@
       "OriginalItemSpec": "wwwroot\\pictures\\login.png"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Notes.MVC.styles.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Notes.MVC.styles.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "Notes.MVC.styles.css",
       "AssetKind": "All",
@@ -1172,13 +1172,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Projects\\CleanNote\\Notes.MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Notes.MVC.styles.css"
+      "OriginalItemSpec": "D:\\Projects\\Clean-Notes\\Notes.MVC\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Notes.MVC.styles.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\allnotes\\allnotes.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\allnotes\\allnotes.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/allnotes/allnotes.css",
       "AssetKind": "All",
@@ -1192,10 +1192,10 @@
       "OriginalItemSpec": "wwwroot\\css\\allnotes\\allnotes.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\allnotes\\context-menu.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\allnotes\\context-menu.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/allnotes/context-menu.css",
       "AssetKind": "All",
@@ -1209,10 +1209,10 @@
       "OriginalItemSpec": "wwwroot\\css\\allnotes\\context-menu.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\allnotes\\edit-note.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\allnotes\\edit-note.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/allnotes/edit-note.css",
       "AssetKind": "All",
@@ -1226,10 +1226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\allnotes\\edit-note.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\allnotes\\no-notes.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\allnotes\\no-notes.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/allnotes/no-notes.css",
       "AssetKind": "All",
@@ -1243,10 +1243,10 @@
       "OriginalItemSpec": "wwwroot\\css\\allnotes\\no-notes.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\allnotes\\no-selected.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\allnotes\\no-selected.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/allnotes/no-selected.css",
       "AssetKind": "All",
@@ -1260,10 +1260,10 @@
       "OriginalItemSpec": "wwwroot\\css\\allnotes\\no-selected.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\allnotes\\rename-folder.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\allnotes\\rename-folder.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/allnotes/rename-folder.css",
       "AssetKind": "All",
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\css\\allnotes\\rename-folder.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\header.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\header.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/header.css",
       "AssetKind": "All",
@@ -1294,10 +1294,10 @@
       "OriginalItemSpec": "wwwroot\\css\\header.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\index\\index.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\index\\index.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/index/index.css",
       "AssetKind": "All",
@@ -1311,10 +1311,10 @@
       "OriginalItemSpec": "wwwroot\\css\\index\\index.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\index\\panel.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\index\\panel.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/index/panel.css",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\css\\index\\panel.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\normalize.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\normalize.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/normalize.css",
       "AssetKind": "All",
@@ -1345,10 +1345,10 @@
       "OriginalItemSpec": "wwwroot\\css\\normalize.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\site.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1362,10 +1362,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\favicon.ico",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1379,10 +1379,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\AddingFolder.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\AddingFolder.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/AddingFolder.js",
       "AssetKind": "All",
@@ -1396,10 +1396,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\AddingFolder.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\addnote.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\addnote.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/addnote.js",
       "AssetKind": "All",
@@ -1413,10 +1413,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\addnote.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\anime.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\anime.min.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/anime.min.js",
       "AssetKind": "All",
@@ -1430,10 +1430,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\anime.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\anyValidation.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\anyValidation.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/anyValidation.js",
       "AssetKind": "All",
@@ -1447,10 +1447,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\anyValidation.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\changeFolderUrl.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\changeFolderUrl.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/changeFolderUrl.js",
       "AssetKind": "All",
@@ -1464,10 +1464,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\changeFolderUrl.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\checkFields.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\checkFields.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/checkFields.js",
       "AssetKind": "All",
@@ -1481,10 +1481,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\checkFields.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\contextMenu.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\contextMenu.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/contextMenu.js",
       "AssetKind": "All",
@@ -1498,10 +1498,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\contextMenu.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\contextMenuFolder.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\contextMenuFolder.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/contextMenuFolder.js",
       "AssetKind": "All",
@@ -1515,10 +1515,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\contextMenuFolder.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\counter.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\counter.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/counter.js",
       "AssetKind": "All",
@@ -1532,10 +1532,27 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\counter.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\deleteSelectedFolder.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\deleteInTrash.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/deleteInTrash.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\deleteInTrash.js"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\deleteSelectedFolder.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/deleteSelectedFolder.js",
       "AssetKind": "All",
@@ -1549,10 +1566,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\deleteSelectedFolder.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\deleteSelectedNote.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\deleteSelectedNote.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/deleteSelectedNote.js",
       "AssetKind": "All",
@@ -1566,10 +1583,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\deleteSelectedNote.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\dropdown.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\dropdown.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/dropdown.js",
       "AssetKind": "All",
@@ -1583,10 +1600,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\dropdown.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\folder.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\folder.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/folder.js",
       "AssetKind": "All",
@@ -1600,10 +1617,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\folder.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\getFolderId.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\getFolderId.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/getFolderId.js",
       "AssetKind": "All",
@@ -1617,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\getFolderId.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\grid.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\grid.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/grid.js",
       "AssetKind": "All",
@@ -1634,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\grid.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\hideWindows.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\hideWindows.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/hideWindows.js",
       "AssetKind": "All",
@@ -1651,10 +1668,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\hideWindows.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\hoverbtn.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\hoverbtn.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/hoverbtn.js",
       "AssetKind": "All",
@@ -1668,10 +1685,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\hoverbtn.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\notesPartial.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\notesPartial.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/notesPartial.js",
       "AssetKind": "All",
@@ -1685,10 +1702,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\notesPartial.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\renameModalWindow.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\renameModalWindow.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/renameModalWindow.js",
       "AssetKind": "All",
@@ -1702,10 +1719,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\renameModalWindow.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\return.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\return.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/return.js",
       "AssetKind": "All",
@@ -1719,10 +1736,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\return.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\sort-page.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\sort-page.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/sort-page.js",
       "AssetKind": "All",
@@ -1736,10 +1753,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\sort-page.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\UpdateURL.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\UpdateURL.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/UpdateURL.js",
       "AssetKind": "All",
@@ -1753,10 +1770,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\UpdateURL.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\allnotes\\UpdateURLAdd.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\UpdateURLAdd.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/allnotes/UpdateURLAdd.js",
       "AssetKind": "All",
@@ -1770,10 +1787,10 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\UpdateURLAdd.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\anime.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\anime.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/anime.js",
       "AssetKind": "All",
@@ -1787,10 +1804,10 @@
       "OriginalItemSpec": "wwwroot\\js\\anime.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\granim.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\granim.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/granim.js",
       "AssetKind": "All",
@@ -1804,10 +1821,10 @@
       "OriginalItemSpec": "wwwroot\\js\\granim.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\site.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1821,10 +1838,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1838,10 +1855,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1855,10 +1872,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1872,10 +1889,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1889,10 +1906,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1906,10 +1923,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1923,10 +1940,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1940,10 +1957,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1957,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1974,10 +1991,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1991,10 +2008,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2008,10 +2025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2025,10 +2042,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2042,10 +2059,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2059,10 +2076,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2076,10 +2093,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2093,10 +2110,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2110,10 +2127,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2127,10 +2144,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2144,10 +2161,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2161,10 +2178,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2178,10 +2195,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2195,10 +2212,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2212,10 +2229,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2229,10 +2246,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2246,10 +2263,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2263,10 +2280,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2280,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2297,10 +2314,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2314,10 +2331,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2331,10 +2348,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2348,10 +2365,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2365,10 +2382,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2382,10 +2399,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2399,10 +2416,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2416,10 +2433,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2433,10 +2450,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2450,10 +2467,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2467,10 +2484,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2484,10 +2501,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2501,10 +2518,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2518,10 +2535,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2535,10 +2552,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2552,10 +2569,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2569,10 +2586,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2586,10 +2603,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2603,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2620,10 +2637,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2637,10 +2654,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2654,10 +2671,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2671,10 +2688,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2688,10 +2705,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2705,10 +2722,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2722,10 +2739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2739,10 +2756,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2756,10 +2773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2773,10 +2790,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2790,10 +2807,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\svg\\DonGon-logo.svg",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\svg\\DonGon-logo.svg",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "svg/DonGon-logo.svg",
       "AssetKind": "All",
@@ -2807,10 +2824,10 @@
       "OriginalItemSpec": "wwwroot\\svg\\DonGon-logo.svg"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\svg\\magnify.svg",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\svg\\magnify.svg",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "svg/magnify.svg",
       "AssetKind": "All",
@@ -2824,10 +2841,10 @@
       "OriginalItemSpec": "wwwroot\\svg\\magnify.svg"
     },
     {
-      "Identity": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\svg\\plus.svg",
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\svg\\plus.svg",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\CleanNote\\Notes.MVC\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
       "BasePath": "_content/Notes.MVC",
       "RelativePath": "svg/plus.svg",
       "AssetKind": "All",

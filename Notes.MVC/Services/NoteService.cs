@@ -1,9 +1,8 @@
 using MediatR;
-using Microsoft.Extensions.Caching.Memory;
-using Notes.Application.CommandsQueries.Folders.Queries.GetFolder;
 using Notes.Application.CommandsQueries.Notes.Commands.CreateNote;
+using Notes.Application.CommandsQueries.Notes.Commands.ToTrash;
+using Notes.Application.CommandsQueries.Notes.Commands.UpdateNote;
 using Notes.Application.Notes.Commands.DeleteNote;
-using Notes.Application.Notes.Commands.UpdateNote;
 using Notes.Application.Notes.Queries.GetNote;
 using Notes.Application.Notes.Queries.GetNoteList;
 using Notes.MVC.Models;
@@ -44,6 +43,17 @@ public class NoteService
 
         await _mediator.Send(query);
     }
+
+    public async Task ToTrash(Guid id, Guid UserId)
+    {
+        var query = new UpdateNoteCommand
+        {
+            Id = id,
+            isDeleted = true
+        };
+
+        await _mediator.Send(query);
+    }
     
     public async Task Update(CombineNoteVmFolderListVm vm, Guid UserId)
     {
@@ -66,8 +76,22 @@ public class NoteService
             UserId = UserId
         };
 
-        var vm = (await _mediator.Send(query))
-            .Notes
+        var vm = (await _mediator.Send(query)).Notes
+            .Where(n => n.isDeleted == false)
+            .OrderByDescending(p => p.EditDate).ToList();
+
+        return vm;
+    }
+
+    public async Task<List<NoteLookupDto>> GetDeletedList(Guid UserId)
+    {
+        var query = new GetNoteListQuery()
+        {
+            UserId = UserId
+        };
+
+        var vm = (await _mediator.Send(query)).Notes
+            .Where(n => n.isDeleted == true)
             .OrderByDescending(p => p.EditDate).ToList();
 
         return vm;
@@ -102,5 +126,16 @@ public class NoteService
         };
 
         return vm;
+    }
+
+    public async Task NoteToTrash(Guid id)
+    {
+        var query = new ToTrashCommand
+        {
+            Id = id,
+            IsDeleted = true
+        };
+
+        await _mediator.Send(query);
     }
 }

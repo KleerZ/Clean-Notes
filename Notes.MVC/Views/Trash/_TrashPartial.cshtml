@@ -1,5 +1,4 @@
 @using IdentityServer4.Extensions
-@using Notes.Persistence
 @model List<NoteLookupDto>?
 
 <link rel="stylesheet" href=@Url.Content("~/css/allnotes/allnotes.css")>
@@ -8,7 +7,7 @@
 <div class="line-container">
     <div class="title-line">
         <div class="title">
-            Все заметки
+            Корзина заметок
             <div class="func">
                 <button class="sort-btn">
                     <svg class="sort-icon" style="width:22px;height:22px" viewBox="0 0 24 24">
@@ -34,14 +33,14 @@
         {
             foreach (var note in Model)
             {
-                using (Html.AjaxBeginForm("EditPage", "Note", new {id = note.Id},
+                using (Html.AjaxBeginForm("EditPage", "Note", new { id = note.Id },
                     new AjaxOptions()
                     {
                         HttpMethod = "get",
                         UpdateTargetId = "edit",
                         InsertionMode = InsertionMode.Replace,
                         OnSuccess = "UpdateURL(this)"
-                    }, new {@class = "note-item-form"}))
+                    }, new { @class = "note-item-form" }))
                 {
                     <button type="submit" class="item">
                         <div class="note-item">
@@ -64,21 +63,28 @@
 
 <div class="context-menu-open">
     <ul>
-        <li class="delete-note-btn">
+        <li >
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M13,3A9,9 0 0,0 4,12H1L4.89,15.89L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3Z" />
+            </svg>
+            Восстановить
+        </li>
+
+        <li class="delete-note-trash-btn">
             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z"/>
             </svg>
-            Удалить
+            Удалить полностью
         </li>
     </ul>
 </div>
-
-<script src="~/js/allnotes/deleteSelectedNote.js"></script>
 
 <script >
 contextMenu();
 contextMenuFolder();
 </script>
+
+<script src="~/js/allnotes/deleteInTrash.js"></script>
 
 <script >
 function search() {
@@ -125,7 +131,4 @@ function search() {
         }
     }
 }
-
-
-document.querySelector('.count').value = $('.note-item').length;
 </script>
