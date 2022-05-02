@@ -12,7 +12,7 @@
                 <span class="note-title">Добавление</span>
             </div>
             <input asp-for="FolderListVm.Folders" type="hidden" value="@Model?.FolderListVm?.Folders">
-            
+
             <select asp-for="NoteVm.Folder" class="folder-drop">
                 <option class="not-add" value="@Guid.Empty">Не добавлять в папку</option>
 
@@ -28,13 +28,15 @@
                 </button>
             </div>
         </div>
-        
+
         <div class="text-container">
-            <input maxlength="100" type="text" asp-for="NoteVm.Title" class="n-title" placeholder="Введите заголовок" >
+            <input maxlength="100" type="text" asp-for="NoteVm.Title" class="n-title" placeholder="Введите заголовок">
             <textarea asp-for="NoteVm.Text" class="n-text" cols="20" rows="10" placeholder="Введите текст"></textarea>
         </div>
     </div>
 </form>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
 
 <script >
 $('.save-btn').click(function(e) {
@@ -44,5 +46,3 @@ $('.save-btn').click(function(e) {
     }
 });
 </script>
-
-

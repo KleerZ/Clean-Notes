@@ -10,11 +10,11 @@
         "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj",
         "projectName": "Notes.Application",
         "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj",
-        "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,11 +86,11 @@
         "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj",
         "projectName": "Notes.Domain",
         "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj",
-        "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
         "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

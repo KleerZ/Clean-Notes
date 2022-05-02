@@ -725,7 +725,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vanya\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -733,11 +733,11 @@
       "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj",
       "projectName": "Notes.Application",
       "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj",
-      "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

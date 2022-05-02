@@ -55,7 +55,32 @@ $('.rename-folder-background').onclick = function(event){
 }
 
 $('.rename-folder-btn').on('click', function(){
+    var url = window.location.href;
+    
+    var titleNote = ""
+    var textNote = ""
+    var editTitleNote = ""
+    var editTextNote = ""
+
+    var noteId = url.split('/')[5];
+    
+    
+    if(url.includes('/Note/AddPage')) {
+        titleNote = document.querySelector('.n-title').value;
+        textNote = document.querySelector('.n-text').value;
+    }
+    if (url.includes('/Note/EditPage/')) {
+        editTitleNote = document.querySelector('.n-title').value;
+        editTextNote = document.querySelector('.n-text').value;
+    }
+    if (url.includes('/Home/Index/')) {
+        editTitleNote = document.querySelector('.n-title').value;
+        editTextNote = document.querySelector('.n-text').value;
+    }
+    
+    
     var text = document.getElementById('folder-name-text');
+    
     if (text.value == ""){
         alert("Введите название папки");
         return false;
@@ -70,6 +95,27 @@ $('.rename-folder-btn').on('click', function(){
         setTimeout(function(){
             modalWindow.style.display = "none";
             text.value = "";
+
+            if (url.includes('/Note/EditPage/')) {
+                $('#edit').load("/Note/EditPage/" + noteId, function(){
+                    document.querySelector('.n-title').value = editTitleNote;
+                    document.querySelector('.n-text').value = editTextNote;
+                });
+            }
+            if (url.includes('/Home/Index/')) {
+                $('#edit').load("/Note/EditPage/" + noteId, function () {
+                    document.querySelector('.n-title').value = editTitleNote;
+                    document.querySelector('.n-text').value = editTextNote;
+                });
+            }
+            else if(url.includes('/Note/AddPage')){
+                $('#edit').load("/Note/AddPage", function(){
+                    document.querySelector('.n-title').value = titleNote;
+                    document.querySelector('.n-text').value = textNote;
+                });
+            }
+            
+            
         }, 200);
     }
 });

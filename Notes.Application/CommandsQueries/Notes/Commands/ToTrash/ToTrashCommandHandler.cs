@@ -9,7 +9,6 @@ namespace Notes.Application.CommandsQueries.Notes.Commands.ToTrash;
 public class ToTrashCommandHandler: IRequestHandler<ToTrashCommand>
 {
     private readonly INotesDbContext _dbContext;
-
     public ToTrashCommandHandler(INotesDbContext context) =>
         _dbContext = context;
 

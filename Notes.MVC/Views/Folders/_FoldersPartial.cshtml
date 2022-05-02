@@ -13,7 +13,7 @@
 }
 @foreach (var folder in Model.Folders)
 {
-    using (Html.AjaxBeginForm("GetNotesInFolder", "Note", new{id = folder.Id}, new AjaxOptions()
+    using (Html.AjaxBeginForm("GetNotesInFolder", "Folder", new{id = folder.Id}, new AjaxOptions()
     {
         UpdateTargetId = "target",
         HttpMethod = "get",

@@ -39,9 +39,9 @@ public class Configuration
                 AllowedGrantTypes = GrantTypes.Code,
                 RequireClientSecret = false,
                 RequirePkce = true,
-                RedirectUris = {"https://localhost:44339/signin-oidc"},
-                AllowedCorsOrigins = {"https://localhost:44339"},
-                PostLogoutRedirectUris = {"https://localhost:44339/signout-oidc"},
+                RedirectUris = {"https://localhost:7118/signin-oidc"},
+                AllowedCorsOrigins = {"https://localhost:7118"},
+                PostLogoutRedirectUris = {"https://localhost:7118/signout-oidc"},
                 AllowedScopes =
                 {
                     IdentityServerConstants.StandardScopes.OpenId,

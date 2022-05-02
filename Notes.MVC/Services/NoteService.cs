@@ -48,8 +48,7 @@ public class NoteService
     {
         var query = new UpdateNoteCommand
         {
-            Id = id,
-            isDeleted = true
+            Id = id
         };
 
         await _mediator.Send(query);
@@ -132,8 +131,7 @@ public class NoteService
     {
         var query = new ToTrashCommand
         {
-            Id = id,
-            IsDeleted = true
+            Id = id
         };
 
         await _mediator.Send(query);

@@ -885,7 +885,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vanya\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -893,18 +893,16 @@
       "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.Services\\Notes.Services.csproj",
       "projectName": "Notes.Services",
       "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Services\\Notes.Services.csproj",
-      "packagesPath": "C:\\Users\\Vanya\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\Clean-Notes\\Notes.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
