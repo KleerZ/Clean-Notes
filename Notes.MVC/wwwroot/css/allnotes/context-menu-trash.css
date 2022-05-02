@@ -21,7 +21,7 @@
     border-radius: 7px;
     padding: 4px;
     /*height: auto;*/
-    max-height: 150px;
+    height: 90px;
 }
 .context-menu-open ul {
     display: flex;
@@ -40,13 +40,13 @@
     list-style: none;
     padding: 8px 12px;
     margin: 0;
-        font-family: "Google Sans Medium";
+    font-family: "Google Sans Medium";
     border-radius: 7px;
     transition: .1s all linear;
 }
 
 .context-menu-open ul li svg{
-    margin-right: 10px;   
+    margin-right: 10px;
 }
 
 .context-menu-open ul li:last-child {

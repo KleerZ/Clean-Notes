@@ -8,7 +8,7 @@
     align-items: center;
     margin: 20px;
 }
-.context-menu-open {
+.context-menu-open-folder {
     display: none;
     position: fixed;
     justify-content: space-between;
@@ -21,9 +21,9 @@
     border-radius: 7px;
     padding: 4px;
     /*height: auto;*/
-    max-height: 150px;
+    height: 90px;
 }
-.context-menu-open ul {
+.context-menu-open-folder ul {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -31,7 +31,7 @@
     margin: 0;
     height: 100%;
 }
-.context-menu-open ul li {
+.context-menu-open-folder ul li {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -40,29 +40,29 @@
     list-style: none;
     padding: 8px 12px;
     margin: 0;
-        font-family: "Google Sans Medium";
+    font-family: "Google Sans Medium";
     border-radius: 7px;
     transition: .1s all linear;
 }
 
-.context-menu-open ul li svg{
-    margin-right: 10px;   
+.context-menu-open-folder ul li svg{
+    margin-right: 10px;
 }
 
-.context-menu-open ul li:last-child {
+.context-menu-open-folder ul li:last-child {
     border-bottom: 1px solid transparent;
     background: #ff3333;
     color: white;
     transition: .1s all linear;
 }
 
-.context-menu-open ul li:last-child:hover {
+.context-menu-open-folder ul li:last-child:hover {
     background: #de0000;
     color: white;
     transition: .1s all linear;
 }
 
-.context-menu-open ul li:hover {
+.context-menu-open-folder ul li:hover {
     background-color: #6c63ff;
     color: white;
     transition: .1s all linear;
