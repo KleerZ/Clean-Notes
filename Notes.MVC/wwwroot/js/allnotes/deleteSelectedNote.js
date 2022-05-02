@@ -12,9 +12,24 @@ $('.delete-note-btn').on('click', function(){
         type: 'POST',
         success: function () {
             // $('#target').html(result);
+
+
+            var url = window.location.href;
+
+            var folderId = url.split('/')[5];
+
+            if (url.includes('Home/Index')) {
+                $('#target').load("/Note/GetList/");
+            }
+            if (url.includes('/Note/EditPage/')) {
+                $('#target').load("/Note/GetList/");
+            }
+            if (url.includes('/Folder/GetNotesInFolder/')) {
+                $('#target').load("/Folder/GetNotesInFolder/" + folderId);
+            }   
+                
             
-            //перейти по ссылке
-            $('#target').load("/Note/GetList/");
+            
             console.log("fef")
 
             document.querySelector('.count').value = $('.note-item').length;
@@ -24,5 +39,5 @@ $('.delete-note-btn').on('click', function(){
     // $('#target').load("/Note/GetList/");
     console.log(id);
     document.querySelector('.count').value = $('.note-item').length;
-    $('#target').load("/Note/GetList/");
+    // $('#target').load("/Note/GetList/");
 });

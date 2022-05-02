@@ -33,18 +33,18 @@ public class NoteService
         return note;
     }
 
-    public async Task Delete(Guid id, Guid UserId)
+    public async Task Delete(Guid id, Guid userId)
     {
         var query = new DeleteNoteCommand
         {
             Id = id,
-            UserId = UserId
+            UserId = userId
         };
 
         await _mediator.Send(query);
     }
 
-    public async Task ToTrash(Guid id, Guid UserId)
+    public async Task ToTrash(Guid id, Guid userId)
     {
         var query = new UpdateNoteCommand
         {
@@ -54,25 +54,25 @@ public class NoteService
         await _mediator.Send(query);
     }
     
-    public async Task Update(CombineNoteVmFolderListVm vm, Guid UserId)
+    public async Task Update(CombineNoteVmFolderListVm vm, Guid userId)
     {
         var command = new UpdateNoteCommand()
         {
-            Id = vm.NoteVm.Id,
-            Title = vm.NoteVm.Title,
-            Text = vm.NoteVm.Text,
-            UserId = UserId,
+            Id = vm.NoteVm!.Id,
+            Title = vm.NoteVm.Title!,
+            Text = vm.NoteVm.Text!,
+            UserId = userId,
             FolderId = vm.NoteVm.Folder!.Value
         };
 
         await _mediator.Send(command);
     }
 
-    public async Task<List<NoteLookupDto>> GetList(Guid UserId)
+    public async Task<List<NoteLookupDto>> GetList(Guid userId)
     {
         var query = new GetNoteListQuery()
         {
-            UserId = UserId
+            UserId = userId
         };
 
         var vm = (await _mediator.Send(query)).Notes
@@ -82,41 +82,41 @@ public class NoteService
         return vm;
     }
 
-    public async Task<List<NoteLookupDto>> GetDeletedList(Guid UserId)
+    public async Task<List<NoteLookupDto>> GetDeletedList(Guid userId)
     {
         var query = new GetNoteListQuery()
         {
-            UserId = UserId
+            UserId = userId
         };
 
         var vm = (await _mediator.Send(query)).Notes
-            .Where(n => n.isDeleted == true)
+            .Where(n => n.isDeleted)
             .OrderByDescending(p => p.EditDate).ToList();
 
         return vm;
     }
 
-    public async Task Add(CombineNoteVmFolderListVm vm, Guid UserId)
+    public async Task Add(CombineNoteVmFolderListVm vm, Guid userId)
     {
         var query = new CreateNoteCommand
         {
-            UserId = UserId,
-            Text = vm.NoteVm.Text,
-            Title = vm.NoteVm.Title,
+            UserId = userId,
+            Text = vm.NoteVm!.Text!,
+            Title = vm.NoteVm.Title!,
             FolderId = vm.NoteVm?.Folder
         };
 
         await _mediator.Send(query);
     }
 
-    public async Task<CombineNoteLookupFolder> GetNotesInFolder(Guid id, Guid UserId)
+    public async Task<CombineNoteLookupFolder> GetNotesInFolder(Guid id, Guid userId)
     {
-        var noteList = GetList(UserId)
+        var noteList = GetList(userId)
             .Result
             .Where(f => f.FolderId == id)
             .ToList();
 
-        var folder = await _folderService.Get(id, UserId);
+        var folder = await _folderService.Get(id, userId);
 
         var vm = new CombineNoteLookupFolder
         {

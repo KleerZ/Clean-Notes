@@ -102,11 +102,8 @@ $('.rename-folder-btn').on('click', function(){
                     document.querySelector('.n-text').value = editTextNote;
                 });
             }
-            if (url.includes('/Home/Index/')) {
-                $('#edit').load("/Note/EditPage/" + noteId, function () {
-                    document.querySelector('.n-title').value = editTitleNote;
-                    document.querySelector('.n-text').value = editTextNote;
-                });
+            if (url.includes('Home/Index')) {
+                location.reload()
             }
             else if(url.includes('/Note/AddPage')){
                 $('#edit').load("/Note/AddPage", function(){

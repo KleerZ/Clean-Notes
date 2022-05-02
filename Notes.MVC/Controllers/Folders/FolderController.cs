@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Notes.MVC.Models;
 using Notes.MVC.Services;
-using Notes.Persistence;
 
 namespace Notes.MVC.Controllers.Folders;
 

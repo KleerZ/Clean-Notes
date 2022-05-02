@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Notes.Application.CommandsQueries.Notes.Commands.Restore;
 using Notes.MVC.Services;
 
 namespace Notes.MVC.Controllers.Trash;
@@ -7,20 +6,18 @@ namespace Notes.MVC.Controllers.Trash;
 public class TrashController: BaseController
 {
     private readonly NoteService _noteService;
-    private readonly FolderService _folderService;
+    private readonly TrashService _trashService;
 
-    public TrashController(NoteService noteService, FolderService folderService)
+    public TrashController(NoteService noteService, TrashService trashService)
     {
         _noteService = noteService;
-        _folderService = folderService;
+        _trashService = trashService;
     }
     
     [HttpGet]
     public async Task<IActionResult> TrashPage()
     {
-        var notes = (await _noteService.GetDeletedList(UserId))
-            .Where(n => n.isDeleted == true)
-            .ToList();
+        var notes = await _noteService.GetDeletedList(UserId);
 
         return PartialView("~/Views/Trash/_TrashPartial.cshtml", notes);
     }
@@ -28,12 +25,7 @@ public class TrashController: BaseController
     [HttpPost]
     public async Task<IActionResult> RestoreFromTrash(Guid id)
     {
-        var query = new RestoreCommand
-        {
-            Id = id
-        };
-
-        await Mediator.Send(query);
+        await _trashService.Restore(id);
 
         var notes = await _noteService.GetDeletedList(UserId);
 

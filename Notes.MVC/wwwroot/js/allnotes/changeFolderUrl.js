@@ -3,6 +3,6 @@ $(document).on('click', '#folder-form', function(){
     
     localStorage.setItem('folderUrl', url);
     
-    let formData = "/Note/GetNotesInFolder/" + url;
+    let formData = "/Folder/GetNotesInFolder/" + url;
     history.pushState(formData, null, formData)
 })

@@ -1,6 +1,5 @@
 using AspNetCore.Unobtrusive.Ajax;
 using Microsoft.AspNetCore.Mvc;
-using Notes.Application.CommandsQueries.Notes.Commands.ToTrash;
 using Notes.Application.Notes.Queries.GetNote;
 using Notes.MVC.Models;
 using Notes.MVC.Services;
@@ -62,10 +61,8 @@ public class NoteController: BaseController
     public async Task<IActionResult> Delete(Guid id)
     {
         await _noteService.Delete(id, UserId);
-        
-        var notes = (await _noteService.GetDeletedList(UserId))
-            .Where(n => n.isDeleted == true)
-            .ToList();
+
+        var notes = await _noteService.GetDeletedList(UserId);
 
         return PartialView("~/Views/Trash/_TrashPartial.cshtml", notes);
     }
