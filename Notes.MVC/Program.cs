@@ -53,7 +53,7 @@ builder.Services.AddAuthentication(options =>
     .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddOpenIdConnect(OpenIdConnectDefaults.AuthenticationScheme, options =>
     {
-        options.Authority = "https://localhost:7202";
+        options.Authority = "https://localhost:44366";
         options.RequireHttpsMetadata = false;
         options.ClientId = "clean-notes";
         options.SaveTokens = true;
@@ -68,8 +68,8 @@ builder.Services.AddAuthorization();
 builder.Services.ConfigureApplicationCookie(config =>
 {
     config.Cookie.Name = "Notes.Ide.Cooke";
-    config.LoginPath = "https://localhost:7118/signin-oidc";
-    config.LogoutPath = "https://localhost:7118/signout-oidc";
+    config.LoginPath = "https://localhost:44339/signin-oidc";
+    config.LogoutPath = "https://localhost:44339/signout-oidc";
 });
 
 // --- Cors ---

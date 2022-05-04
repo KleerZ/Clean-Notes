@@ -1,8 +1,10 @@
 using AspNetCore.Unobtrusive.Ajax;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Completion;
 using Notes.Application.Notes.Queries.GetNote;
 using Notes.MVC.Models;
 using Notes.MVC.Services;
+using SQLitePCL;
 
 namespace Notes.MVC.Controllers.Notes;
 

@@ -1,6 +1,7 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Notes.Application.CommandsQueries.Folders.Commands.CreateFolder;
+using Notes.Application.CommandsQueries.Folders.Commands.DeleteAll;
 using Notes.Application.CommandsQueries.Folders.Commands.DeleteFolder;
 using Notes.Application.CommandsQueries.Folders.Queries.GetFolder;
 using Notes.Application.CommandsQueries.Folders.Queries.GetFolderList;
@@ -79,5 +80,15 @@ public class FolderService
         var folderList = await GetList(UserId);
 
         return folderList;
+    }
+
+    public async Task DeleteAll(Guid id)
+    {
+        var query = new DeleteFolderAllCommand
+        {
+            Id = id
+        };
+
+        await _mediator.Send(query);
     }
 }

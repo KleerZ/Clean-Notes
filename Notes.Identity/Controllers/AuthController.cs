@@ -4,7 +4,7 @@ using IdentityServer4.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Notes.Identity.Models;
-using Notes.MVC.Models.Account;
+using Notes.Identity.Models.Account;
 
 namespace Notes.Identity.Controllers;
 

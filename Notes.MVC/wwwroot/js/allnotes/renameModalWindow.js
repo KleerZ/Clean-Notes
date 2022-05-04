@@ -16,8 +16,6 @@ $('.rename-folder').on('click', function(){
 });
 
 
-//Прятать эту хуйню
-
 function hide(){
     document.addEventListener('click', function(e) {
         if (e.target.id != 'rename-window-id' && e.target.id != 'rename-btn-id' && e.target.class != "rename-folder" && e.target.id != 'rename-ul-id' && e.target.id != 'rename-folder-id' && e.target.id != 'folder-name-text' && e.target.id != 'folder-window-title') {
@@ -34,7 +32,6 @@ function hide(){
             }, 200);
         }
     });
-    
 }
 
 
@@ -78,7 +75,6 @@ $('.rename-folder-btn').on('click', function(){
         editTextNote = document.querySelector('.n-text').value;
     }
     
-    
     var text = document.getElementById('folder-name-text');
     
     if (text.value == ""){
@@ -111,8 +107,6 @@ $('.rename-folder-btn').on('click', function(){
                     document.querySelector('.n-text').value = textNote;
                 });
             }
-            
-            
         }, 200);
     }
 });

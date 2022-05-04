@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Notes.MVC.Models.Account;
+namespace Notes.Identity.Models.Account;
 
 public class LoginViewModel
 {

@@ -6,6 +6,7 @@ using Notes.Application.Notes.Commands.DeleteNote;
 using Notes.Application.Notes.Queries.GetNote;
 using Notes.Application.Notes.Queries.GetNoteList;
 using Notes.MVC.Models;
+using Notes.Persistence;
 
 namespace Notes.MVC.Services;
 
@@ -13,11 +14,13 @@ public class NoteService
 {
     private readonly IMediator _mediator;
     private readonly FolderService _folderService;
+    private readonly NoteDbContext _context;
 
-    public NoteService(IMediator mediator, FolderService folderService)
+    public NoteService(IMediator mediator, FolderService folderService, NoteDbContext context)
     {
         _mediator = mediator;
         _folderService = folderService;
+        _context = context;
     }
 
     public async Task<NoteVM> Get(Guid id, Guid userId)
@@ -135,5 +138,10 @@ public class NoteService
         };
 
         await _mediator.Send(query);
+    }
+
+    public async Task DeleteRange(IEnumerable<NoteLookupDto> noteList)
+    {
+        
     }
 }

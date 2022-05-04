@@ -1,6 +1,7 @@
 @model Notes.Application.CommandsQueries.Folders.Queries.GetFolderList.FolderListVm
 
 <link rel="stylesheet" href="~/css/index/panel.css">
+<link rel="stylesheet" href="~/css/folder-delete-modal.css">
 
 @if (Model.Folders.Count == 0)
 {
@@ -27,6 +28,7 @@
     }
 }
 
+<script src="~/lib/jquery/dist/jquery.js"></script>
 <script src="~/js/allnotes/deleteSelectedFolder.js"></script>
 
 <script >
@@ -40,4 +42,10 @@
 <script >
 contextMenu();
 contextMenuFolder();
+</script>
+
+<script >
+$('.delete-folder-btn-folder').on('click', function (){
+    console.log("Sfdgfhj,.")
+})
 </script>

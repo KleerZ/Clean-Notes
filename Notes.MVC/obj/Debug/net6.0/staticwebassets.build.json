@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DmrSvvAkNRDZv+5h8SLIFv0Dy2Ka+fnWjJz58RkJVaQ=",
+  "Hash": "ROlhVRGB4MALxF75oUAbjuyYSfKI8/sdFoK4V/MsfCo=",
   "Source": "Notes.MVC",
   "BasePath": "_content/Notes.MVC",
   "Mode": "Default",
@@ -1192,6 +1192,40 @@
       "OriginalItemSpec": "wwwroot\\css\\allnotes\\allnotes.css"
     },
     {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\allnotes\\context-menu-folder.css",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "css/allnotes/context-menu-folder.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\allnotes\\context-menu-folder.css"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\allnotes\\context-menu-trash.css",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "css/allnotes/context-menu-trash.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\allnotes\\context-menu-trash.css"
+    },
+    {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\allnotes\\context-menu.css",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1275,6 +1309,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\allnotes\\rename-folder.css"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\folder-delete-modal.css",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "css/folder-delete-modal.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\folder-delete-modal.css"
     },
     {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\header.css",

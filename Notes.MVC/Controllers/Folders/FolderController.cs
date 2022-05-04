@@ -1,6 +1,9 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Notes.Application.CommandsQueries.Folders.Commands.DeleteAll;
 using Notes.MVC.Models;
 using Notes.MVC.Services;
+using SQLitePCL;
 
 namespace Notes.MVC.Controllers.Folders;
 
@@ -25,7 +28,7 @@ public class FolderController : BaseController
 
     [HttpPost]
     public async Task<IActionResult> Add(CombineNoteFolderViewModel vm)
-    {   
+    {
         await _folderService.Add(vm.Folder.Name, UserId);
         
         var folderList = await _folderService.GetList(UserId);
@@ -55,5 +58,13 @@ public class FolderController : BaseController
         var vm = await _noteService.GetNotesInFolder(id, UserId);
 
         return PartialView("~/Views/Folders/_FolderNotesPartial.cshtml", vm);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> DeleteAll(Guid id)
+    {
+        await _folderService.DeleteAll(id);
+
+        return RedirectToAction("Index", "Home");
     }
 }
