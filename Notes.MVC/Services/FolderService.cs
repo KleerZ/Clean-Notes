@@ -3,8 +3,10 @@ using Microsoft.EntityFrameworkCore;
 using Notes.Application.CommandsQueries.Folders.Commands.CreateFolder;
 using Notes.Application.CommandsQueries.Folders.Commands.DeleteAll;
 using Notes.Application.CommandsQueries.Folders.Commands.DeleteFolder;
+using Notes.Application.CommandsQueries.Folders.Commands.RemoveNotesFromFolder;
 using Notes.Application.CommandsQueries.Folders.Queries.GetFolder;
 using Notes.Application.CommandsQueries.Folders.Queries.GetFolderList;
+using Notes.Domain;
 using Notes.MVC.Models;
 using Notes.Persistence;
 
@@ -87,6 +89,16 @@ public class FolderService
         var query = new DeleteFolderAllCommand
         {
             Id = id
+        };
+
+        await _mediator.Send(query);
+    }
+    
+    public async Task RemoveNotesFromFolder(Guid id)
+    {
+        var query = new RemoveNotesCommand
+        {
+            FolderId = id
         };
 
         await _mediator.Send(query);

@@ -263,12 +263,12 @@
     </div>
 }
 
-@using (Html.AjaxBeginForm("Rename", "Folder", new AjaxOptions
-{
-    InsertionMode = InsertionMode.Replace,
-    HttpMethod = "post"
-}))
-{
+@* @using (Html.AjaxBeginForm("Rename", "Folder", new AjaxOptions *@
+@* { *@
+@*     InsertionMode = InsertionMode.Replace, *@
+@*     HttpMethod = "post" *@
+@* })) *@
+@* { *@
     <div class="modal-delete-folder-bkg" id="modal-delete-folder-bkg">
         <div class="modal-delete-folder">
             <span id="delete-folder-span">Выберите вариант удаления</span>
@@ -278,7 +278,7 @@
             </div>
         </div>
     </div>   
-}
+@* } *@
 
 <script src="~/js/allnotes/deleteSelectedNote.js"></script>
 <script src="~/js/allnotes/deleteInTrash.js"></script>

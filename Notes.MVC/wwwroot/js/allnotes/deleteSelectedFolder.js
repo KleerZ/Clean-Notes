@@ -110,8 +110,10 @@ $('.modal-delete-folder-bkg').on('click', function(event){
 })
 
 $('#delete-all-in-folder').on('click', function(){
-    var id = localStorage.getItem('id');
+    var id = localStorage.getItem("id-folder");
     var url = window.location.href;
+
+    console.log(id)
     
     $.ajax({
         url: '/Folder/DeleteAll/' + id,
@@ -119,7 +121,29 @@ $('#delete-all-in-folder').on('click', function(){
         // dataType: JSON,
         // data: id,
         success: function () {
-            $('#target').load("/Trash/TrashPage");
+            // $('#target').load("/Trash/TrashPage");
+            // location.reload()
+            location.href = '/Home/Index';
         }
     });
 });
+
+$('#remove-note-delete').on('click', function(){
+    var id = localStorage.getItem("id-folder");
+    var url = window.location.href;
+
+    console.log(id)
+
+    $.ajax({
+        url: '/Folder/DeleteFolderOnly/' + id,
+        type: 'POST',
+        // dataType: JSON,
+        // data: id,
+        success: function () {
+            // $('#target').load("/Trash/TrashPage");
+            // location.reload()
+            location.href = '/Home/Index';
+        }
+    });
+});
+

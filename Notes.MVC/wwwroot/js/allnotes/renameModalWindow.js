@@ -1,5 +1,6 @@
 $('.rename-folder').on('click', function(){
     let idDD = localStorage.getItem("id-folder");
+    console.log(idDD)
 
     let modal = document.getElementById('rename-folder-background');
     let text = document.getElementById('folder-name-text');
@@ -92,6 +93,13 @@ $('.rename-folder-btn').on('click', function(){
             modalWindow.style.display = "none";
             text.value = "";
 
+
+            if (url.includes('/Trash/TrashPage')) {
+                $('#edit').load("/Note/EditPage/" + noteId, function(){
+                    document.querySelector('.n-title').value = editTitleNote;
+                    document.querySelector('.n-text').value = editTextNote;
+                });
+            }
             if (url.includes('/Note/EditPage/')) {
                 $('#edit').load("/Note/EditPage/" + noteId, function(){
                     document.querySelector('.n-title').value = editTitleNote;

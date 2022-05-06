@@ -11,11 +11,8 @@ public class AuthDbContext: IdentityDbContext<AppUser>
     public AuthDbContext(DbContextOptions<AuthDbContext> options) 
         : base(options){}
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
         optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=CleanNotesAuth;Username=postgres;Password=1234");
-    }
-        
 
     protected override void OnModelCreating(ModelBuilder builder)
     {

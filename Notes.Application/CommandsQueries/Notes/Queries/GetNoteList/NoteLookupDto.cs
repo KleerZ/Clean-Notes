@@ -11,7 +11,7 @@ public class NoteLookupDto: IMapWith<Note>
     public string Text { get; set; }
     public DateTime EditDate { get; set; }
     public bool isDeleted { get; set; }
-    public Guid FolderId { get; set; }
+    public Guid? FolderId { get; set; }
     
     public void Mapping(Profile profile)
     {

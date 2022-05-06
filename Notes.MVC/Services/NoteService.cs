@@ -112,22 +112,13 @@ public class NoteService
         await _mediator.Send(query);
     }
 
-    public async Task<CombineNoteLookupFolder> GetNotesInFolder(Guid id, Guid userId)
+    public async Task<List<NoteLookupDto>> GetNotesInFolder(Guid id, Guid userId)
     {
-        var noteList = GetList(userId)
-            .Result
+        var noteList = (await GetList(userId))
             .Where(f => f.FolderId == id)
             .ToList();
 
-        var folder = await _folderService.Get(id, userId);
-
-        var vm = new CombineNoteLookupFolder
-        {
-            FolderVm = folder,
-            NoteLookupDto = noteList
-        };
-
-        return vm;
+        return noteList;
     }
 
     public async Task NoteToTrash(Guid id)
@@ -138,10 +129,5 @@ public class NoteService
         };
 
         await _mediator.Send(query);
-    }
-
-    public async Task DeleteRange(IEnumerable<NoteLookupDto> noteList)
-    {
-        
     }
 }

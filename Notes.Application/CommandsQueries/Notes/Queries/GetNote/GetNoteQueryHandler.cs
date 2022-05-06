@@ -31,15 +31,13 @@ public class GetNoteQueryHandler: IRequestHandler<GetNoteQuery, NoteVM>
             {
                 if (request.Id == Guid.Empty)
                 {
-                    // entity = _dbContext.Notes.Where(n => n.UserId == request.UserId)
-                    //     .OrderBy(n => n.EditDate)
-                    //     .Last();
-
                     if (entity is null)
                         entity = new Note();
                 }
                 else
-                    entity = await _dbContext.Notes.Where(n => n.UserId == request.UserId).FirstOrDefaultAsync();
+                    entity = await _dbContext.Notes
+                        .Where(n => n.UserId == request.UserId)
+                        .FirstOrDefaultAsync(cancellationToken);
             }
             else 
                 entity = new Note();
