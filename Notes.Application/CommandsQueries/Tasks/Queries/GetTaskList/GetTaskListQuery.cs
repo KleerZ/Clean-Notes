@@ -1,6 +1,6 @@
 using MediatR;
 
-namespace Notes.Application.Tasks.Queries.GetTaskList;
+namespace Notes.Application.CommandsQueries.Tasks.Queries.GetTaskList;
 
 public class GetTaskListQuery: IRequest<TaskListVM>
 {

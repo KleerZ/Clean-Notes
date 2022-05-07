@@ -8,8 +8,8 @@ public class TasksConfiguration: IEntityTypeConfiguration<Tasks>
 {
     public void Configure(EntityTypeBuilder<Tasks> builder)
     {
-        builder.HasKey(task => task.Id);
-        builder.HasIndex(task => task.Id).IsUnique();
-        builder.Property(task => task.Title).HasMaxLength(100);
+        builder.HasKey(tasks => tasks.Id);
+        builder.HasIndex(tasks => tasks.Id).IsUnique();
+        builder.Property(tasks => tasks.Title).HasMaxLength(100);
     }
 }

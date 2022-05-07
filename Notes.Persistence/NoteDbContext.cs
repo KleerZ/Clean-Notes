@@ -9,6 +9,7 @@ public class NoteDbContext: DbContext, INotesDbContext
 {
     public DbSet<Note> Notes { get; set; }
     public DbSet<Tasks> Tasks { get; set; }
+    public DbSet<SubTask> SubTasks { get; set; }
     public DbSet<Folder> Folders { get; set; }
 
     public NoteDbContext(DbContextOptions<NoteDbContext> options) : base(options)
@@ -20,6 +21,9 @@ public class NoteDbContext: DbContext, INotesDbContext
     {
         builder.ApplyConfiguration(new NoteConfiguration());
         builder.ApplyConfiguration(new TasksConfiguration());
+        builder.ApplyConfiguration(new FolderConfiguration());
+        builder.ApplyConfiguration(new SubTasksConfiguration());
+        
         base.OnModelCreating(builder);
     }
 }

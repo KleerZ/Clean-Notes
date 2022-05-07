@@ -4,7 +4,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Notes.Application.Interfaces;
 
-namespace Notes.Application.Tasks.Queries.GetTaskList;
+namespace Notes.Application.CommandsQueries.Tasks.Queries.GetTaskList;
 
 public class GetTaskListQueryHandler: IRequestHandler<GetTaskListQuery, TaskListVM>
 {

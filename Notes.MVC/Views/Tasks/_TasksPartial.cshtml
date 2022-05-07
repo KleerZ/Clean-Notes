@@ -1,0 +1,131 @@
+@using IdentityServer4.Extensions
+@using Notes.Persistence
+@model List<NoteLookupDto>?
+
+<link rel="stylesheet" href=@Url.Content("~/css/allnotes/allnotes.css")>
+<link rel="stylesheet" href=@Url.Content("~/css/allnotes/context-menu.css")>
+
+<div class="line-container">
+    <div class="title-line">
+        <div class="title">
+            Все заметки
+            <div class="func">
+                <button class="sort-btn">
+                    <svg class="sort-icon" style="width:22px;height:22px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"/>
+                    </svg>
+                    Сортировка
+                </button>
+            </div>
+        </div>
+        <div class="search-div">
+            <div class="svg-search">
+            </div>
+            <input class="input-search" onkeydown="search()" type="text" placeholder="Поиск">
+        </div>
+    </div>
+
+    <div class="notes" id="notes">
+        @if (Model.IsNullOrEmpty())
+        {
+            await Html.RenderPartialAsync("~/Views/Notes/_NoNotesPartial.cshtml");
+        }
+        else
+        {
+            foreach (var note in Model)
+            {
+                using (Html.AjaxBeginForm("EditPage", "Note", new {id = note.Id},
+                    new AjaxOptions()
+                    {
+                        HttpMethod = "get",
+                        UpdateTargetId = "edit",
+                        InsertionMode = InsertionMode.Replace,
+                        OnSuccess = "UpdateURL(this)"
+                    }, new {@class = "note-item-form"}))
+                {
+                    <button type="submit" class="item">
+                        <div class="note-item">
+                            <span class="item-title">
+                                <span class="title-text">@note?.Title</span>
+                                <span class="date">@note?.EditDate.Date.ToShortDateString()</span>
+                                <input type="hidden" class="hidden-n" value="@note?.Id"/>
+                            </span>
+                            <div class="text">
+                                @note?.Text
+                            </div>
+                        </div>
+                    </button>
+                }
+            }
+        }
+    </div>
+</div>
+
+
+<div class="context-menu-open">
+    <ul>
+        <li class="delete-note-btn">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="currentColor" d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z"/>
+            </svg>
+            Удалить
+        </li>
+    </ul>
+</div>
+
+<script src="~/js/allnotes/deleteSelectedNote.js"></script>
+
+<script >
+contextMenu();
+contextMenuFolder();
+</script>
+
+<script >
+function search() {
+    let parent = document.querySelector('#notes');
+    let itemsNote = parent.querySelectorAll('.note-item');
+    
+    if ($('.input-search').val() !== '') {
+        for (let i = 0; i < itemsNote.length; i++) {
+            let item = itemsNote[i];
+            let text = item.querySelector('.text').innerText;
+            let title = item.querySelector('.title-text').innerText;
+            let date = item.querySelector('.date').innerText;
+            let search = document.querySelector('.input-search').value;
+            
+            if (text.toLowerCase().includes(search.toLowerCase()) || title.toLowerCase().includes(search.toLowerCase()) || date.toLowerCase().includes(search.toLowerCase())) {
+                item.style.display = 'flex';
+                item.style.visibility = 'visibility';
+                console.log('found')
+            }
+            else {
+                item.style.display = 'none';
+                item.style.visibility = 'hidden';
+               
+                console.log('not found')
+            }
+        }
+    }
+    else if ($('.input-search').val() === ''){
+        for (let i = 0; i < itemsNote.length; i++) {
+            let item = itemsNote[i];
+            let text = item.querySelector('.text').innerText;
+            let title = item.querySelector('.title-text').innerText;
+            let date = item.querySelector('.date').innerText;
+            let search = document.querySelector('.input-search').value;
+            
+           
+            let all = document.getElementsByClassName('note-item');
+            all.style.visibility = 'visible';
+            all.style.display = 'flex';
+                                
+                                
+            console.log('found')
+
+        }
+    }
+}
+
+
+document.querySelector('.count').value = $('.note-item').length;
+</script>

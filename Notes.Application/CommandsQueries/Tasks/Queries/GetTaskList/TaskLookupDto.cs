@@ -1,13 +1,12 @@
 using AutoMapper;
 using Notes.Application.Common.Mappings;
 
-namespace Notes.Application.Tasks.Queries.GetTaskList;
+namespace Notes.Application.CommandsQueries.Tasks.Queries.GetTaskList;
 
 public class TaskLookupDto: IMapWith<Domain.Tasks>
 {
     public Guid Id { get; set; }
     public string Title { get; set; }
-    public Dictionary<string, string[]> TaskItems { get; set; }
 
     public void Mapping(Profile profile)
     {
