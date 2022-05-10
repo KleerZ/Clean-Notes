@@ -10,6 +10,7 @@ public class TasksConfiguration: IEntityTypeConfiguration<Tasks>
     {
         builder.HasKey(tasks => tasks.Id);
         builder.HasIndex(tasks => tasks.Id).IsUnique();
+        
         builder.Property(tasks => tasks.Title).HasMaxLength(100);
     }
 }

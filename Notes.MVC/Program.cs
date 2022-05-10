@@ -36,6 +36,7 @@ builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddScoped<NoteService>();
 builder.Services.AddScoped<FolderService>();
 builder.Services.AddScoped<TrashService>();
+builder.Services.AddScoped<TaskService>();
 
 builder.Services.AddSession(options =>
 {

@@ -1,14 +1,14 @@
 @using IdentityServer4.Extensions
 @using Notes.Persistence
-@model List<NoteLookupDto>?
+@model List<Notes.Application.CommandsQueries.Tasks.Queries.GetTaskList.TaskLookupDto>?
 
-<link rel="stylesheet" href=@Url.Content("~/css/allnotes/allnotes.css")>
-<link rel="stylesheet" href=@Url.Content("~/css/allnotes/context-menu.css")>
+<link rel="stylesheet" href=@Url.Content("~/css/tasks/alltasks.css")>
+<link rel="stylesheet" href=@Url.Content("~/css/tasks/context-menu-tasks.css")>
 
 <div class="line-container">
     <div class="title-line">
         <div class="title">
-            Все заметки
+            Все Задачи
             <div class="func">
                 <button class="sort-btn">
                     <svg class="sort-icon" style="width:22px;height:22px" viewBox="0 0 24 24">
@@ -34,7 +34,7 @@
         {
             foreach (var note in Model)
             {
-                using (Html.AjaxBeginForm("EditPage", "Note", new {id = note.Id},
+                using (Html.AjaxBeginForm("EditPage", "Tasks", new {id = note.Id},
                     new AjaxOptions()
                     {
                         HttpMethod = "get",
@@ -47,12 +47,12 @@
                         <div class="note-item">
                             <span class="item-title">
                                 <span class="title-text">@note?.Title</span>
-                                <span class="date">@note?.EditDate.Date.ToShortDateString()</span>
+                                <span class="date">@note?.EditDate</span>
                                 <input type="hidden" class="hidden-n" value="@note?.Id"/>
                             </span>
-                            <div class="text">
-                                @note?.Text
-                            </div>
+                            @* <div class="text"> *@
+                            @*     @note?.Text *@
+                            @* </div> *@
                         </div>
                     </button>
                 }
