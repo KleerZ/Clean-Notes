@@ -1,9 +1,11 @@
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using Notes.Application.CommandsQueries.Tasks.Commands.UpdateTask;
 using Notes.Application.CommandsQueries.Tasks.Queries.GetTask;
 using Notes.Application.CommandsQueries.Tasks.Queries.GetTaskList;
 using Notes.Application.Interfaces;
 using Notes.Domain;
+using Notes.MVC.Models;
 
 namespace Notes.MVC.Services;
 
@@ -49,5 +51,18 @@ public class TaskService
             .ToListAsync();
 
         return subTasks;
+    }
+    
+    public async Task Edit(CombineTaskSubTasks vm, Guid userId)
+    {
+        var query = new UpdateTaskCommand
+        {
+            Id = vm.TaskVm.Id,
+            Title = vm.TaskVm.Title,
+            SubTasks = vm.SubTasks,
+            UserId = userId
+        };
+        
+        await _mediator.Send(query);
     }
 }

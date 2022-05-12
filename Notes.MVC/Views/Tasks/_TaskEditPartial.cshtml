@@ -1,15 +1,14 @@
-@* @model Notes.Application.Notes.Queries.GetNote.NoteVM *@
-@using Notes.Domain
-@using Notes.Application.Notes.Queries.GetNote
 @model CombineTaskSubTasks;
 
-<link rel="stylesheet" href=@Url.Content("~/css/allnotes/edit-note.css")>
+<link rel="stylesheet" href=@Url.Content("~/css/tasks/edit-task.css")>
 
-@using (Html.AjaxBeginForm("Edit", "Note", new AjaxOptions
+@using (Html.AjaxBeginForm("Edit", "Tasks", new AjaxOptions
 {
     OnSuccess = "OnSuccess()",
     InsertionMode = InsertionMode.Replace,
-    LoadingElementDuration = 100
+    LoadingElementDuration = 100,
+    HttpMethod = "POST",
+    UpdateTargetId = "edit"
 }, new { vm = Model }))
 {
     <div class="edit-container">
@@ -29,49 +28,88 @@
             @*         <option class="folder-select" value="@folder.Id">@folder.Name</option> *@
             @*     } *@
             @* </select> *@
+            <input asp-for="SubTasks" type="hidden" value="@Model.SubTasks">
 
-            @foreach (var subtask in Model?.SubTasks)
-            {
-                @subtask.Id<br>
-                @subtask.Text<br>
-                @subtask.isChecked<br>
-                @subtask.Tasks<br>
-            }
 
             <div class="func-note">
+                <button type="button" class="add-task-btn">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                    </svg>
+                    Добавить задачу
+                </button>
                 <button type="submit" class="save-btn">
                     Сохранить
                 </button>
-                <button class="download-btn">
-                    <svg style="width:22px;height:22px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M2 12H4V17H20V12H22V17C22 18.11 21.11 19 20 19H4C2.9 19 2 18.11 2 17V12M12 15L17.55 9.54L16.13 8.13L13 11.25V2H11V11.25L7.88 8.13L6.46 9.55L12 15Z"/>
-                    </svg>
-                </button>
+                @* <button class="download-btn"> *@
+                @*     <svg style="width:22px;height:22px" viewBox="0 0 24 24"> *@
+                @*         <path fill="currentColor" d="M2 12H4V17H20V12H22V17C22 18.11 21.11 19 20 19H4C2.9 19 2 18.11 2 17V12M12 15L17.55 9.54L16.13 8.13L13 11.25V2H11V11.25L7.88 8.13L6.46 9.55L12 15Z"/> *@
+                @*     </svg> *@
+                @* </button> *@
             </div>
         </div>
 
-        @* <div class="text-container"> *@
-        @*     <input maxlength="100" type="text" asp-for="NoteVm.Title" class="n-title" placeholder="Введите заголовок" > *@
-        @*     <textarea asp-for="NoteVm.Text" class="n-text" cols="20" rows="10" placeholder="Введите текст">vvvvv</textarea> *@
-        @* </div> *@
+        <div class="text-container">
+            <input maxlength="100" type="text" asp-for="TaskVm.Title" class="n-title" placeholder="Введите заголовок">
+
+            <div class="task-block">
+                @foreach (var subtask in Model?.SubTasks)
+                {
+                    <div class="task">
+                        <span>
+                            <input class="subtask-text" value="@subtask.Text" type="text" name="subtasktext"><br>
+                            <input type="hidden" value="@subtask.Id" name="subtaskid">
+                            <input type="hidden" value="@Model.TaskVm.Id" name="taskid">
+                            <input type="hidden" value="@subtask.isChecked.ToString()" name="ischecked">
+                        </span>
+
+                        <div class="task-func">
+                            <input class="checkbox" type="checkbox">
+                            
+                            <button id="task-update" type="button" class="update-btn-task">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M17 3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V7L17 3M19 19H5V5H16.17L19 7.83V19M12 12C10.34 12 9 13.34 9 15S10.34 18 12 18 15 16.66 15 15 13.66 12 12 12M6 6H15V10H6V6Z" />
+                                </svg>
+                            </button>
+                            
+                            <button id="task-del" type="button" class="delete-btn-task">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                    <path fill="currentColor" d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
     </div>
 }
 
+@* @using (Html.AjaxBeginForm("Rename", "Folder", new AjaxOptions *@
+@* { *@
+@*     InsertionMode = InsertionMode.Replace, *@
+@*     UpdateTargetId = "folder-divv", *@
+@*     HttpMethod = "post" *@
+@* })) *@
+@* { *@
+    <div class="create-task-background" id="create-task-background">
+        <div class="create-task-window" id="create-task-id">
+            <span class="create-task-title" id="create-task-title">Введите текст задачи</span>
+            <input id="task-name-text" class="task-input" maxlength="120" type="text">  
+            <input value="@Model.TaskVm.Id" id="taskid-hidden" type="hidden">  
+            <button id="task-create" class="create-btn-task" type="button">Создать</button>
+        </div>
+    </div>
+@* } *@
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/allnotes/deleteTask.js"></script>
 <script src="~/js/allnotes/deleteSelectedFolder.js"></script>
 <script src="~/js/allnotes/deleteSelectedNote.js"></script>
 <script src="~/js/allnotes/AddingFolder.js"></script>
+<script src="~/js/allnotes/taskEdit.js"></script>
+<script src="~/js/allnotes/createTask.js"></script>
 
 <script >
-    function OnSuccess() {
-        if(localStorage.getItem('folderurl').split('/')[5] != null){
-            $('#target').load('@Url.Action("GetNotesInFolder", "Folder")' + '/' + localStorage.getItem('folderurl').split('/')[5]);
-        }
-        else {
-            $('#target').load('@Url.Action("GetList", "Note")');
-        }
-    }
-   
-    
-    
-    
+
 </script>

@@ -7,4 +7,5 @@ public class CombineTaskSubTasks
 {
     public TaskVm? TaskVm { get; set; }
     public List<SubTask>? SubTasks { get; set; }
+    public string? TaskTitle { get; set; }
 }

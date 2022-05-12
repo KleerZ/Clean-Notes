@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Notes.Application.Common.Exceptions;
 using Notes.Application.Interfaces;
 
-namespace Notes.Application.Tasks.Commands.UpdateTask;
+namespace Notes.Application.CommandsQueries.Tasks.Commands.UpdateTask;
 
 public class UpdateTaskCommandHandler: IRequestHandler<UpdateTaskCommand>
 {
@@ -22,8 +22,12 @@ public class UpdateTaskCommandHandler: IRequestHandler<UpdateTaskCommand>
             throw new NotFoundException(nameof(Task), request.Id);
 
         entity.Title = request.Title;
-        entity.EditDate = DateTime.Now;
+        entity.EditDate = DateTime.Now.ToUniversalTime();
+        entity.SubTasks = request.SubTasks;
+        entity.Id = request.Id;
+        entity.UserId = request.UserId;
 
+        _dbContext.Tasks.Update(entity);
         await _dbContext.SaveChangesAsync(cancellationToken);
         
         return Unit.Value;

@@ -112,7 +112,12 @@
 
 
         @using (Html.AjaxBeginForm("Index", "Tasks",
-            new AjaxOptions { UpdateTargetId = "target" }))
+            new AjaxOptions
+            {
+                UpdateTargetId = "target",
+                InsertionMode = InsertionMode.Replace,
+                HttpMethod = "get",
+            }))
         {
             <button class="btn" title="Задачи">
                 <div class="func-item" id="button3">

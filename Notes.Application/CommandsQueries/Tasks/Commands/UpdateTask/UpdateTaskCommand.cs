@@ -1,12 +1,12 @@
 using MediatR;
+using Notes.Domain;
 
-namespace Notes.Application.Tasks.Commands.UpdateTask;
+namespace Notes.Application.CommandsQueries.Tasks.Commands.UpdateTask;
 
 public class UpdateTaskCommand: IRequest
 {
-    public Guid UserId { get; set; }
     public Guid Id { get; set; }
+    public Guid UserId { get; set; }
     public string Title { get; set; }
-    public Dictionary<string, string[]> TaskItems { get; set; }
-    public DateTime EditDate { get; set; }
+    public List<SubTask> SubTasks { get; set; }
 }
