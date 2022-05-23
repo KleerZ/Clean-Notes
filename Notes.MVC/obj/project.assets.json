@@ -10727,13 +10727,14 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.3",
       "Microsoft.jQuery.Unobtrusive.Ajax >= 3.2.6",
       "Notes.Application >= 1.0.0",
+      "Notes.Domain >= 1.0.0",
       "Notes.Identity >= 1.0.0",
       "Notes.Persistence >= 1.0.0",
       "Notes.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\orcwa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -10741,11 +10742,11 @@
       "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.MVC\\Notes.MVC.csproj",
       "projectName": "Notes.MVC",
       "projectPath": "D:\\Projects\\Clean-Notes\\Notes.MVC\\Notes.MVC.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\orcwa\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\Clean-Notes\\Notes.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\orcwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10761,6 +10762,9 @@
           "projectReferences": {
             "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj": {
               "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Application\\Notes.Application.csproj"
+            },
+            "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj": {
+              "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Domain\\Notes.Domain.csproj"
             },
             "D:\\Projects\\Clean-Notes\\Notes.Identity\\Notes.Identity.csproj": {
               "projectPath": "D:\\Projects\\Clean-Notes\\Notes.Identity\\Notes.Identity.csproj"
@@ -10849,7 +10853,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

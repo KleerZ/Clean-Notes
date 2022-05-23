@@ -46,6 +46,7 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.3",
           "Microsoft.jQuery.Unobtrusive.Ajax": "3.2.6",
           "Notes.Application": "1.0.0",
+          "Notes.Domain": "1.0.0",
           "Notes.Identity": "1.0.0",
           "Notes.Persistence": "1.0.0",
           "Notes.Services": "1.0.0",

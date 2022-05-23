@@ -11,6 +11,7 @@
 <link rel="stylesheet" href=@Url.Content("~/css/index/panel.css")>
 <link rel="stylesheet" href=@Url.Content("~/css/allnotes/context-menu-folder.css")>
 <link rel="stylesheet" href=@Url.Content("~/css/allnotes/rename-folder.css")>
+<link rel="stylesheet" href=@Url.Content("~/css/tasks/taskModal.css")>
 
 <div class="container">
 <div class="side-panel">
@@ -59,7 +60,7 @@
 
                 <hr>
 
-                <span class="drop-select">
+                <span id="task-span" class="drop-select">
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M19,19H5V8H19M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M16.53,11.06L15.47,10L10.59,14.88L8.47,12.76L7.41,13.82L10.59,17L16.53,11.06Z"/>
                     </svg>
@@ -285,8 +286,17 @@
     </div>   
 @* } *@
 
+<div class="task-bkg-modal" id="task-bkg-modal">
+    <div class="task-window" id="task-window-id">
+        <span class="folder-window-title" id="folder-window-title">Введите заголовок задачи</span>
+        <input name="taskName" id="modal-task-text" class="task-input" maxlength="50" type="text">
+        <input class="modal-task-btn" id="modal-task-btn-id" type="submit" value="Создать">
+    </div>
+</div>
+
 <script src="~/js/allnotes/deleteSelectedNote.js"></script>
 <script src="~/js/allnotes/deleteInTrash.js"></script>
+<script src="~/js/allnotes/taskModal.js"></script>
 
 <script>
 $('#note').one('click', function(){

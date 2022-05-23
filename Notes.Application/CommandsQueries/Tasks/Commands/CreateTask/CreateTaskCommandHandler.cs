@@ -1,8 +1,7 @@
 using MediatR;
 using Notes.Application.Interfaces;
-using Notes.Domain;
-    
-namespace Notes.Application.Tasks.Commands.CreateTask;
+
+namespace Notes.Application.CommandsQueries.Tasks.Commands.CreateTask;
 
 public class CreateTaskCommandHandler: IRequestHandler<CreateTaskCommand, Guid>
 {
@@ -19,7 +18,7 @@ public class CreateTaskCommandHandler: IRequestHandler<CreateTaskCommand, Guid>
             Id = Guid.NewGuid(),
             UserId = request.UserId,
             Title = request.Title,
-            EditDate = request.EditDate
+            EditDate = DateTime.Now.ToUniversalTime().AddHours(3)
         };
 
         await _dbContext.Tasks.AddAsync(task, cancellationToken);

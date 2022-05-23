@@ -17,10 +17,10 @@ public class NoteVM: IMapWith<Note>
         profile.CreateMap<Note, NoteVM>()
             .ForMember(noteVM => noteVM.Title,
                 options =>
-                    options.MapFrom(note => note.Title))
+                options.MapFrom(note => note.Title))
             .ForMember(noteVM => noteVM.Text,
                 options =>
-                    options.MapFrom(note => note.Text))
+                options.MapFrom(note => note.Text))
             .ForMember(noteVM => noteVM.Id,
             options =>
                 options.MapFrom(note => note.Id))

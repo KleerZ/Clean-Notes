@@ -26,6 +26,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Notes.Application\Notes.Application.csproj" />
+      <ProjectReference Include="..\Notes.Domain\Notes.Domain.csproj" />
       <ProjectReference Include="..\Notes.Identity\Notes.Identity.csproj" />
 
       <ProjectReference Include="..\Notes.Persistence\Notes.Persistence.csproj" />

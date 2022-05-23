@@ -7,7 +7,7 @@ using Notes.Domain;
 
 namespace Notes.Application.CommandsQueries.Folders.Queries.GetFolder;
 
-public class GetFolderQueryHandler: IRequestHandler<GetFolderQuery, FolderVM>
+public class GetFolderQueryHandler : IRequestHandler<GetFolderQuery, FolderVM>
 {
     private readonly INotesDbContext _dbContext;
     private readonly IMapper _mapper;
@@ -18,26 +18,27 @@ public class GetFolderQueryHandler: IRequestHandler<GetFolderQuery, FolderVM>
         _mapper = mapper;
     }
 
-    public async Task<FolderVM> Handle(GetFolderQuery request, 
+    public async Task<FolderVM> Handle(GetFolderQuery request,
         CancellationToken cancellationToken)
     {
         var entity = await _dbContext.Folders
-            .FirstOrDefaultAsync(folder => 
+            .FirstOrDefaultAsync(folder =>
                 folder.Id == request.Id, cancellationToken);
 
         if (entity == null || entity.UserId != request.UserId)
         {
-            if (_dbContext.Folders.Count() > 0)
+            if (_dbContext.Folders.Any())
             {
-                entity = await _dbContext.Folders.Where(n => n.UserId == request.UserId
-                                                             && n.Id == request.Id)
-                    .FirstOrDefaultAsync();
+                entity = await _dbContext.Folders
+                    .Where(n => n.UserId == request.UserId
+                                && n.Id == request.Id)
+                    .FirstOrDefaultAsync(cancellationToken);
             }
-            else 
+            else
+            {
                 entity = new Folder();
+            }
         }
-
-        // throw new NotFoundException(nameof(Note), request.Id);
 
         return _mapper.Map<FolderVM>(entity);
     }

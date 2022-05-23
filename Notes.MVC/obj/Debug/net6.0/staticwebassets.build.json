@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z/KFXQIuDJ8+1rjbpqpEXDCl8cH1rbfz2tdKqfoA7n4=",
+  "Hash": "G6IhPqfqYCKETRlH4diAwb2HlBQpy7WNOfqtkOW+OFM=",
   "Source": "Notes.MVC",
   "BasePath": "_content/Notes.MVC",
   "Mode": "Default",
@@ -1464,6 +1464,23 @@
       "OriginalItemSpec": "wwwroot\\css\\tasks\\edit-task.css"
     },
     {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\tasks\\taskModal.css",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "css/tasks/taskModal.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\tasks\\taskModal.css"
+    },
+    {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\favicon.ico",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1904,6 +1921,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\taskEdit.js"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\taskModal.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/taskModal.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\taskModal.js"
     },
     {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\UpdateURL.js",

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Notes.Application.CommandsQueries.Tasks.Commands.CreateTask;
 using Notes.Application.Interfaces;
 using Notes.Domain;
 using Notes.MVC.Models;
@@ -110,5 +111,19 @@ public class TasksController : BaseController
         await _context.SaveChangesAsync(CancellationToken.None);
 
         return RedirectToAction("EditPage", "Tasks", new { id = taskid });
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> CreateTask(string taskName)
+    {
+        var query = new CreateTaskCommand()
+        {
+            UserId = UserId,
+            Title = taskName
+        };
+
+        await Mediator.Send(query);
+        
+        return RedirectToAction("Index", "Tasks");
     }
 }
