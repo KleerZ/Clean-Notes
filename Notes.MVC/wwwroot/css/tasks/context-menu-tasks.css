@@ -128,3 +128,35 @@
     color: white;
     transition: .1s all linear;
 }
+
+#item-task{
+    position: relative;
+    /*width: 395px;*/
+    min-width: 95%; /*95*/
+    max-width: 95%; /*95*/
+    height: auto;
+    border: none;
+    background: none;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius: 7px;
+    /*padding-left: 3px;*/
+    /*padding-right: 3px;*/
+    transition: .1s all linear;
+}
+
+.item-task{
+    position: relative;
+    /*width: 395px;*/
+    min-width: 95%; /*95*/
+    max-width: 95%; /*95*/
+    height: auto;
+    border: none;
+    background: none;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius: 7px;
+    /*padding-left: 3px;*/
+    /*padding-right: 3px;*/
+    transition: .1s all linear;
+}

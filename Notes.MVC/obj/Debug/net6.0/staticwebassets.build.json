@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "G6IhPqfqYCKETRlH4diAwb2HlBQpy7WNOfqtkOW+OFM=",
+  "Hash": "NXuVYUIyXInEFbhapMDGqdlssWoMKeV/Yd8u6+u+2dw=",
   "Source": "Notes.MVC",
   "BasePath": "_content/Notes.MVC",
   "Mode": "Default",
@@ -1634,6 +1634,23 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\contextMenuFolder.js"
     },
     {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\contextMenuTask.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/contextMenuTask.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\contextMenuTask.js"
+    },
+    {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\counter.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1734,6 +1751,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\deleteTask.js"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\divSearch.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/divSearch.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\divSearch.js"
     },
     {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\dropdown.js",

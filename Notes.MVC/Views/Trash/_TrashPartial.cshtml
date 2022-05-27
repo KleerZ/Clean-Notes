@@ -40,7 +40,7 @@
                         UpdateTargetId = "edit",
                         InsertionMode = InsertionMode.Replace,
                         OnSuccess = "UpdateURL(this)"
-                    }, new { @class = "note-item-form" }))
+                    }, new { @class = "note-item-form", @tag = "form"}))
                 {
                     <button type="submit" class="item">
                         <div class="note-item">
@@ -100,50 +100,3 @@ $('.restore-note-trash-btn').on('click', function(){
 </script>
 
 <script src="~/js/allnotes/deleteInTrash.js"></script>
-
-<script >
-function search() {
-    let parent = document.querySelector('#notes');
-    let itemsNote = parent.querySelectorAll('.note-item');
-    
-    if ($('.input-search').val() !== '') {
-        for (let i = 0; i < itemsNote.length; i++) {
-            let item = itemsNote[i];
-            let text = item.querySelector('.text').innerText;
-            let title = item.querySelector('.title-text').innerText;
-            let date = item.querySelector('.date').innerText;
-            let search = document.querySelector('.input-search').value;
-            
-            if (text.toLowerCase().includes(search.toLowerCase()) || title.toLowerCase().includes(search.toLowerCase()) || date.toLowerCase().includes(search.toLowerCase())) {
-                item.style.display = 'flex';
-                item.style.visibility = 'visibility';
-                console.log('found')
-            }
-            else {
-                item.style.display = 'none';
-                item.style.visibility = 'hidden';
-               
-                console.log('not found')
-            }
-        }
-    }
-    else if ($('.input-search').val() === ''){
-        for (let i = 0; i < itemsNote.length; i++) {
-            let item = itemsNote[i];
-            let text = item.querySelector('.text').innerText;
-            let title = item.querySelector('.title-text').innerText;
-            let date = item.querySelector('.date').innerText;
-            let search = document.querySelector('.input-search').value;
-            
-           
-            let all = document.getElementsByClassName('note-item');
-            all.style.visibility = 'visible';
-            all.style.display = 'flex';
-                                
-                                
-            console.log('found')
-
-        }
-    }
-}
-</script>

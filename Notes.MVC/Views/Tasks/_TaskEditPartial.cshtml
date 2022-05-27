@@ -4,7 +4,7 @@
 
 @using (Html.AjaxBeginForm("Edit", "Tasks", new AjaxOptions
 {
-    OnSuccess = "OnSuccess()",
+    OnSuccess = "taskSuccess()",
     InsertionMode = InsertionMode.Replace,
     LoadingElementDuration = 100,
     HttpMethod = "POST",
@@ -110,6 +110,8 @@
 <script src="~/js/allnotes/taskEdit.js"></script>
 <script src="~/js/allnotes/createTask.js"></script>
 
-<script >
-
+<script>
+function taskSuccess(){
+    $('#target').load("/Tasks/Index/")
+}
 </script>

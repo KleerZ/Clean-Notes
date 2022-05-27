@@ -94,4 +94,10 @@ public class NoteController: BaseController
 
         return PartialView("~/Views/Notes/_NotesPartial.cshtml", vm);
     }
+
+    [HttpGet]
+    public IActionResult NoSelected()
+    {
+        return PartialView("~/Views/Notes/_NoSelectedEditPartial.cshtml");
+    }
 }

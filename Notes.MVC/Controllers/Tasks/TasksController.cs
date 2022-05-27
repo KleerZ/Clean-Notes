@@ -126,4 +126,15 @@ public class TasksController : BaseController
         
         return RedirectToAction("Index", "Tasks");
     }
+
+    [HttpPost]
+    public async Task<IActionResult> DeleteTask(Guid id)
+    {
+        var task = await _context.Tasks.FirstOrDefaultAsync(i => i.Id == id);
+
+        _context.Tasks.Remove(task);
+        await _context.SaveChangesAsync(CancellationToken.None);
+        
+        return RedirectToAction("Index", "Tasks");
+    }
 }

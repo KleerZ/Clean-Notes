@@ -21,7 +21,7 @@
         <div class="search-div">
             <div class="svg-search">
             </div>
-            <input class="input-search" onkeydown="search()" type="text" placeholder="Поиск">
+            <input class="input-search" onkeyup="search()" type="text" placeholder="Поиск">
         </div>
     </div>
 
@@ -41,7 +41,7 @@
                         UpdateTargetId = "edit",
                         InsertionMode = InsertionMode.Replace,
                         OnSuccess = "UpdateURL(this)"
-                    }, new {@class = "note-item-form"}))
+                    }, new {@class = "note-item-form", @tag = "form"}))
                 {
                     <button type="submit" class="item">
                         <div class="note-item">
@@ -74,6 +74,7 @@
 </div>
 
 <script src="~/js/allnotes/deleteSelectedNote.js"></script>
+<script src="~/js/allnotes/contextMenu.js"></script>
 
 <script >
 contextMenu();
@@ -82,50 +83,26 @@ contextMenuFolder();
 
 <script >
 function search() {
-    let parent = document.querySelector('#notes');
-    let itemsNote = parent.querySelectorAll('.note-item');
     
-    if ($('.input-search').val() !== '') {
-        for (let i = 0; i < itemsNote.length; i++) {
-            let item = itemsNote[i];
-            let text = item.querySelector('.text').innerText;
-            let title = item.querySelector('.title-text').innerText;
-            let date = item.querySelector('.date').innerText;
-            let search = document.querySelector('.input-search').value;
-            
-            if (text.toLowerCase().includes(search.toLowerCase()) || title.toLowerCase().includes(search.toLowerCase()) || date.toLowerCase().includes(search.toLowerCase())) {
-                item.style.display = 'flex';
-                item.style.visibility = 'visibility';
-                console.log('found')
-            }
-            else {
-                item.style.display = 'none';
-                item.style.visibility = 'hidden';
-               
-                console.log('not found')
-            }
-        }
-    }
-    else if ($('.input-search').val() === ''){
-        for (let i = 0; i < itemsNote.length; i++) {
-            let item = itemsNote[i];
-            let text = item.querySelector('.text').innerText;
-            let title = item.querySelector('.title-text').innerText;
-            let date = item.querySelector('.date').innerText;
-            let search = document.querySelector('.input-search').value;
-            
-           
-            let all = document.getElementsByClassName('note-item');
-            all.style.visibility = 'visible';
-            all.style.display = 'flex';
-                                
-                                
-            console.log('found')
-
+    //поиск item по тексту введенному в input-search
+    var input, filter, ul, li, a, b, i, txtValue, textValue;
+    input = document.getElementsByClassName("input-search")[0];
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("notes");
+    li = ul.getElementsByTagName("button");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByClassName("title-text")[0];
+        b = li[i].getElementsByClassName("text")[0];
+        txtValue = a.textContent || a.innerText;
+        textValue = b.textContent || b.innerText;
+        console.log(txtValue)
+        if (txtValue.toUpperCase().indexOf(filter) > -1 || textValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
         }
     }
 }
-
 
 document.querySelector('.count').value = $('.note-item').length;
 </script>

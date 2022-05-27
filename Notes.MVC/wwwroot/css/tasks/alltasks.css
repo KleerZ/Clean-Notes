@@ -502,7 +502,7 @@ a {
     height: 35px;
 }
 
-.item{
+.item-task{
     position: relative;
     /*width: 395px;*/
     width: 95%;
@@ -524,7 +524,7 @@ a {
     width: 100%;
 }
 
-.item:hover{
+.item-task:hover{
     /*position: absolute;*/
     z-index: 9999999;
     /*width: 393px;*/
@@ -662,4 +662,68 @@ a {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+.item-taskk{
+    position: relative;
+    /*width: 395px;*/
+    min-width: 95%; /*95*/
+    max-width: 95%; /*95*/
+    height: auto;
+    border: none;
+    background: none;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius: 7px;
+    /*padding-left: 3px;*/
+    /*padding-right: 3px;*/
+    transition: .1s all linear;
+}
+
+#item-taskk{
+    position: relative;
+    /*width: 395px;*/
+    min-width: 95%; /*95*/
+    max-width: 95%; /*95*/
+    height: auto;
+    border: none;
+    background: none;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius: 7px;
+    /*padding-left: 3px;*/
+    /*padding-right: 3px;*/
+    transition: .1s all linear;
+}
+
+button #item-taskk {
+    position: relative;
+    /*width: 395px;*/
+    min-width: 95%; /*95*/
+    max-width: 95%; /*95*/
+    height: auto;
+    border: none;
+    background: none;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius: 7px;
+    /*padding-left: 3px;*/
+    /*padding-right: 3px;*/
+    transition: .1s all linear;
+}
+
+.note-item-form .item-taskk{
+    position: relative;
+    /*width: 395px;*/
+    min-width: 95%; /*95*/
+    max-width: 95%; /*95*/
+    height: auto;
+    border: none;
+    background: none;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius: 7px;
+    /*padding-left: 3px;*/
+    /*padding-right: 3px;*/
+    transition: .1s all linear;
 }

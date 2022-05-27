@@ -66,3 +66,52 @@
 .modal-task-btn:hover{
     background: black;
 }
+
+#item-task{
+    position: relative;
+    /*width: 395px;*/
+    min-width: 95%; /*95*/
+    max-width: 95%; /*95*/
+    height: auto;
+    border: none;
+    background: none;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius: 7px;
+    /*padding-left: 3px;*/
+    /*padding-right: 3px;*/
+    transition: .1s all linear;
+}
+
+.item-task{
+    position: relative;
+    /*width: 395px;*/
+    min-width: 95%; /*95*/
+    max-width: 95%; /*95*/
+    height: auto;
+    border: none;
+    background: none;
+    margin-bottom: 0px;
+    padding: 0;
+    border-radius: 7px;
+    /*padding-left: 3px;*/
+    /*padding-right: 3px;*/
+    transition: .1s all linear;
+}
+
+#item-task:hover{
+    /*position: absolute;*/
+    z-index: 9999999;
+    /*width: 393px;*/
+    /*height: 130px;*/
+    box-shadow: 0 0 8px 1px rgba(34, 60, 80, 0.5);
+    transition: .1s all linear;
+    /*left: 0;*/
+    /*right: 0;*/
+    /*margin-right: -5px;*/
+    /*margin-bottom: 10px;*/
+    /*margin-top: 5px;*/
+    transform: scale(1.005);
+    border: none;
+    outline: none;
+}

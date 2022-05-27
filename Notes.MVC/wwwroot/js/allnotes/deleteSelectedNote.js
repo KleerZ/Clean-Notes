@@ -12,6 +12,7 @@ $('.delete-note-btn').on('click', function(){
         type: 'POST',
         success: function () {
             // $('#target').html(result);
+            $('#edit').load("/Note/NoSelected/")
 
 
             var url = window.location.href;

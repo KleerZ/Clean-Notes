@@ -1,6 +1,6 @@
 function contextMenu() {
-    let contextMenu = document.querySelectorAll('.item');
-    let contextMenuOpen = document.querySelector('.context-menu-open');
+    var contextMenu = document.querySelectorAll('.item');
+    var contextMenuOpen = document.querySelector('.context-menu-open');
     for (let i = 0; i < contextMenu.length; i++) {
         contextMenu[i].addEventListener('contextmenu', function (e) {
             e.preventDefault();
@@ -15,7 +15,7 @@ function contextMenu() {
             contextMenuOpen.style.visibility = 'visible';
             contextMenuOpen.style.display = 'flex';
 
-            let element = e.target;
+            var element = e.target;
             while (element.className !== 'note-item-form') {
                 element = element.parentNode;
             }

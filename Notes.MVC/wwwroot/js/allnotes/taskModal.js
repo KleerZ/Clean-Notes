@@ -47,6 +47,7 @@ $('#modal-task-btn-id').on('click', function(){
             },
             success: function (result) {
                 hideTaskCreate()
+                
                 $('#target').html(result)
 
                 let modalWindow = document.querySelector('.task-bkg-modal')
