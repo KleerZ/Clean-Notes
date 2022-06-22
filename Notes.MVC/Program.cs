@@ -10,7 +10,6 @@ using Notes.Application.Interfaces;
 using Notes.Identity.Models;
 using Notes.MVC.Services;
 using Notes.Persistence;
-using Notes.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 

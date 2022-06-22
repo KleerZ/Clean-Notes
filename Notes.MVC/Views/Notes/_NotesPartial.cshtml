@@ -10,12 +10,12 @@
         <div class="title">
             Все заметки
             <div class="func">
-                <button class="sort-btn">
-                    <svg class="sort-icon" style="width:22px;height:22px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"/>
-                    </svg>
-                    Сортировка
-                </button>
+                @* <button class="sort-btn"> *@
+                @*     <svg class="sort-icon" style="width:22px;height:22px" viewBox="0 0 24 24"> *@
+                @*         <path fill="currentColor" d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"/> *@
+                @*     </svg> *@
+                @*     Сортировка *@
+                @* </button> *@
             </div>
         </div>
         <div class="search-div">
@@ -73,36 +73,12 @@
     </ul>
 </div>
 
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/js/allnotes/deleteSelectedNote.js"></script>
 <script src="~/js/allnotes/contextMenu.js"></script>
+<script src="~/js/allnotes/divSearch.js"></script>
 
 <script >
 contextMenu();
 contextMenuFolder();
-</script>
-
-<script >
-function search() {
-    
-    //поиск item по тексту введенному в input-search
-    var input, filter, ul, li, a, b, i, txtValue, textValue;
-    input = document.getElementsByClassName("input-search")[0];
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("notes");
-    li = ul.getElementsByTagName("button");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByClassName("title-text")[0];
-        b = li[i].getElementsByClassName("text")[0];
-        txtValue = a.textContent || a.innerText;
-        textValue = b.textContent || b.innerText;
-        console.log(txtValue)
-        if (txtValue.toUpperCase().indexOf(filter) > -1 || textValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-
-document.querySelector('.count').value = $('.note-item').length;
 </script>

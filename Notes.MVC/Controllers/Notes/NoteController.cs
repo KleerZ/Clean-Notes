@@ -1,10 +1,9 @@
 using AspNetCore.Unobtrusive.Ajax;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.Completion;
 using Notes.Application.Notes.Queries.GetNote;
 using Notes.MVC.Models;
 using Notes.MVC.Services;
-using SQLitePCL;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace Notes.MVC.Controllers.Notes;
 
@@ -99,5 +98,21 @@ public class NoteController: BaseController
     public IActionResult NoSelected()
     {
         return PartialView("~/Views/Notes/_NoSelectedEditPartial.cshtml");
+    }
+
+    [HttpPost]
+    public async Task PrintDocument(Guid id)
+    {
+        var note = await _noteService.Get(id, UserId);
+        
+        var oWord = new Word.Application();
+        var oDoc = oWord.Documents.Add("D:\\Projects\\Clean-Notes\\" +
+                                       "Notes.MVC\\wwwroot\\templates\\note-template.docx");
+        
+        oDoc.Bookmarks["title"].Range.Text = note.Title;
+        oDoc.Bookmarks["text"].Range.Text = note.Text;
+        
+        oDoc.SaveAs(FileName: Environment.CurrentDirectory + "\\note.docx");
+        oDoc.Close();
     }
 }

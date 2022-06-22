@@ -1,9 +1,8 @@
 using MediatR;
-using Notes.Application.CommandsQueries.Notes.Commands.CreateNote;
 using Notes.Application.Interfaces;
 using Notes.Domain;
 
-namespace Notes.Application.Notes.Commands.CreateNote;
+namespace Notes.Application.CommandsQueries.Notes.Commands.CreateNote;
 
 public class CreateNoteCommandHandler: IRequestHandler<CreateNoteCommand, Guid>
 {
@@ -19,10 +18,10 @@ public class CreateNoteCommandHandler: IRequestHandler<CreateNoteCommand, Guid>
         
         var note = new Note
         {
+            Id = Guid.NewGuid(),
             UserId = request.UserId,
             Title = request.Title,
             Text = request.Text,
-            Id = Guid.NewGuid(),
             EditDate = DateTime.UtcNow,
             FolderId = request.FolderId
         };

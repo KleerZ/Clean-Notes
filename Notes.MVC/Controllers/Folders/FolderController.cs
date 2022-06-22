@@ -67,7 +67,10 @@ public class FolderController : BaseController
     [HttpPost]
     public async Task<IActionResult> DeleteAll(Guid id)
     {
-        await _folderService.DeleteAll(id);
+        var noteList = await _noteService.GetNotesInFolder(id, UserId);
+        
+        await _noteService.DeleteRange(noteList ,UserId);
+        await _folderService.DeleteAll(id, UserId);
 
         return RedirectToAction("Index", "Home");
     }

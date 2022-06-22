@@ -8,6 +8,7 @@ public class TaskLookupDto: IMapWith<Domain.Tasks>
     public Guid Id { get; set; }
     public string Title { get; set; }
     public DateTime EditDate { get; set; }
+    public bool isDeleted { get; set; }
 
     public void Mapping(Profile profile)
     {
@@ -20,6 +21,9 @@ public class TaskLookupDto: IMapWith<Domain.Tasks>
                     options.MapFrom(task => task.Title))
             .ForMember(taskDto => taskDto.EditDate,
                 options =>
-                    options.MapFrom(taskDto => taskDto.EditDate));
+                    options.MapFrom(taskDto => taskDto.EditDate))
+            .ForMember(taskDto => taskDto.isDeleted,
+            options =>
+                options.MapFrom(taskDto => taskDto.isDeleted));
     }
 }

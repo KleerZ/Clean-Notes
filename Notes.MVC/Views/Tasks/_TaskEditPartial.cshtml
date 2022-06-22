@@ -1,6 +1,7 @@
 @model CombineTaskSubTasks;
 
 <link rel="stylesheet" href=@Url.Content("~/css/tasks/edit-task.css")>
+<link rel="stylesheet" href=@Url.Content("~/css/tasks/context-menu-tasks.css")>
 
 @using (Html.AjaxBeginForm("Edit", "Tasks", new AjaxOptions
 {
@@ -15,6 +16,7 @@
         <div class="header">
             <div class="info-div">
                 <span class="note-title">Изменение</span>
+                <span id="comp-title">@ViewBag.Completed</span>
                 <div class="date-info">
                     Последние изменения:&nbsp;<span class="edit-date">@Model.TaskVm?.EditDate.Date.ToShortDateString()</span>
                     <input asp-for="TaskVm.Id" type="hidden" value="@Model.TaskVm?.Id">
@@ -36,7 +38,7 @@
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
                     </svg>
-                    Добавить задачу
+                    Добавить подзадачу
                 </button>
                 <button type="submit" class="save-btn">
                     Сохранить
@@ -85,22 +87,16 @@
     </div>
 }
 
-@* @using (Html.AjaxBeginForm("Rename", "Folder", new AjaxOptions *@
-@* { *@
-@*     InsertionMode = InsertionMode.Replace, *@
-@*     UpdateTargetId = "folder-divv", *@
-@*     HttpMethod = "post" *@
-@* })) *@
-@* { *@
+
     <div class="create-task-background" id="create-task-background">
         <div class="create-task-window" id="create-task-id">
-            <span class="create-task-title" id="create-task-title">Введите текст задачи</span>
-            <input id="task-name-text" class="task-input" maxlength="120" type="text">  
+            <span class="create-task-title" id="create-task-title">Введите текст подзадачи</span>
+            <input id="task-name-text" class="task-input" maxlength="65" type="text">  
             <input value="@Model.TaskVm.Id" id="taskid-hidden" type="hidden">  
             <button id="task-create" class="create-btn-task" type="button">Создать</button>
         </div>
     </div>
-@* } *@
+
 
 <script src="~/lib/jquery/dist/jquery.js"></script>
 <script src="~/js/allnotes/deleteTask.js"></script>
@@ -111,6 +107,8 @@
 <script src="~/js/allnotes/createTask.js"></script>
 
 <script>
+contextMenuTask()
+
 function taskSuccess(){
     $('#target').load("/Tasks/Index/")
 }

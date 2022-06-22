@@ -75,6 +75,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhc2hcX1RyYXNoUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects/Clean-Notes/Notes.MVC/Views/Trash/_TrashTaskPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhc2hcX1RyYXNoVGFza1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/Clean-Notes/Notes.MVC/Views/User/User.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/Clean-Notes/Notes.MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

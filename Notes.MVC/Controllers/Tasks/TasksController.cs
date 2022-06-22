@@ -22,7 +22,10 @@ public class TasksController : BaseController
     [HttpGet]
     public async Task<IActionResult> Index()
     {
-        var listTasks = (await _taskService.GetList(UserId)).Task;
+        var listTasks = (await _taskService.GetList(UserId))
+            .Task
+            .Where(t => t.isDeleted == false)
+            .ToList();
 
         return PartialView("_TasksPartial", listTasks);
     }
@@ -38,6 +41,11 @@ public class TasksController : BaseController
             TaskVm = task,
             SubTasks = subTasks.OrderBy(s => s.CreateDate).ToList()
         };
+
+        if (task.isCompleted)
+            ViewBag.Completed = "Задача выполнена";
+        else
+            ViewBag.Completed = "Задача не выполнена";
 
         return PartialView("~/Views/Tasks/_TaskEditPartial.cshtml", vm);
     }
@@ -70,11 +78,15 @@ public class TasksController : BaseController
 
         if (subtask.isChecked)
             subtask.isChecked = false;
-        else 
+        else
             subtask.isChecked = true;
-        
+
+        await CompleteTask(taskid);
+
         _context.SubTasks.Update(subtask);
         await _context.SaveChangesAsync(cancellationToken: CancellationToken.None);
+        
+        ViewBag.Completed = "Выполнено";
         
         return RedirectToAction("EditPage", "Tasks", new { id = taskid });
     }
@@ -128,13 +140,64 @@ public class TasksController : BaseController
     }
 
     [HttpPost]
+    public async Task<IActionResult> ToTrash(Guid id)
+    {
+        var task = await _context.Tasks
+            .FirstOrDefaultAsync(s => s.Id == id);
+        
+        task.isDeleted = true;
+        
+        _context.Tasks.Update(task);
+        await _context.SaveChangesAsync(CancellationToken.None);
+
+        return RedirectToAction("Index", "Tasks");
+    }
+
+    [HttpPost]
     public async Task<IActionResult> DeleteTask(Guid id)
     {
-        var task = await _context.Tasks.FirstOrDefaultAsync(i => i.Id == id);
+        var task = await _context.Tasks
+            .FirstOrDefaultAsync(i => i.Id == id);
 
         _context.Tasks.Remove(task);
+        
         await _context.SaveChangesAsync(CancellationToken.None);
         
-        return RedirectToAction("Index", "Tasks");
+        return RedirectToAction("TaskTrash", "Trash");
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> RestoreFromTrash(Guid id)
+    {
+        var task = await _context.Tasks
+            .FirstOrDefaultAsync(i => i.Id == id);
+
+        task.isDeleted = false;
+        
+        _context.Tasks.Update(task);
+        await _context.SaveChangesAsync(CancellationToken.None);
+
+        return RedirectToAction("TaskTrash", "Trash");
+    }
+    
+    [HttpPost]
+    public async Task CompleteTask(Guid id)
+    {
+        var completedSubtasks = (await _taskService.GetSubTasks(id))
+            .Where(i => i.isChecked)
+            .ToList();
+        
+        var task = await _context.Tasks
+            .FirstOrDefaultAsync(i => i.Id == id);
+
+        var taskSubtasks = await _taskService.GetSubTasks(id);
+
+        if (completedSubtasks.Count < taskSubtasks.Count)
+            task.isCompleted = false;
+        else if(completedSubtasks.Count == taskSubtasks.Count)
+            task.isCompleted = true;
+        
+        _context.Tasks.Update(task);
+        await _context.SaveChangesAsync(CancellationToken.None);
     }
 }

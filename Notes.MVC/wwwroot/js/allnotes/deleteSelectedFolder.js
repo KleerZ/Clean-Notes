@@ -118,8 +118,6 @@ $('#delete-all-in-folder').on('click', function(){
     $.ajax({
         url: '/Folder/DeleteAll/' + id,
         type: 'POST',
-        // dataType: JSON,
-        // data: id,
         success: function () {
             // $('#target').load("/Trash/TrashPage");
             // location.reload()

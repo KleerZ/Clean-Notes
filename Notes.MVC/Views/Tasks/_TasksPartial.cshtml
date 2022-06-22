@@ -10,12 +10,7 @@
         <div class="title">
             Все Задачи
             <div class="func">
-                <button class="sort-btn">
-                    <svg class="sort-icon" style="width:22px;height:22px" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M18 21L14 17H17V7H14L18 3L22 7H19V17H22M2 19V17H12V19M2 13V11H9V13M2 7V5H6V7H2Z"/>
-                    </svg>
-                    Сортировка
-                </button>
+                
             </div>
         </div>
         <div class="search-div">
@@ -64,7 +59,7 @@
 
 <div class="context-menu-open">
     <ul>
-        <li class="delete-note-btn">
+        <li id="del-task-main" class="delete-note-btn">
             <svg style="width:24px;height:24px" viewBox="0 0 24 24">
                 <path fill="currentColor" d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z"/>
             </svg>
@@ -73,18 +68,18 @@
     </ul>
 </div>
 
-<script src="~/js/allnotes/deleteSelectedNote.js"></script>
+@* <script src="~/js/allnotes/deleteSelectedNote.js"></script> *@
+<script src="~/js/allnotes/divSearch.js"></script>
 
 <script >
-contextMenu();
-contextMenuFolder();
+// contextMenu();
+// contextMenuFolder();
 contextMenuTask();
 </script>
 
 <script >
-
-document.querySelector('.count').value = $('.note-item').length;
 </script>
 
 <script src="~/lib/jquery/dist/jquery.js"></script>
 <script src="~/js/allnotes/contextMenuTask.js"></script>
+<script src="~/js/allnotes/divSearch.js"></script>

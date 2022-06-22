@@ -8,6 +8,7 @@ public class TaskVm: IMapWith<Domain.Tasks>
     public Guid Id { get; set;}
     public string Title { get; set; }
     public DateTime EditDate { get; set; }
+    public bool isCompleted { get; set; }
 
     public void Mapping(Profile profile)
     {
@@ -20,6 +21,9 @@ public class TaskVm: IMapWith<Domain.Tasks>
                     options.MapFrom(task => task.Title))
             .ForMember(taskVM => taskVM.EditDate,
                 options =>
-                    options.MapFrom(task => task.EditDate));
+                    options.MapFrom(task => task.EditDate))
+            .ForMember(taskVM => taskVM.isCompleted,
+                options =>
+                    options.MapFrom(task => task.isCompleted));
     }
 }

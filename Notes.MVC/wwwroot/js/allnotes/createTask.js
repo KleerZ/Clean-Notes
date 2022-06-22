@@ -1,6 +1,6 @@
 $('.add-task-btn').on('click', function(){
-    let modal = document.getElementById('create-task-background');
-    let text = document.getElementById('task-name-text');
+    var modal = document.getElementById('create-task-background');
+    var text = document.getElementById('task-name-text');
 
     modal.style.display = "flex";
 
@@ -32,8 +32,8 @@ $('.add-task-btn').on('click', function(){
 // }
 
 function hideTaskCreate(){
-    let modalWindow = document.querySelector('.create-task-background')
-    let modal = document.querySelector('#task-name-text')
+    var modalWindow = document.querySelector('.create-task-background')
+    var modal = document.querySelector('#task-name-text')
     var text = document.getElementById('task-name-text');
 
     modalWindow.onclick = function(event){

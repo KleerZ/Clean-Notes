@@ -15,7 +15,7 @@ function contextMenuTask() {
             contextMenuOpen.style.visibility = 'visible';
             contextMenuOpen.style.display = 'flex';
 
-            let element = e.target;
+            var element = e.target;
             while (element.className !== 'note-item-form') {
                 element = element.parentNode;
             }
@@ -38,40 +38,52 @@ function contextMenuTask() {
     });
 }
 
-$('.delete-note-btn').on('click', function(){
-    var id = localStorage.getItem('id-task');
-    var url = localStorage.getItem('url2');
-
-    var input = document.querySelector('.count')
-    input.value = $('.note-item').length;
-
-    console.log("fef")
-
+$('#del-task').on('click', function(){
+    var task = localStorage.getItem("id-task");
+    console.log(task)
     $.ajax({
-        url: '/Tasks/DeleteTask/' + id,
+        url: "/Tasks/DeleteTask/",
         type: 'POST',
-        success: function (result) {
-            $('#target').html(result);
-            $('#edit').load("/Note/NoSelected/")
-            
-            // var url = window.location.href;
-            //
-            // var folderId = url.split('/')[5];
-
-            // if (url.includes('Home/Index')) {
-            //     $('#target').load("/Note/GetList/");
-            // }
-
-
-
-            console.log("fef")
-
-            document.querySelector('.count').value = $('.note-item').length;
+        data: {
+            id: task
+        },
+        success: function(result){
+            console.log(result)
+            $('#target').html(result)
         }
-    });
+    })
+});
 
-    // $('#target').load("/Note/GetList/");
-    console.log(id);
-    document.querySelector('.count').value = $('.note-item').length;
-    // $('#target').load("/Note/GetList/");
+$('#res-task').on('click', function(){
+    var task = localStorage.getItem("id-task");
+    console.log(task)
+    $.ajax({
+        url: "/Tasks/RestoreFromTrash/",
+        type: 'POST',
+        data: {
+            id: task
+        },
+        success: function(result){
+            console.log(result)
+            $('#target').html(result)
+        }
+    })
+});
+
+
+
+$('#del-task-main').on('click', function(){
+    var task = localStorage.getItem("id-task");
+    console.log(task)
+    $.ajax({
+        url: "/Tasks/ToTrash/",
+        type: 'POST',
+        data: {
+            id: task
+        },
+        success: function(result){
+            console.log(result)
+            $('#target').html(result)
+        }
+    })
 });

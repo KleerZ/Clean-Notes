@@ -70,7 +70,7 @@
     align-items: center;
     justify-content: space-around;
     /*height: 100%;*/
-    width: 300px;
+    width: 400px;
 }
 
 .save-btn{
@@ -268,7 +268,7 @@
     justify-content: space-around;
     align-items: center;
     height: 40px;
-    width: 180px;
+    width: 280px;
     border-radius: 7px;
     border: none;
     font-family: "Google Sans Medium", serif;
@@ -384,4 +384,9 @@
     cursor: pointer;
     background: black;
     transition: .2s all linear;
+}
+
+#comp-title{
+    font-family: "Google Sans Medium", serif;
+    color: #575757;
 }

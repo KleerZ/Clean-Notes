@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NXuVYUIyXInEFbhapMDGqdlssWoMKeV/Yd8u6+u+2dw=",
+  "Hash": "YhAXkhUXxfAuPM8cuTZ4WVIC8jGhV81jC4JGz84CgOk=",
   "Source": "Notes.MVC",
   "BasePath": "_content/Notes.MVC",
   "Mode": "Default",
@@ -1481,6 +1481,40 @@
       "OriginalItemSpec": "wwwroot\\css\\tasks\\taskModal.css"
     },
     {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\tasks\\trash-context.css",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "css/tasks/trash-context.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\tasks\\trash-context.css"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\css\\user\\user.css",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "css/user/user.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user\\user.css"
+    },
+    {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\favicon.ico",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1787,6 +1821,23 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\dropdown.js"
     },
     {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\exportToExcel.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/exportToExcel.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\exportToExcel.js"
+    },
+    {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\folder.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1923,6 +1974,23 @@
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\return.js"
     },
     {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\searchTable.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/searchTable.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\searchTable.js"
+    },
+    {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\sort-page.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -1938,6 +2006,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\allnotes\\sort-page.js"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\sortTable.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/sortTable.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\sortTable.js"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\tableToExcel.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/allnotes/tableToExcel.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\allnotes\\tableToExcel.js"
     },
     {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\allnotes\\taskEdit.js",
@@ -2025,6 +2127,23 @@
       "OriginalItemSpec": "wwwroot\\js\\anime.js"
     },
     {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\chart.min.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/chart.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chart.min.js"
+    },
+    {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\granim.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -2042,6 +2161,23 @@
       "OriginalItemSpec": "wwwroot\\js\\granim.js"
     },
     {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\helpers.esm.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/helpers.esm.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\helpers.esm.js"
+    },
+    {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\site.js",
       "SourceId": "Notes.MVC",
       "SourceType": "Discovered",
@@ -2057,6 +2193,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\tstest.ts",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/tstest.ts",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\tstest.ts"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\js\\utils.js",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "js/utils.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\utils.js"
     },
     {
       "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
@@ -3077,6 +3247,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\svg\\plus.svg"
+    },
+    {
+      "Identity": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\templates\\note-template.docx",
+      "SourceId": "Notes.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\Clean-Notes\\Notes.MVC\\wwwroot\\",
+      "BasePath": "_content/Notes.MVC",
+      "RelativePath": "templates/note-template.docx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\templates\\note-template.docx"
     }
   ]
 }

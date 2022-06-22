@@ -22,6 +22,7 @@ public class ToTrashCommandHandler: IRequestHandler<ToTrashCommand>
             throw new NotFoundException(nameof(Note), request.Id);
 
         entity.isDeleted = true;
+        entity.EditDate = DateTime.UtcNow;
         
         await _dbContext.SaveChangesAsync(cancellationToken);
         

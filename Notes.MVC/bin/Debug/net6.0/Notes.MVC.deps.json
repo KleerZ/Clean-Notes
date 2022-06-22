@@ -50,6 +50,7 @@
           "Notes.Identity": "1.0.0",
           "Notes.Persistence": "1.0.0",
           "Notes.Services": "1.0.0",
+          "Word2016.Interop": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "6.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "6.0.0.0",
@@ -3217,6 +3218,22 @@
           "System.Text.Encoding": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
+        }
+      },
+      "Word2016.Interop/1.0.0": {
+        "runtime": {
+          "lib/Microsoft.Office.Interop.Word.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.4613.1000"
+          },
+          "lib/office.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.4815.1000"
+          }
+        },
+        "compile": {
+          "lib/Microsoft.Office.Interop.Word.dll": {},
+          "lib/office.dll": {}
         }
       },
       "Notes.Application/1.0.0": {
@@ -6452,6 +6469,13 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Word2016.Interop/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OjsXbpMsiSUzqu3zdSW/Bu150kyruvezT+DhK9ZuncycQ9bYF+as1OkXg6rLsrRpcAFoMoHOTzmzH0LUvKgj2Q==",
+      "path": "word2016.interop/1.0.0",
+      "hashPath": "word2016.interop.1.0.0.nupkg.sha512"
     },
     "Notes.Application/1.0.0": {
       "type": "project",

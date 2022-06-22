@@ -1918,3 +1918,5 @@ D:\Projects\Clean-Notes\Notes.MVC\obj\Debug\net6.0\refint\Notes.MVC.dll
 D:\Projects\Clean-Notes\Notes.MVC\obj\Debug\net6.0\Notes.MVC.pdb
 D:\Projects\Clean-Notes\Notes.MVC\obj\Debug\net6.0\Notes.MVC.genruntimeconfig.cache
 D:\Projects\Clean-Notes\Notes.MVC\obj\Debug\net6.0\ref\Notes.MVC.dll
+D:\Projects\Clean-Notes\Notes.MVC\bin\Debug\net6.0\Microsoft.Office.Interop.Word.dll
+D:\Projects\Clean-Notes\Notes.MVC\bin\Debug\net6.0\office.dll

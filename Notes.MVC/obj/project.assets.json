@@ -3550,6 +3550,17 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Word2016.Interop/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/Microsoft.Office.Interop.Word.dll": {},
+          "lib/office.dll": {}
+        },
+        "runtime": {
+          "lib/Microsoft.Office.Interop.Word.dll": {},
+          "lib/office.dll": {}
+        }
+      },
       "Notes.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -10687,6 +10698,19 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Word2016.Interop/1.0.0": {
+      "sha512": "OjsXbpMsiSUzqu3zdSW/Bu150kyruvezT+DhK9ZuncycQ9bYF+as1OkXg6rLsrRpcAFoMoHOTzmzH0LUvKgj2Q==",
+      "type": "package",
+      "path": "word2016.interop/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Microsoft.Office.Interop.Word.dll",
+        "lib/office.dll",
+        "word2016.interop.1.0.0.nupkg.sha512",
+        "word2016.interop.nuspec"
+      ]
+    },
     "Notes.Application/1.0.0": {
       "type": "project",
       "path": "../Notes.Application/Notes.Application.csproj",
@@ -10730,12 +10754,12 @@
       "Notes.Domain >= 1.0.0",
       "Notes.Identity >= 1.0.0",
       "Notes.Persistence >= 1.0.0",
-      "Notes.Services >= 1.0.0"
+      "Notes.Services >= 1.0.0",
+      "Word2016.Interop >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\orcwa\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -10743,15 +10767,11 @@
       "projectUniqueName": "D:\\Projects\\Clean-Notes\\Notes.MVC\\Notes.MVC.csproj",
       "projectName": "Notes.MVC",
       "projectPath": "D:\\Projects\\Clean-Notes\\Notes.MVC\\Notes.MVC.csproj",
-      "packagesPath": "C:\\Users\\orcwa\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\Clean-Notes\\Notes.MVC\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\orcwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10759,7 +10779,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10839,6 +10858,10 @@
           "Microsoft.jQuery.Unobtrusive.Ajax": {
             "target": "Package",
             "version": "[3.2.6, )"
+          },
+          "Word2016.Interop": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [
@@ -10862,5 +10885,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Word2016.Interop 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Word2016.Interop",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

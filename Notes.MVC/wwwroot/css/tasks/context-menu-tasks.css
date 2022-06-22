@@ -20,17 +20,19 @@
     background-color: white;
     border-radius: 7px;
     padding: 4px;
-    /*height: auto;*/
-    max-height: 150px;
+    /*min-height: 160px;*/
+    /*max-height: 155px;*/
+    height: auto;
 }
+
 .context-menu-open ul {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     padding: 0;
     margin: 0;
-    height: 100%;
 }
+
 .context-menu-open ul li {
     display: flex;
     justify-content: flex-start;

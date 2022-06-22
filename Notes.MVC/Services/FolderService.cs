@@ -84,14 +84,18 @@ public class FolderService
         return folderList;
     }
 
-    public async Task DeleteAll(Guid id)
+    public async Task DeleteAll(Guid id, Guid userId)
     {
-        var query = new DeleteFolderAllCommand
+        var query = new DeleteFolderCommand
         {
-            Id = id
+            Id = id,
+            UserId = userId
         };
 
         await _mediator.Send(query);
+        
+        if (_dbContext.Folders.FirstOrDefault(i => i.Id == id) != null)
+            throw new Exception();
     }
     
     public async Task RemoveNotesFromFolder(Guid id)

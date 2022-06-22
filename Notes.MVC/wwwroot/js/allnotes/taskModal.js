@@ -1,7 +1,6 @@
 $('#task-span').on('click', function(){
-    console.log('wddddddddddddddddd')
-    let modal = document.getElementById('task-bkg-modal');
-    let text = document.getElementById('modal-task-text');
+    var modal = document.getElementById('task-bkg-modal');
+    var text = document.getElementById('modal-task-text');
 
     modal.style.display = "flex";
 
@@ -9,27 +8,23 @@ $('#task-span').on('click', function(){
         modal.style.opacity = 1;
         modal.style.visibility = "visible";
     }, 1);
-
-    hideTaskCreate()
 });
 
-function hideTaskCreate(){
-    let modalWindow = document.querySelector('.task-bkg-modal')
-    var text = document.getElementById('modal-task-text');
+$('#task-bkg-modal').on('click', function(event){
+    if(event.target == this){
+        var modalWindow = document.querySelector('#task-bkg-modal')
+        var text = document.getElementById('modal-task-text');
 
-    modalWindow.onclick = function(event){
-        if(event.target == modalWindow){
-            modalWindow.style.opacity = "0";
-            modalWindow.style.visibility = "visible";
+        modalWindow.style.opacity = "0";    
+        modalWindow.style.visibility = "visible";
 
-            setTimeout(function(){
-                modalWindow.style.display = "none";
-                modalWindow.style.opacity = 0;
-                text.value = "";
-            }, 200);
-        }
+        setTimeout(function(){
+            modalWindow.style.display = "none";
+            modalWindow.style.opacity = 0;
+            text.value = "";
+        }, 200);
     }
-}
+})
 
 $('#modal-task-btn-id').on('click', function(){
     if (document.getElementById('modal-task-text').value === "") {
@@ -46,11 +41,7 @@ $('#modal-task-btn-id').on('click', function(){
                 taskName: text.value
             },
             success: function (result) {
-                hideTaskCreate()
-                
-                $('#target').html(result)
-
-                let modalWindow = document.querySelector('.task-bkg-modal')
+                var modalWindow = document.querySelector('.task-bkg-modal')
                 var text = document.getElementById('modal-task-text')
 
                 modalWindow.style.opacity = "0";
@@ -61,6 +52,8 @@ $('#modal-task-btn-id').on('click', function(){
                     modalWindow.style.opacity = 0;
                     text.value = "";
                 }, 200);
+                
+                $('#target').html(result)
             }
         })
     }
